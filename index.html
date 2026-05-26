@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page for Chronos Assistant">
+    <meta name="keywords" content="Landing page, Israel Prosper, D3F4U17, Devspace">
+    <meta name="Author" content="D3F4U17">
+    <link rel="icon" type="image/ico" href="images/edited.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/1dedf583a5.js" crossorigin="anonymous"></script>
+    <title>CHRONOS — Voice Assistant</title>
+    <script src="Js/index.js" defer></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <script src="Js/particles.js"></script>
+    <script src="Js/app.js"></script>
+
+    <div class="page">
+
+        <header>
+            <a href="#" class="logo-wrap">
+                <span class="logo-mark">D3F4U17<span>.</span></span>
+                <span class="logo-sub">Assistant</span>
+            </a>
+
+            <input id="menu-toggle" type="checkbox">
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <nav class="nav-mobile">
+                <a href="about-me.html"><i class="fa-regular fa-user"></i> About Me</a>
+                <a href="download.html"><i class="fa-solid fa-download"></i> Download</a>
+                <a href="How-to-use.html"><i class="fa-solid fa-blog"></i>User Guide</a>
+                <a href="privacy.html"><i class="fa-solid fa-paperclip"></i> Privacy</a>
+                <div class="nav-mobile-footer">
+                    <a href="about-me.html">GET STARTED →</a>
+                </div>
+            </nav>
+
+            <nav class="nav-desktop">
+                <a href="about-me.html">About Me</a>
+                <a href="download.html">Download</a>
+                <a href="How-to-use.html">User Guide</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="about-me.html" class="btn-cta">Get Started →</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-wrapper">
+                <div class="glow-orb"></div>
+                <div class="tag">
+                    <span class="dot"></span>
+                    Chronos v.1.1.9 — Now Live
+                </div>
+                <div class="avatar-ring">
+                    <img
+                        src="images/devs/devi.png"
+                        alt="D3F4U17"
+                        id="avatar-img"
+                        onerror="this.classList.add('hidden'); document.getElementById('avatar-fb').classList.remove('hidden');"
+                    >
+                    <div class="avatar-fallback hidden" id="avatar-fb">D</div>
+                </div>
+                <div class="hero-wrap">
+                    <h1 class="hero-heading">
+                        Meet <span class="accent-word">Chronos</span>
+                    </h1>
+                    <p class="hero-sub">
+                        A Windows voice assistant built with <code>Vosk</code>, <code>Kokoro-TTS</code> &amp; <code>Windows APIs</code>.
+                        Commands executed. Responses voiced. Ideas shipped.
+                    </p>
+                </div>
+                <div class="hero-actions">
+                    <a href="about-me.html" class="btn-primary">ABOUT THE DEV</a>
+                    <a href="download.html" class="btn-outline">GET CHRONOS</a>
+                </div>
+                <div class="stat-strip">
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Offline Kokoro-TTS</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">Windows</span>
+                        <span class="stat-label">Native APIs</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">KOKORO-TTS</span>
+                        <span class="stat-label">Edge Neural</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="footer-left">
+                Built by <span>D3F4U17</span> · l5r431 · <span>31°46'36.3"N 35°13'42.4"E</span>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/l5r431" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/l5r431" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="privacy.html" title="Privacy"><i class="fa-solid fa-shield-halved"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

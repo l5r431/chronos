@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+.header {
+    background: linear-gradient(30deg, black, rgba(12, 12, 238, 0.557), black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    right: -100vw;
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    transition: right .2s linear;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+.navbar-mobile.active { 
+    right: 0;
+}
+.m-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: .5rem 1.5rem;
+    opacity: .8;
+    position: relative;
+    z-index: 0;
+    font-size: 1.1rem;
+    margin: 1rem 1rem;
+    opacity: .7;
+    font-family: Poppins, sans-serif, system-ui, -apple-system;
+}
+.m-link::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background: dimgray;
+    padding: .4rem .5rem;
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .6s;
+}
+.m-link:hover::before {
+    opacity: 1;
+}
+.close {
+    width: 30px;
+    margin: .5rem;
+    opacity: .8;
+}
+.close:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: .4s;
+    opacity: 1;
+}
+.menu {
+    width: 30px;
+    margin-right: 1rem;
+    display: none;
+    opacity: .7;
+}
+.menu:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: .4s;
+    opacity: 1;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon {
+    width: 100px;
+    height: 50px;
+}
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0 1.5rem;
+    opacity: .8;
+    font-size: 1.1rem;
+    font-family: Poppins, sans-serif;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+    transition: transform .8s;
+}
+.link:hover {
+    opacity: 1;
+}
+.link::before {
+    content: '';
+    inset: -4px;
+    background: rgb(87, 101, 251);
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .4s;
+}
+.link:hover::before {
+    opacity: 1;
+}
+@media (max-width:1130px) {
+    .link {
+        font-size: 1rem;
+        margin: .5rem 1rem;
+    }
+    .logo {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:935px) {
+    .link {
+        font-size: .9rem;
+        margin: .5rem .9rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:445px) {
+    .navbar {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+}

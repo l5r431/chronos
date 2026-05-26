@@ -1,0 +1,13 @@
+Just say NOVEMBER and its activated
+say ROMEO to deactivate it
+
+
+AVAILABLE COMMANDS
+
+Apps:             Just say (Open, Launch, run) + App name
+Activate:         Just say November
+Deactivate:       Just say Romeo or Close
+Power Off Pc:     Say 'Computer'.
+Restart Pc:       Just say Victor
+
+THANKS FOR DOWNLOADING.
