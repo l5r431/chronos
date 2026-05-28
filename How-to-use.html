@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <nav>
   <a href="index.html" class="logo">
     <div class="logo-pulse"></div>
@@ -32,36 +33,36 @@
   <a href="privacy.html">Privacy</a>
 </div>
 
-<!-- ── HERO BAND ── -->
+<!-- HERO -->
 <div class="hero-band">
   <div class="hero-eyebrow">
     <div class="logo-pulse"></div>
-    User Manual / Guide
+    User Manual · v.2.0
   </div>
   <h1>How to Use <span>Chronos</span></h1>
-  <p>Version- 1.1.7</p>
-  <p>Everything you need to go from zero to voice-controlling your Windows PC — step by step, with no experience required.</p>
+  <p>From zero to voice-controlling your Windows PC in under five minutes — no experience required.</p>
   <div class="breadcrumb">
     <div class="breadcrumb-item done"><div class="breadcrumb-num">1</div> Download</div>
     <div class="breadcrumb-sep">——</div>
-    <div class="breadcrumb-item done"><div class="breadcrumb-num">2</div> Extract</div>
+    <div class="breadcrumb-item done"><div class="breadcrumb-num">2</div> Run Installer</div>
     <div class="breadcrumb-sep">——</div>
-    <div class="breadcrumb-item done"><div class="breadcrumb-num">3</div> Place</div>
+    <div class="breadcrumb-item done"><div class="breadcrumb-num">3</div> Launch</div>
     <div class="breadcrumb-sep">——</div>
-    <div class="breadcrumb-item done"><div class="breadcrumb-num">4</div> Launch</div>
+    <div class="breadcrumb-item done"><div class="breadcrumb-num">4</div> Auto-start</div>
     <div class="breadcrumb-sep">——</div>
     <div class="breadcrumb-item done"><div class="breadcrumb-num">5</div> Speak</div>
   </div>
 </div>
+
 <div class="page-body">
   <aside class="sidebar">
     <div class="toc-label">On this page</div>
     <ul class="toc-list" id="toc">
       <li class="active-toc"><a href="#requirements">Requirements</a></li>
       <li><a href="#step1">Step 1 — Download</a></li>
-      <li><a href="#step2">Step 2 — Extract</a></li>
-      <li><a href="#step3">Step 3 — Place it</a></li>
-      <li><a href="#step4">Step 4 — Launch</a></li>
+      <li><a href="#step2">Step 2 — Install</a></li>
+      <li><a href="#step3">Step 3 — Launch</a></li>
+      <li><a href="#step4">Step 4 — Auto-start</a></li>
       <li><a href="#step5">Step 5 — Start talking</a></li>
       <li><a href="#commands">Voice commands</a></li>
       <li><a href="#tips">Tips &amp; best practices</a></li>
@@ -73,17 +74,23 @@
 
   <main class="main-content">
 
+    <!-- REQUIREMENTS -->
     <div id="requirements">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Before you begin</div>
         <h2>System requirements</h2>
-        <p>Chronos is lightweight and designed to run on virtually any modern Windows PC. Check these before starting.</p>
+        <p>Chronos is designed to run on virtually any modern Windows PC. Check these before starting.</p>
       </div>
       <div class="req-grid reveal">
         <div class="req-card">
           <div class="req-icon">🪟</div>
           <h4>Windows 10 or 11</h4>
           <p>Both 32-bit and 64-bit editions are supported. Windows 7/8 are not.</p>
+        </div>
+        <div class="req-card">
+          <div class="req-icon">💾</div>
+          <h4>~400 MB disk space</h4>
+          <p>The installed footprint after setup. The installer itself is 170 MB — smaller download, expanded on install.</p>
         </div>
         <div class="req-card">
           <div class="req-icon">🎤</div>
@@ -93,203 +100,177 @@
         <div class="req-card">
           <div class="req-icon">🔊</div>
           <h4>Audio output</h4>
-          <p>Speakers or headphones required for Chronos' TTS voice responses.</p>
-        </div>
-        <div class="req-card">
-          <div class="req-icon">💾</div>
-          <h4>~200 MB disk space</h4>
-          <p>Includes the Vosk speech model and TTS cache storage. The cache grows slowly over time.</p>
-        </div>
-        <div class="req-card">
-          <div class="req-icon">🗜️</div>
-          <h4>ZIP extractor</h4>
-          <p>Windows' built-in tool or WinRAR both work. WinRAR gives a handy right-click "Extract Here" shortcut.</p>
+          <p>Speakers or headphones required to hear Chronos' TTS voice responses.</p>
         </div>
         <div class="req-card">
           <div class="req-icon">⚡</div>
           <h4>No internet required</h4>
           <p>After the initial download, Chronos runs entirely offline. No Wi-Fi, no cloud, no accounts.</p>
         </div>
+        <div class="req-card">
+          <div class="req-icon">🐙</div>
+          <h4>GitHub Releases</h4>
+          <p>Chronos is distributed via GitHub Releases — free, versioned, and always the latest official build.</p>
+        </div>
       </div>
       <div class="status-row reveal">
         <div class="status-badge"><div class="status-dot green"></div> Fully offline</div>
         <div class="status-badge"><div class="status-dot cyan"></div> No account needed</div>
-        <div class="status-badge"><div class="status-dot green"></div> No installer / registry</div>
+        <div class="status-badge"><div class="status-dot green"></div> Simple EXE installer</div>
         <div class="status-badge"><div class="status-dot amber"></div> Microphone permission required</div>
       </div>
     </div>
 
     <hr class="divider">
 
-    <!-- STEP 1 -->
+    <!-- STEP 1 — DOWNLOAD -->
     <div id="step1">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 01</div>
-        <h2>Download the ZIP file</h2>
-        <p>Grab the latest official Chronos release from the download page.</p>
+        <h2>Download the installer</h2>
+        <p>Grab the latest official Chronos release directly from GitHub.</p>
+      </div>
+
+      <div class="dl-hero reveal">
+        <div class="dl-hero-text">
+          <h3>Chronos Installer (.exe)</h3>
+          <p>A single self-contained installer — everything Chronos needs to run is bundled inside. One click to download, one click to install.</p>
+          <div class="dl-size-badges">
+            <div class="dl-badge"><div class="dot dot-cyan"></div> 170 MB download</div>
+            <div class="dl-badge"><div class="dot dot-amber"></div> ~400 MB installed</div>
+            <div class="dl-badge"><div class="dot dot-cyan"></div> Windows 10 / 11</div>
+          </div>
+        </div>
+        <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener noreferrer" class="dl-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download on GitHub
+        </a>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">01</div>
-          <h3>Get the official download</h3>
+          <h3>Finding the right file on GitHub</h3>
           <div class="step-tag">Download</div>
         </div>
         <div class="step-card-body">
-          <p>Head to the <strong>Download</strong> page of this website and click the <strong>"Download Chronos.zip"</strong> button. The file is a single self-contained ZIP archive — everything Chronos needs to run is bundled inside.</p>
+          <p>Click the button above or go to the <strong>GitHub Releases page</strong>. Under the latest release, look for the <strong>Assets</strong> section and click the <code>Chronos-Setup.exe</code> file to download it.</p>
           <div class="callout callout-info">
             <div class="callout-icon">📥</div>
-            <div>Always download Chronos from this official website. Third-party mirrors or file-sharing sites may serve outdated or tampered builds. The official download link is on the <a href="download.html">Download page</a>.</div>
+            <div>Always download Chronos from the official GitHub Releases page. Third-party mirrors or file-sharing sites may serve outdated or tampered builds.</div>
           </div>
           <div class="callout callout-warn">
             <div class="callout-icon">⚠️</div>
-            <div><strong>Browser warning:</strong> Your browser may show a warning like <em>"This file type may be harmful."</em> This is a standard warning for any executable inside a ZIP. Click <strong>Keep</strong> or <strong>Download anyway</strong> to proceed — Chronos contains no malware.</div>
+            <div><strong>Browser warning:</strong> Your browser may show <em>"This file type may be harmful."</em> This is a standard warning for any unsigned .exe. Click <strong>Keep</strong> or <strong>Download anyway</strong> — Chronos contains no malware. See the Troubleshooting section if Windows Defender or antivirus flags it.</div>
           </div>
-          <p>Once the download finishes, you should see <strong>Chronos.zip</strong> in your Downloads folder. Do not attempt to open or run files directly from inside the ZIP — always extract first.</p>
         </div>
       </div>
     </div>
 
     <hr class="divider">
 
-    <!-- STEP 2 -->
+    <!-- STEP 2 — INSTALL -->
     <div id="step2">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 02</div>
-        <h2>Extract the archive</h2>
-        <p>Unzip Chronos.zip using Windows' built-in extractor or WinRAR.</p>
+        <h2>Run the installer</h2>
+        <p>Double-click the downloaded .exe and follow the short setup wizard.</p>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">02</div>
-          <h3>Using Windows' built-in tool</h3>
-          <div class="step-tag">Extract</div>
+          <h3>Installing Chronos</h3>
+          <div class="step-tag">Install</div>
         </div>
         <div class="step-card-body">
-          <p>Right-click <strong>Chronos.zip</strong> in File Explorer, then click <strong>"Extract All…"</strong>. A dialog will appear asking where to extract. Choose a location and click <strong>Extract</strong>.</p>
-          <div class="callout callout-info">
-            <div class="callout-icon">📂</div>
-            <div>Windows will create a new folder called <strong>Chronos</strong> at your chosen location containing all the extracted files. This is normal and expected.</div>
+          <p>Double-click the downloaded <code>Chronos-Setup.exe</code>. The installer will set up all required files and unpack Chronos (~400 MB total) into a folder of your choosing.</p>
+          <div class="callout callout-warn">
+            <div class="callout-icon">🛡️</div>
+            <div><strong>Windows SmartScreen:</strong> You may see a blue dialog — <em>"Windows protected your PC."</em> This appears because Chronos is not signed with a commercial certificate. Click <strong>"More info"</strong> → <strong>"Run anyway"</strong>. You'll only see this once.</div>
           </div>
+          <div class="callout callout-tip">
+            <div class="callout-icon">💡</div>
+            <div><strong>Recommended install path:</strong> Install to <code>C:\Users\YourName\AppData\Local\Chronos</code> or <code>C:\Users\YourName\Documents\Chronos</code> to avoid write-permission issues. Avoid <code>C:\Program Files</code> unless you run as admin — Chronos needs to write its TTS cache to its own folder.</div>
+          </div>
+          <p>Once the installer finishes, Chronos is ready — no additional setup, no dependencies to install, no configuration files to edit.</p>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
-          <div class="step-num-badge">02</div>
-          <h3>Using WinRAR (recommended)</h3>
-          <div class="step-tag">Extract</div>
+          <div class="step-num-badge">02b</div>
+          <h3>What's inside the installation</h3>
+          <div class="step-tag">Info</div>
         </div>
         <div class="step-card-body">
-          <p>WinRAR adds a convenient <strong>"Extract Here"</strong> option directly in your right-click context menu, making extraction one click. It also supports more archive formats and gives progress feedback for large files.</p>
+          <p>The installer unpacks everything Chronos needs to run completely offline:</p>
           <div class="callout callout-info">
-            <div class="callout-icon">🗜️</div>
-            <div>Don't have WinRAR? Download it free from the official site: <a href="https://www.rarlab.com/download.htm" target="_blank" rel="noopener noreferrer">rarlab.com/download.htm</a>. Choose the version matching your Windows — 64-bit is correct for most modern PCs. WinRAR is free to use indefinitely.</div>
+            <div class="callout-icon">📦</div>
+            <div>
+              <strong>Vosk speech model</strong> — the offline recognition engine that processes your voice entirely on-device.<br><br>
+              <strong>edge-tts runtime</strong> — the text-to-speech system Chronos uses to speak back to you.<br><br>
+              <strong>TTS cache folder</strong> — created on first launch; stores generated audio files permanently for instant playback on repeat.<br><br>
+              <strong>Chronos.exe</strong> — the main executable you'll launch each session.
+            </div>
           </div>
-          <p>Once WinRAR is installed, right-click <strong>Chronos.zip</strong> → <strong>"Extract Here"</strong> and the Chronos folder appears instantly in the same location as the ZIP.</p>
         </div>
       </div>
     </div>
 
     <hr class="divider">
 
-    <!-- STEP 3 -->
+    <!-- STEP 3 — LAUNCH -->
     <div id="step3">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 03</div>
-        <h2>Place Chronos in a safe folder</h2>
-        <p>Move the extracted folder to a permanent home — somewhere it won't be accidentally deleted or moved.</p>
+        <h2>Launch Chronos</h2>
+        <p>Open the installed folder and double-click Chronos.exe to fire it up for the first time.</p>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">03</div>
-          <h3>Choose a permanent location</h3>
-          <div class="step-tag">Place</div>
-        </div>
-        <div class="step-card-body">
-          <p>Cut and paste the <strong>Chronos</strong> folder from your Downloads into one of these recommended locations. Chronos stores its TTS cache relative to its own folder, so moving it later is fine as long as you also move the whole folder together.</p>
-          <div class="paths">
-            <div class="path-item">C:\Program Files\Chronos</div>
-            <div class="path-item">C:\Users\YourName\Documents\Chronos</div>
-            <div class="path-item">C:\Users\YourName\AppData\Local\Chronos</div>
-            <div class="path-item">D:\Apps\Chronos &nbsp;(any drive works)</div>
-          </div>
-          <div class="callout callout-warn">
-            <div class="callout-icon">⚠️</div>
-            <div><strong>Avoid leaving it in Downloads or Temp.</strong> These folders are frequently auto-purged by disk cleanup tools and Windows Storage Sense. If Chronos disappears, it's usually because of this. Move it somewhere stable.</div>
-          </div>
-          <div class="callout callout-tip">
-            <div class="callout-icon">💡</div>
-            <div><strong>Program Files tip:</strong> If you install to <code style="color:var(--cyan)">C:\Program Files\Chronos</code>, you may need to right-click the folder and set write permissions for your user account so Chronos can write to its TTS cache. Alternatively, just use your Documents or AppData folder to avoid this entirely.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <!-- STEP 4 -->
-    <div id="step4">
-      <div class="sec-header reveal">
-        <div class="sec-eyebrow">Step 04</div>
-        <h2>Launch Chronos</h2>
-        <p>Double-click Chronos.exe to fire it up for the first time.</p>
-      </div>
-
-      <div class="step-card reveal">
-        <div class="step-card-header">
-          <div class="step-num-badge">04</div>
           <h3>Running Chronos.exe</h3>
           <div class="step-tag">Launch</div>
         </div>
         <div class="step-card-body">
-          <p>Open the <strong>Chronos</strong> folder and double-click <strong>Chronos.exe</strong>. On first launch it may take a few seconds as Chronos initialises the Vosk speech model and sets up its TTS cache directory.</p>
-          <div class="callout callout-warn">
-            <div class="callout-icon">🛡️</div>
-            <div><strong>Windows SmartScreen warning:</strong> You may see a blue dialog reading <em>"Windows protected your PC."</em> This appears because Chronos is not code-signed with an expensive certificate — it does not mean it's harmful. Click <strong>"More info"</strong> → <strong>"Run anyway"</strong> to proceed. You'll only see this once.</div>
-          </div>
+          <p>Open your Chronos install folder and double-click <strong>Chronos.exe</strong>. On first launch it may take a few extra seconds as Chronos initialises the Vosk speech model and creates its TTS cache directory.</p>
           <div class="callout callout-warn">
             <div class="callout-icon">🎤</div>
-            <div><strong>Microphone permission:</strong> Windows may also ask <em>"Do you want to allow Chronos to access your microphone?"</em> Click <strong>Yes</strong> — this is essential for voice recognition to work. You can manage this later in <strong>Settings → Privacy → Microphone</strong>.</div>
+            <div><strong>Microphone permission:</strong> Windows may ask <em>"Do you want to allow Chronos to access your microphone?"</em> Click <strong>Yes</strong> — this is essential for voice recognition. You can manage this later under <strong>Settings → Privacy → Microphone</strong>.</div>
           </div>
           <div class="callout callout-tip">
             <div class="callout-icon">📌</div>
-            <div>To launch Chronos quickly in future: right-click <strong>Chronos.exe</strong> → <strong>"Send to" → "Desktop (create shortcut)"</strong>. You can also drag the shortcut to your taskbar to pin it.</div>
+            <div>Create a desktop shortcut for quick access: right-click <strong>Chronos.exe</strong> → <strong>Send to → Desktop (create shortcut)</strong>. You can also pin it to your taskbar.</div>
           </div>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
-          <div class="step-num-badge">04b</div>
+          <div class="step-num-badge">03b</div>
           <h3>What happens on startup</h3>
           <div class="step-tag">Info</div>
         </div>
         <div class="step-card-body">
-          <p>When Chronos starts successfully, it will:</p>
-          <div class="checklist" style="margin-top:0.5rem;">
-            <div class="check-item">
-              <div class="check-icon">✓</div>
-              <div class="check-item-text">
-                <h4>Greet you with the date and time</h4>
-                <p>Chronos speaks a welcome message including today's date and current time using its natural TTS voice.</p>
-              </div>
+          <p>When Chronos starts successfully it will:</p>
+          <div class="startup-steps">
+            <div class="startup-step">
+              <div class="startup-step-num">1</div>
+              <div class="startup-step-text"><strong>Greet you with today's date and time</strong> — Chronos speaks a welcome message including the current date using its natural TTS voice.</div>
             </div>
-            <div class="check-item">
-              <div class="check-icon">✓</div>
-              <div class="check-item-text">
-                <h4>Begin listening immediately</h4>
-                <p>The microphone is activated and Vosk starts processing audio. The wake word is needed by default — Chronos will not be always listening because all words can trigger an Open App command.</p>
-              </div>
+            <div class="startup-step">
+              <div class="startup-step-num">2</div>
+              <div class="startup-step-text"><strong>Begin listening immediately</strong> — the microphone activates and Vosk starts processing audio. Chronos is ready for commands right after the greeting.</div>
             </div>
-            <div class="check-item">
-              <div class="check-icon">✓</div>
-              <div class="check-item-text">
-                <h4>Load the TTS cache</h4>
-                <p>Any previously cached audio is loaded for instant playback. On first run the cache is empty, so the first responses will generate audio fresh — which takes a moment.</p>
-              </div>
+            <div class="startup-step">
+              <div class="startup-step-num">3</div>
+              <div class="startup-step-text"><strong>Load the TTS cache</strong> — any previously cached audio is available for instant playback. On first run the cache is empty, so the first responses generate fresh audio which takes a moment — this is normal.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">4</div>
+              <div class="startup-step-text"><strong>Scan all Application on your Computer</strong> — Chronos will scan all installed applications on your computer for easy opening and closing</div>
             </div>
           </div>
         </div>
@@ -298,7 +279,64 @@
 
     <hr class="divider">
 
-    <!-- STEP 5 -->
+    <!-- STEP 4 — AUTO-START -->
+    <div id="step4">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Step 04</div>
+        <h2>Set Chronos to auto-start</h2>
+        <p>Add Chronos to your Windows startup folder so it launches automatically every time you log in.</p>
+      </div>
+
+      <div class="startup-highlight reveal">
+        <h4>⚡ Recommended — Shell:startup</h4>
+        <p style="font-size:.9rem;color:var(--muted2);line-height:1.7">The easiest way to have Chronos ready the moment your PC boots. Place a shortcut in the Windows startup folder and you'll never have to open it manually again.</p>
+      </div>
+
+      <div class="step-card reveal" style="margin-top:1.5rem">
+        <div class="step-card-header">
+          <div class="step-num-badge">04</div>
+          <h3>Adding Chronos to Windows startup</h3>
+          <div class="step-tag">Auto-start</div>
+        </div>
+        <div class="step-card-body">
+          <p>Follow these steps exactly:</p>
+          <div class="startup-steps">
+            <div class="startup-step">
+              <div class="startup-step-num">1</div>
+              <div class="startup-step-text">Navigate to your Chronos install folder, right-click <strong>Chronos.exe</strong> → <strong>Send to → Desktop (create shortcut)</strong>. This creates a shortcut on your desktop.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">2</div>
+              <div class="startup-step-text">Press <strong>Windows key + R</strong> to open the Run dialog.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">3</div>
+              <div class="startup-step-text">Type <code>shell:startup</code> and press <strong>Enter</strong>. A File Explorer window opens showing your personal startup folder.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">4</div>
+              <div class="startup-step-text">Copy the Chronos shortcut from your desktop and paste it into the startup folder that just opened.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">5</div>
+              <div class="startup-step-text">Done. Chronos will now launch automatically every time you log into Windows — no manual opening required.</div>
+            </div>
+          </div>
+          <div class="callout callout-info">
+            <div class="callout-icon">ℹ️</div>
+            <div>The startup folder path is <code>%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code>. Only your shortcut goes here — never move the actual Chronos folder. The shortcut is just a pointer; Chronos stays where you installed it.</div>
+          </div>
+          <div class="callout callout-tip">
+            <div class="callout-icon">💡</div>
+            <div>If you ever want to stop Chronos from launching on startup, simply delete the shortcut from the <code>shell:startup</code> folder. The actual Chronos installation is untouched.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- STEP 5 — START TALKING -->
     <div id="step5">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 05</div>
@@ -313,28 +351,28 @@
           <div class="step-tag">Use it</div>
         </div>
         <div class="step-card-body">
-          <p>Chronos uses the <strong>Vosk</strong> offline speech recognition engine. Vosk is trained on natural speech but performs best when you speak clearly and at a moderate pace. You do not need to yell or over-enunciate — just talk the way you normally would.</p>
+          <p>Chronos uses the <strong>Vosk</strong> offline speech recognition engine. Vosk performs best when you speak clearly at a moderate pace. You don't need to yell or over-enunciate — talk the way you normally would.</p>
           <div class="callout callout-tip">
             <div class="callout-icon">💡</div>
-            <div><strong>Background noise:</strong> Vosk handles mild ambient noise well, but loud music, TV in the background, or echo-heavy rooms can reduce accuracy. A headset microphone will give the best results.</div>
+            <div><strong>Background noise:</strong> Vosk handles mild ambient noise well, but loud music, TV, or echo-heavy rooms reduce accuracy. A headset microphone will give the best results by far.</div>
           </div>
-          <p>Chronos processes your audio entirely on-device using your CPU. There is no internet round-trip, which means recognition is fast regardless of your connection speed.</p>
+          <p>All audio is processed entirely on-device by your CPU — no internet round-trip, which means recognition is fast regardless of your connection speed or whether you're offline.</p>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
-          <div class="step-num-badge">05</div>
+          <div class="step-num-badge">05b</div>
           <h3>How the TTS cache works</h3>
           <div class="step-tag">Performance</div>
         </div>
         <div class="step-card-body">
-          <p>Every time Chronos speaks a phrase using <strong>edge-tts</strong>, the generated audio is saved permanently in a local cache folder. The next time Chronos needs to say the same phrase, it plays the cached file instantly — no generation delay.</p>
+          <p>Every time Chronos speaks a new phrase using <strong>edge-tts</strong>, the generated audio is saved permanently in a local cache folder inside the Chronos directory. The next time Chronos needs that exact phrase, it plays the cached file instantly.</p>
           <div class="callout callout-info">
             <div class="callout-icon">⚡</div>
-            <div>The TTS cache <strong>is never cleared</strong> — it grows over time and Chronos only gets faster with repeated use. Greetings, common responses, and frequently used phrases will always snap back instantly after the first time they're generated.</div>
+            <div>The TTS cache <strong>is never cleared</strong> — it only ever grows, and Chronos only gets faster with use. Greetings, time responses, and frequently spoken phrases will snap back instantly after their first generation. This is by design.</div>
           </div>
-          <p>This is especially noticeable with the daily greeting: the first time Chronos greets you on a new date, it generates fresh audio. From that point on, it plays back in milliseconds.</p>
+          <p>The daily greeting is a great example: the first time Chronos greets you on a new date, it generates fresh audio (brief pause). Every subsequent launch that same day plays the cached file in milliseconds.</p>
         </div>
       </div>
     </div>
@@ -346,56 +384,61 @@
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Voice commands</div>
         <h2>What you can say</h2>
-        <p>Chronos understands a range of natural commands. Here are the core ones to get started.</p>
+        <p>Chronos understands a range of natural commands. Here are the core ones to get you started.</p>
       </div>
 
       <div class="reveal">
-      <table class="cmd-table">
-        <thead>
-          <tr>
-            <th>What to say</th>
-            <th>What Chronos does</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="cmd-phrase">open [app name]</span></td>
-            <td>Launches the named application</td>
-            <td>Searches installed apps via Windows APIs</td>
-          </tr>
-          <tr>
-            <td><span class="cmd-phrase">what time is it "Upcoming"</span></td>
-            <td>Speaks the current time</td>
-            <td>Uses system clock, no internet needed</td>
-          </tr>
-          <tr>
-            <td><span class="cmd-phrase">what's today's date "Upcoming"</span></td>
-            <td>Speaks the current date</td>
-            <td>Same as startup greeting date</td>
-          </tr>
-          <tr>
-            <td><span class="cmd-phrase">rescan / rebuild</span></td>
-            <td>Scans all applications on your Desktop</td>
-            <td>Scans All applications</td>
-          </tr>
-          <tr>
-            <td><span class="cmd-phrase">stop listening</span></td>
-            <td>Pauses microphone input</td>
-            <td>Say "november" to resume</td>
-          </tr>
-          <tr>
-            <td><span class="cmd-phrase">goodbye / exit</span></td>
-            <td>Speaks a farewell and closes Chronos</td>
-            <td>Graceful shutdown — saves state</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="cmd-table">
+          <thead>
+            <tr>
+              <th>What to say</th>
+              <th>What Chronos does</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="cmd-phrase">open [app name]</span></td>
+              <td>Launches the named application</td>
+              <td>Searches installed apps via Windows APIs. Works with any app on your system.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">rescan</span> / <span class="cmd-phrase">rebuild</span></td>
+              <td>Rescans all applications on your system</td>
+              <td>Run after installing new apps so Chronos can find them.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">reset</span> / <span class="cmd-phrase">clear</span></td>
+              <td>Soft purge — drains the audio queue, resets Vosk, rebuilds app catalogue, replays greeting</td>
+              <td>Use this if Chronos feels sluggish or out-of-sync. Does not touch the TTS cache.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">stop listening</span></td>
+              <td>Pauses microphone input</td>
+              <td>Say <strong>"november"</strong> to resume listening.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">what time is it</span> <span class="badge-upcoming">Upcoming</span></td>
+              <td>Speaks the current time</td>
+              <td>Uses system clock — no internet needed.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">what's today's date</span> <span class="badge-upcoming">Upcoming</span></td>
+              <td>Speaks the current date</td>
+              <td>Same date spoken during the startup greeting.</td>
+            </tr>
+            <tr>
+              <td><span class="cmd-phrase">goodbye</span> / <span class="cmd-phrase">exit</span></td>
+              <td>Speaks a farewell and closes Chronos</td>
+              <td>Graceful shutdown — always use this instead of force-closing.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="callout callout-info reveal" style="margin-top:1.25rem;">
+      <div class="callout callout-info reveal" style="margin-top:1.25rem">
         <div class="callout-icon">ℹ️</div>
-        <div>This list covers the core built-in commands. Chronos is actively developed and new commands are added with updates. Check the <a href="download.html">Download page</a> for changelog notes with each release.</div>
+        <div>Commands marked <strong>Upcoming</strong> are in active development and will be available in a future release. Check the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> for changelogs with each update.</div>
       </div>
     </div>
 
@@ -413,57 +456,57 @@
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Place The chronos Shortcut in the Shell:startup Folder</h4>
-            <p>In order for Chronos to startup with your pc, Place its shortcut in the <b> Shell:startup </b> Folder,Go to Chronos.exe and copy it, Click Windows key + R, then type '<b>Shell:startup</b>', and press Enter, Then Paste the chronos Shortcut.</p>
+            <h4>Add Chronos to shell:startup</h4>
+            <p>See Step 4 above. Placing the Chronos shortcut in your Windows startup folder means it's always ready the moment you log in — no manual launching required.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Use a headset or close-field mic</h4>
-            <p>Vosk accuracy improves significantly with a microphone closer to your mouth. Even a budget USB headset beats a far-field laptop mic in a noisy room.</p>
+            <p>Vosk accuracy improves significantly with a microphone closer to your mouth. Even a budget USB headset beats a far-field laptop mic in a noisy environment.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Set your mic as the Windows default</h4>
-            <p>Go to <strong>Settings → System → Sound → Input</strong> and confirm that your intended microphone is selected as the default device. Chronos uses whatever Windows reports as default.</p>
+            <p>Go to <strong>Settings → System → Sound → Input</strong> and confirm your intended microphone is set as the default recording device. Chronos uses whatever Windows reports as default.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Keep Chronos in one permanent folder</h4>
-            <p>The TTS cache lives inside the Chronos folder. Moving just the .exe will break the cache lookup. Always move the entire Chronos folder together if you relocate it.</p>
+            <h4>Never move just the .exe</h4>
+            <p>The TTS cache lives inside the Chronos folder. Moving only Chronos.exe breaks the cache lookup. If you need to relocate Chronos, move the <em>entire</em> install folder together and update your shortcut path.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Let it finish speaking before issuing the next command</h4>
-            <p>Chronos is sequential — it processes one command at a time. Interrupting mid-speech may cause the next command to be missed. Wait for the response to finish.</p>
+            <h4>Wait for Chronos to finish speaking</h4>
+            <p>Chronos processes one command at a time sequentially. Issuing another command while it's mid-speech may cause that command to be missed. Wait for the response to complete.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Check the console window for feedback</h4>
-            <p>Chronos opens a console/terminal window alongside its main process. If it's not responding to voice, the console will usually show the reason — such as "no audio input detected" or a recognition error.</p>
+            <p>Chronos opens a console alongside its main process. If Chronos isn't responding to voice, the console will usually show the reason — such as no audio input detected or a recognition error.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Create a desktop shortcut for easy access</h4>
-            <p>Right-click Chronos.exe → Send to → Desktop (create shortcut). Pin the shortcut to your taskbar so Chronos is always one click away.</p>
+            <h4>Say "reset" if things feel out of sync</h4>
+            <p>Saying <strong>"reset"</strong> or <strong>"clear"</strong> triggers a soft purge: drains the audio queue, resets Vosk, rebuilds the app catalogue, and replays the greeting — all without closing Chronos or touching the TTS cache.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Use the "reset" voice command if things get sluggish</h4>
-            <p>Saying <strong>"reset"</strong> or <strong>"clear"</strong> performs a soft purge of Chronos' short-term memory state without closing the app or touching the TTS cache. Use this if responses start feeling out of sync.</p>
+            <h4>Say "rescan" after installing new apps</h4>
+            <p>When you install a new application and want to open it with Chronos, say <strong>"rescan"</strong> or <strong>"rebuild"</strong> first. This rebuilds the app catalogue so Chronos can find the newly installed app.</p>
           </div>
         </div>
       </div>
@@ -476,7 +519,7 @@
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Troubleshooting</div>
         <h2>Common issues &amp; fixes</h2>
-        <p>Most problems have a simple cause. Check these first before anything else.</p>
+        <p>Most problems have a simple cause. Check these before anything else.</p>
       </div>
 
       <div class="step-card reveal">
@@ -485,14 +528,14 @@
           <h3>Chronos doesn't hear me / no response to voice</h3>
         </div>
         <div class="step-card-body">
-          <p>This is almost always a microphone configuration issue, not a bug.</p>
+          <p>Almost always a microphone configuration issue, not a bug.</p>
           <div class="callout callout-info">
             <div class="callout-icon">🔧</div>
             <div>
-              1. Open <strong>Windows Settings → System → Sound → Input</strong> and confirm your mic is selected as the default device.<br><br>
-              2. Check that the microphone volume level is above 50%.<br><br>
-              3. Confirm that Chronos has microphone permission: <strong>Settings → Privacy → Microphone</strong> → ensure it's toggled on for desktop apps.<br><br>
-              4. Check the Chronos console window — it will show whether audio is being received.
+              1. <strong>Settings → System → Sound → Input</strong> — confirm your mic is selected as the default device.<br><br>
+              2. Make sure the microphone volume is above 50%.<br><br>
+              3. Check microphone permission: <strong>Settings → Privacy → Microphone</strong> → toggle on for desktop apps.<br><br>
+              4. Look at the Chronos console window — it will show whether audio is being received.
             </div>
           </div>
         </div>
@@ -504,12 +547,11 @@
           <h3>Chronos crashes on startup</h3>
         </div>
         <div class="step-card-body">
-          <p>A crash on launch is usually caused by a missing file inside the Chronos folder, or Chronos being run directly from inside the ZIP without extracting first.</p>
+          <p>A crash on launch usually means a missing or corrupted file inside the Chronos folder, or the installer didn't complete successfully.</p>
           <div class="callout callout-warn">
             <div class="callout-icon">⚠️</div>
-            <div><strong>Never double-click Chronos.exe from inside the ZIP.</strong> Always extract the entire ZIP first, then run the .exe from the extracted folder. Running from inside a ZIP causes files to be missing at runtime.</div>
+            <div>Re-download the installer from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it again. The original download may have been interrupted or corrupted mid-transfer.</div>
           </div>
-          <p>If you extracted properly and still see a crash, re-download the ZIP from the <a href="download.html" style="color:var(--cyan)">Download page</a> and extract fresh. The download may have been corrupted mid-transfer.</p>
         </div>
       </div>
 
@@ -519,15 +561,14 @@
           <h3>Voice recognition is inaccurate</h3>
         </div>
         <div class="step-card-body">
-          <p>Vosk's accuracy depends on audio quality. Try these in order:</p>
           <div class="callout callout-tip">
             <div class="callout-icon">💡</div>
             <div>
               • Move closer to your microphone.<br>
               • Reduce background noise (TV, music, fans).<br>
               • Speak at a steady moderate pace — not too fast, not exaggerated.<br>
-              • Switch to a headset microphone if using a laptop's built-in mic.<br>
-              • Check that the correct input device is selected in Windows Sound settings.
+              • Switch to a headset microphone if using a built-in laptop mic.<br>
+              • Confirm the correct input device is selected in Windows Sound settings.
             </div>
           </div>
         </div>
@@ -539,21 +580,31 @@
           <h3>No sound / Chronos speaks but I can't hear it</h3>
         </div>
         <div class="step-card-body">
-          <p>Check that your speakers or headphones are connected and selected as the default playback device in Windows Sound settings. Also confirm your system volume is not muted. Chronos plays audio through the Windows default output device — changing that in the Sound control panel is sufficient.</p>
+          <p>Check that speakers or headphones are connected and set as the default playback device in Windows Sound settings. Confirm system volume is not muted. Chronos plays audio through the Windows default output device — changing that in the Sound control panel is sufficient.</p>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>Antivirus flagging Chronos</h3>
+          <h3>Antivirus or Windows Defender flagging Chronos</h3>
         </div>
         <div class="step-card-body">
-          <p>Some antivirus engines flag unsigned executables as potentially unwanted programs (PUPs). Chronos is not malware — it is a locally built, unsigned application with no code-signing certificate. You can add the Chronos folder as an exclusion in your antivirus software to prevent interference.</p>
+          <p>Chronos is an unsigned executable — it has no commercial code-signing certificate. Some antivirus engines flag unsigned executables as potentially unwanted programs (PUPs). Chronos is not malware.</p>
           <div class="callout callout-info">
             <div class="callout-icon">ℹ️</div>
-            <div>If you're unsure, you can verify the download by comparing the SHA-256 hash of your downloaded ZIP against the hash published on the <a href="download.html">Download page</a>.</div>
+            <div>Add the Chronos install folder as an exclusion in your antivirus software to prevent interference. You can verify authenticity by comparing the SHA-256 hash of your downloaded file against the hash published on the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a>.</div>
           </div>
+        </div>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card-header">
+          <div class="step-num-badge">!</div>
+          <h3>Chronos can't find a newly installed app</h3>
+        </div>
+        <div class="step-card-body">
+          <p>The app catalogue is built when Chronos starts and doesn't automatically update while it's running. After installing a new application, say <strong>"rescan"</strong> or <strong>"rebuild"</strong> to trigger a fresh catalogue scan. Chronos will then be able to find and open the new app.</p>
         </div>
       </div>
     </div>
@@ -568,14 +619,23 @@
       </div>
 
       <div class="faq-list reveal">
-
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
             Does Chronos work without the internet?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes — completely. Chronos uses Vosk for offline speech recognition and edge-tts for text-to-speech, both of which run entirely on your device. After you download and extract it, you never need an internet connection to use Chronos.</p>
+            <p>Yes — completely. Chronos uses Vosk for offline speech recognition and edge-tts for text-to-speech, both running entirely on your device. After the initial download and install, you never need an internet connection to use Chronos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How large is Chronos after installation?
+            <div class="faq-arrow">▾</div>
+          </button>
+          <div class="faq-a">
+            <p>The installer download is <strong>170 MB</strong>. After installation, the total footprint on disk is approximately <strong>400 MB</strong>. Most of that size is the Vosk speech recognition model, which is what enables fully offline voice recognition without any internet connection.</p>
           </div>
         </div>
 
@@ -585,7 +645,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes. Chronos is portable — just copy the entire Chronos folder to another PC and run Chronos.exe. There's no per-machine license, no activation, and no install process. The TTS cache will transfer with it too, so cached audio travels with the folder.</p>
+            <p>Yes. Just download and run the installer on each PC. There's no per-machine license, no activation, and no account needed. The TTS cache is stored locally per installation, so each PC will build up its own cache over time.</p>
           </div>
         </div>
 
@@ -595,7 +655,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>The cache grows slowly because it only stores audio for unique phrases Chronos has actually spoken. In practice, the cache tends to stabilise at a small size since daily usage involves many of the same repeated phrases — greetings, time/date responses, acknowledgements. You can manually clear the cache folder if you need to reclaim space, but this is rarely necessary.</p>
+            <p>The cache grows slowly because it only stores audio for unique phrases Chronos has actually spoken. In practice it stabilises quickly since daily usage involves many repeated phrases — greetings, acknowledgements, common responses. The cache is never cleared automatically, which is by design: it means Chronos only gets faster over time.</p>
           </div>
         </div>
 
@@ -605,7 +665,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>No. All audio is processed locally by Vosk on your CPU and immediately discarded after recognition. Chronos does not write your audio to disk and does not have any network component to transmit it. See the <a href="privacy.html">Privacy page</a> for the full policy.</p>
+            <p>No. All audio is processed locally by Vosk on your CPU and immediately discarded after recognition. Chronos does not write your voice audio to disk and has no network component to transmit anything. See the <a href="privacy.html">Privacy page</a> for the full policy.</p>
           </div>
         </div>
 
@@ -615,7 +675,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Download the new ZIP from the <a href="download.html">Download page</a>, extract it, and copy the contents into your existing Chronos folder — overwriting the old files. Your TTS cache is stored in a subfolder that will not be overwritten during an update, so your cached audio is preserved.</p>
+            <p>Download the new installer from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it. The installer will update the Chronos files in place. Your TTS cache is stored in a subfolder that won't be overwritten during an update, so all your cached audio is preserved.</p>
           </div>
         </div>
 
@@ -625,17 +685,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes, entirely free. There is no paid version, no premium tier, no subscription, and no ads. Chronos is an independent personal project built and maintained by a solo developer.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            Can I run Chronos at Windows startup automatically?
-            <div class="faq-arrow">▾</div>
-          </button>
-          <div class="faq-a">
-            <p>Yes. Create a shortcut to Chronos.exe, then press <strong>Win + R</strong>, type <code>shell:startup</code>, and press Enter. Place the shortcut in the folder that opens. Windows will now launch Chronos automatically each time you log in.</p>
+            <p>Yes, entirely free. No paid version, no premium tier, no subscription, no ads. Chronos is an independent personal project built and maintained by a solo developer, distributed freely via GitHub.</p>
           </div>
         </div>
 
@@ -645,10 +695,19 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>The current build ships with an English Vosk model. Other language models are available from the Vosk project, but swapping models requires manually replacing the model folder — this is not officially supported in the current release and may affect accuracy or performance.</p>
+            <p>The current build ships with an English Vosk model. Other language models are available from the Vosk project, but swapping models requires manually replacing the model folder — this is not officially supported in the current release.</p>
           </div>
         </div>
 
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What does the "reset" command actually do?
+            <div class="faq-arrow">▾</div>
+          </button>
+          <div class="faq-a">
+            <p>Saying "reset" or "clear" triggers a soft purge: it drains the current audio queue, resets the Vosk speech recogniser, rebuilds the application catalogue, and replays the startup greeting. It's a full internal refresh without closing or restarting Chronos — and importantly, it never touches the TTS cache.</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -664,12 +723,12 @@
 
       <div class="uninstall-box reveal">
         <h4>⚠️ To completely remove Chronos</h4>
-        <p>Simply <strong>delete the Chronos folder</strong>. Chronos does not write to the Windows registry, does not install services or drivers, and does not place files anywhere outside its own folder. There is no uninstaller because none is needed — deleting the folder is the complete and total uninstallation. You can also remove the desktop shortcut if you created one.</p>
+        <p>Delete the Chronos install folder. Chronos does not write to the Windows registry, does not install services or drivers, and does not place files anywhere outside its own folder. There is no separate uninstaller because none is needed — deleting the folder is the complete and total removal. Also delete the desktop shortcut and remove the shortcut from <code>shell:startup</code> if you added one.</p>
       </div>
 
-      <div class="callout callout-info reveal" style="margin-top:1.25rem;">
+      <div class="callout callout-info reveal" style="margin-top:1.25rem">
         <div class="callout-icon">ℹ️</div>
-        <div>If you want to move Chronos rather than remove it, simply move the entire folder to a new location and re-create your desktop shortcut pointing to the new path. The TTS cache inside the folder moves with it automatically.</div>
+        <div>If you want to move Chronos rather than remove it, move the entire install folder to the new location and update your shortcut paths to point to the new <code>Chronos.exe</code> location. The TTS cache inside the folder moves with it automatically.</div>
       </div>
     </div>
 
@@ -678,9 +737,9 @@
     <!-- BOTTOM CTA -->
     <div class="bottom-cta reveal">
       <h3>Ready to get started?</h3>
-      <p>Download Chronos now — free, offline, and ready in under two minutes.</p>
+      <p>Download Chronos from GitHub — free, offline, and set up in under five minutes.</p>
       <div class="cta-btns">
-        <a href="download.html" class="btn-primary">↓ Download Chronos</a>
+        <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener noreferrer" class="btn-primary">↓ Download on GitHub</a>
         <a href="privacy.html" class="btn-ghost">Read privacy policy →</a>
       </div>
     </div>
@@ -694,15 +753,14 @@
   <div class="foot-links">
     <a href="index.html">Home</a>
     <a href="about-me.html">About Me</a>
-    <a href="download.html">Download</a>
+    <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">Download</a>
     <a href="privacy.html">Privacy</a>
-    <a href="https://www.rarlab.com/download.htm" target="_blank" rel="noopener">Get WinRAR</a>
   </div>
   <small>Windows Voice Assistant · Free &amp; Offline · © 2026 Chronos</small>
 </footer>
 
 <script>
-// ── hamburger ──
+// hamburger
 const burger = document.getElementById('burger');
 const mobNav = document.getElementById('mobNav');
 burger.addEventListener('click', () => mobNav.classList.toggle('open'));
@@ -711,24 +769,22 @@ document.addEventListener('click', e => {
     mobNav.classList.remove('open');
 });
 
-// ── scroll reveal ──
+// scroll reveal
 const reveals = document.querySelectorAll('.reveal');
 const revObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
   });
-}, { threshold: 0.08 });
+}, { threshold: 0.07 });
 reveals.forEach(el => revObs.observe(el));
 
-// ── TOC highlight ──
+// TOC highlight
 const sections = document.querySelectorAll('[id]');
 const tocItems = document.querySelectorAll('.toc-list li');
-const secIds   = Array.from(sections).map(s => s.id);
-
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+    if (window.scrollY >= sec.offsetTop - 130) current = sec.id;
   });
   tocItems.forEach(li => {
     const a = li.querySelector('a');
@@ -736,7 +792,7 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-// ── FAQ accordion ──
+// FAQ accordion
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('click', () => {
     const item = btn.parentElement;
