@@ -321,7 +321,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: clamp(1rem, 2.5vh, 2rem);
     text-align: center;
     pointer-events: none;
@@ -370,9 +370,8 @@ main {
 .avatar-ring {
     position: relative;
     z-index: 2;
-    margin-top: 2rem;
-    width: clamp(120px, 13vw, 130px);
-    height: clamp(120px, 13vw, 130px);
+    width: clamp(100px, 12vw, 130px);
+    height: clamp(100px, 12vw, 130px);
     border-radius: 50%;
     padding: 3px;
     background:
@@ -455,7 +454,7 @@ main {
 .hero-heading {
     font-family: var(--ff-display);
     font-weight: 800;
-    font-size: clamp(2rem, 7vw, 10rem);
+    font-size: clamp(1.5rem, 6vw, 10rem);
     line-height: 1;
     letter-spacing: -0.03em;
     z-index: 2;
@@ -535,7 +534,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(1.5rem, 4vw, 4rem);
+    gap: clamp(1rem, 4vw, 4rem);
     z-index: 2;
 }
 
@@ -548,7 +547,7 @@ main {
 .stat-num {
     font-family: var(--ff-display);
     font-weight: 800;
-    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-size: clamp(1.1rem, 3vw, 2rem);
 }
 
 .stat-label {
