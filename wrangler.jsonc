@@ -12,7 +12,7 @@
     "nodejs_compat"
   ],
   "routes": [
-    { "pattern": "fridaycore.win", "custom_domain": true }
+    { "pattern": "fridaycore.win", "custom_domain": true },
     { "pattern": "www.fridaycore.win", "custom_domain": true }
   ]
 }
