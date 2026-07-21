@@ -5,6 +5,7 @@
 }
 
 :root {
+    --glow: #f7f3f30a;
     --bg: #050508;
     --surface: rgba(255,255,255,0.03);
     --border: rgba(255,255,255,0.07);
@@ -344,12 +345,71 @@ main {
     border-radius: 50%;
     background:
         radial-gradient(circle,
-        var(--accent-glow) 0%,
-        transparent 70%);
+        var(--glow) 50%,
+        transparent 50%);
     z-index: 0;
     pointer-events: none;
-    animation: pulse 6s ease-in-out infinite;
+    animation: pulse 2s ease-in-out infinite;
     will-change: transform, opacity;
+}
+/* HUD rings inside glow-orb */
+.glow-orb__hud {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    z-index: 1;
+    overflow: visible;
+}
+
+.glow-orb__ring {
+    fill: none;
+    stroke: var(--white);
+    opacity: 0.85;
+    transform-origin: 100px 100px;
+}
+
+.glow-orb__ring--outer {
+    stroke-width: 1;
+    stroke-dasharray: 140 60 40 60;
+    animation: spin-cw 18s linear infinite;
+}
+
+.glow-orb__ring--ticks {
+    stroke-width: 2;
+    stroke-dasharray: 2 9;
+    opacity: 0.5;
+    animation: spin-ccw 40s linear infinite;
+}
+
+.glow-orb__ring--mid {
+    stroke-width: 1.5;
+    stroke-dasharray: 90 40 20 40 60 30;
+    animation: spin-ccw 12s linear infinite;
+}
+
+.glow-orb__ring--inner {
+    stroke-width: 1;
+    stroke-dasharray: 60 20;
+    animation: spin-cw 7s linear infinite;
+}
+
+.glow-orb__core {
+    fill: var(--white);
+    animation: pulse 2s ease-in-out infinite;
+    transform-origin: 100px 100px;
+}
+
+/* Rotation keyframes */
+@keyframes spin-cw {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-ccw {
+    from { transform: rotate(360deg); }
+    to   { transform: rotate(0deg); }
 }
 
 @keyframes pulse {
@@ -377,9 +437,9 @@ main {
     background:
         conic-gradient(
             from 0deg,
-            var(--accent),
-            var(--accent2),
-            var(--accent)
+            var(--white),
+            var(--tag-bg),
+            var(--white)
         );
     animation:
         spin-ring 8s linear infinite,
@@ -416,10 +476,10 @@ main {
     align-items: center;
     gap: 0.5rem;
     padding: 0.35rem 0.9rem;
-    border-radius: 100px;
-    background: var(--tag-bg);
-    border: 1px solid var(--tag-border);
-    color: var(--accent2);
+    border-radius: 100px 0 100px 0;
+    background: var(--muted);
+    border: 1px solid var(--white);
+    color: var(--bg);
     font-family: var(--ff-mono);
     font-size: clamp(9px, 1.1vw, 11px);
     letter-spacing: 0.15em;
@@ -432,7 +492,7 @@ main {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent2);
+    background: var(--white);
     animation: blink 1.6s ease infinite;
 }
 
@@ -464,8 +524,8 @@ main {
     background:
         linear-gradient(
             90deg,
-            var(--accent),
-            var(--accent2)
+            var(--white),
+            var(--muted)
         );
     -webkit-background-clip: text;
     background-clip: text;
@@ -506,9 +566,8 @@ main {
 }
 
 .btn-primary {
-    color: var(--white);
-    background: var(--accent);
-    box-shadow: 0 0 30px var(--accent-glow);
+    color: var(--bg);
+    background: var(--white);
 }
 
 .btn-primary:hover {
@@ -518,7 +577,7 @@ main {
 .btn-outline {
     color: var(--white);
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.112);
+    background: var(--bg);
 }
 
 .btn-outline:hover {

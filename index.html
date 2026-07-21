@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Core -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page for Chronos Assistant">
+    <title>Chronos | Free Local JARVIS-Style Voice Assistant for Windows</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Chronos is a free, open-source, JARVIS-style voice assistant that runs entirely locally on Windows — no cloud, no subscription. Voice commands, app control, media playback, and more.">
+    <meta name="keywords" content="Chronos, voice assistant, JARVIS assistant, local voice assistant, Windows voice assistant, offline AI assistant, open source voice assistant, D3F4U17">
+    <meta name="author" content="D3F4U17">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fridaycore.win/">
+
+    <!-- Search engine verification -->
     <meta name="msvalidate.01" content="7CF2E9532538DB50C9157D3409661057" />
-    <meta name="keywords" content="Landing page, Israel Prosper, D3F4U17, Devspace">
-    <meta name="Author" content="D3F4U17">
-    <link rel="icon" type="image/ico" href="images/imageicon.ico">
+    <!-- If you've also verified with Google Search Console, add its meta tag here too -->
+
+    <!-- Open Graph (Facebook, Discord, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chronos - Free Local JARVIS-Style Voice Assistant for Windows">
+    <meta property="og:description" content="A free, open-source, JARVIS-style voice assistant that runs entirely locally on Windows — no cloud, no subscription.">
+    <meta property="og:url" content="https://fridaycore.win/">
+    <meta property="og:site_name" content="Chronos">
+    <meta property="og:image" content="https://fridaycore.win/images/og-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chronos — Free Local JARVIS-Style Voice Assistant for Windows">
+    <meta name="twitter:description" content="A free, open-source, JARVIS-style voice assistant that runs entirely locally on Windows — no cloud, no subscription.">
+    <meta name="twitter:image" content="https://fridaycore.win/images/og-preview.png">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#050508">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="images/imageicon.ico">
+    <link rel="apple-touch-icon" href="images/imageicon.ico">
+
+    <!-- Structured data (helps Google show it as a software product) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Chronos",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Windows",
+      "author": {
+        "@type": "Person",
+        "name": "D3F4U17"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://fridaycore.win/",
+      "description": "A free, open-source, JARVIS-style voice assistant that runs entirely locally on Windows — no cloud, no subscription."
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles / Scripts -->
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/1dedf583a5.js" crossorigin="anonymous"></script>
-    <title>CHRONOS — Voice Assistant</title>
     <script src="Js/index.js" defer></script>
 </head>
 <body>
@@ -24,8 +83,8 @@
 
         <header>
             <a href="#" class="logo-wrap">
-                <span class="logo-mark">CHRONOS<span>.</span></span>
-                <span class="logo-sub">Assistant</span>
+                <span class="logo-mark">Chronos<span>.</span></span>
+                <span class="logo-sub">DESKTOP Assistant</span>
             </a>
 
             <input id="menu-toggle" type="checkbox">
@@ -55,10 +114,18 @@
         </header>
 
         <main>
-            <div class="glow-orb"></div>
+            <div class="glow-orb">
+                <svg class="glow-orb__hud" viewBox="0 0 200 200" aria-hidden="true">
+                    <circle class="glow-orb__ring glow-orb__ring--outer" cx="100" cy="100" r="90" />
+                    <circle class="glow-orb__ring glow-orb__ring--ticks" cx="100" cy="100" r="90" />
+                    <circle class="glow-orb__ring glow-orb__ring--mid" cx="100" cy="100" r="65" />
+                    <circle class="glow-orb__ring glow-orb__ring--inner" cx="100" cy="100" r="40" />
+                    <circle class="glow-orb__core" cx="100" cy="100" r="6" />
+                </svg>
+            </div>
             <div class="tag">
                 <span class="dot"></span>
-                Chronos v.2.0.0 — Now Live
+                Chronos v.2.0.0 - Now Live
             </div>
             <div class="avatar-ring">
                 <img
@@ -73,7 +140,7 @@
                 Meet <span class="accent-word">Chronos</span>
             </h1>
             <p class="hero-sub">
-                A Windows voice assistant built with <code>Vosk</code>, <code>Kokoro-TTS</code> &amp; <code>Windows APIs</code>.
+                A Windows voice assistant built with <code>Moonshine STT</code>, <code>Whisper,</code> <code>Piper-TTS</code> &amp; <code>Windows APIs</code>.
                 Commands executed. Responses voiced. Ideas shipped.
             </p>
            
@@ -84,7 +151,7 @@
             <div class="stat-strip">
                 <div class="stat-item">
                     <span class="stat-num">100%</span>
-                    <span class="stat-label">Offline Kokoro-TTS</span>
+                    <span class="stat-label">Offline Piper-TTS</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
@@ -93,14 +160,14 @@
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-num">KOKORO-TTS</span>
-                    <span class="stat-label">Edge Neural</span>
+                    <span class="stat-num">Piper-TTS</span>
+                    <span class="stat-label">Hcf & Lessac</span>
                 </div>
             </div>
         </main>
         <footer>
             <p class="footer-left">
-                Built by <span>D3F4U17</span> · l5r431 · <span>31°46'36.3"N 35°13'42.4"E</span>
+                Built by <span>D3F4U17</span> · l5r431 · <span>Definitive Edition</span>
             </p>
             <div class="footer-socials">
                 <a href="https://github.com/l5r431" title="GitHub"><i class="fa-brands fa-github"></i></a>
