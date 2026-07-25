@@ -1,664 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chronos — Privacy Policy</title>
-  <link rel="stylesheet" href="css/privacy.css">
-  <link rel="icon" type="icon/image" href="images/imageicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy, Friday Voice Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/privacy.css">
+<link rel="icon" type="image/ico" href="images/imageicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <div class="nav-logo">
-    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-      <polygon points="11,1 21,6 21,16 11,21 1,16 1,6" stroke="#e8b923" stroke-width="1.5" fill="none"/>
-      <polygon points="11,5 17,8 17,14 11,17 5,14 5,8" fill="rgba(232,185,35,0.15)" stroke="#c0392b" stroke-width="1"/>
-      <circle cx="11" cy="11" r="2" fill="#e8b923"/>
-    </svg>
-    Chron<span>os</span>
-  </div>
+  <a href="index.html" class="logo">
+    <div class="logo-pulse"></div>
+    Fri<em>day</em>
+  </a>
   <ul class="nav-links">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="about-me.html">About me</a></li>
-    <li><a href="download.html">download chronos</a></li>
-    <li><a href="How-to-use.html">User Guide</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about-me.html">About Me</a></li>
+    <li><a href="download.html" class="nav-btn">Download</a></li>
+    <li><a href="How-to-use.html" class="current">User Guide</a></li>
   </ul>
-  <div class="nav-badge">PRIVACY POLICY</div>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Home</a>
+  <a href="about-me.html">About Me</a>
+  <a href="download.html">Download</a>
+  <a href="How-to-use.html">User Guide</a>
+</div>
+
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-eyebrow">Privacy Protocol · v1.1.1</div>
-      <h1>Your Data<em>Stays With You</em></h1>
-      <p class="hero-desc">Chronos is a voice-powered AI assistant for Windows that launches your applications on command — no cloud, no tracking, no compromise. This document defines exactly how your privacy is protected.</p>
-      <div class="hero-meta">
-        <span class="meta-pill">Windows 10 / 11</span>
-        <span class="meta-pill">100% Local Processing</span>
-        <span class="meta-pill">Zero Data Exfiltration</span>
-        <span class="meta-pill">Offline Capable</span>
-      </div>
-    </div>
-    <!-- IRON MAN SKETCH -->
-    <div class="ironman-wrap">
-      <div class="hud-ring"></div>
-      <div class="hud-ring"></div>
-      <svg viewBox="0 0 280 480" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <style>
-          .sk { stroke: #e8b923; stroke-width: 1.2; fill: none; opacity: 0.85; }
-          .sk2 { stroke: #c0392b; stroke-width: 0.8; fill: none; opacity: 0.7; }
-          .sk3 { stroke: rgba(232,185,35,0.35); stroke-width: 0.7; fill: none; }
-          .glow { stroke: #e8b923; stroke-width: 1.5; fill: rgba(232,185,35,0.08); }
-          .arc-label { fill: #e8b923; font-family: 'Share Tech Mono', monospace; font-size: 7px; letter-spacing: 1px; opacity: 0.7; }
-        </style>
-
-        <!-- HELMET -->
-        <!-- face plate outer -->
-        <path class="sk" d="M100,40 Q80,42 72,60 L68,100 Q68,130 80,140 L90,148 L95,155 L140,158 L185,155 L190,148 L200,140 Q212,130 212,100 L208,60 Q200,42 180,40 Z"/>
-        <!-- forehead ridge -->
-        <path class="sk2" d="M110,42 L140,38 L170,42"/>
-        <!-- cheek panels L -->
-        <path class="sk" d="M72,75 L80,70 L90,80 L88,110 L78,115 L70,105 Z"/>
-        <!-- cheek panels R -->
-        <path class="sk" d="M208,75 L200,70 L190,80 L192,110 L202,115 L210,105 Z"/>
-        <!-- visor slit -->
-        <path class="glow" d="M92,90 L108,82 L140,80 L172,82 L188,90 L188,100 L172,108 L140,110 L108,108 L92,100 Z"/>
-        <!-- eye lights L -->
-        <path class="sk" d="M100,88 L118,84 L120,92 L102,96 Z" opacity="0.6"/>
-        <path d="M100,88 L118,84 L120,92 L102,96 Z" fill="rgba(232,185,35,0.12)"/>
-        <!-- eye lights R -->
-        <path class="sk" d="M160,84 L178,88 L178,96 L160,92 Z" opacity="0.6"/>
-        <path d="M160,84 L178,88 L178,96 L160,92 Z" fill="rgba(232,185,35,0.12)"/>
-        <!-- nose -->
-        <path class="sk2" d="M136,110 L140,118 L144,110"/>
-        <!-- chin -->
-        <path class="sk" d="M100,135 L110,148 L140,152 L170,148 L180,135"/>
-        <!-- chin plate -->
-        <path class="sk2" d="M115,145 L140,150 L165,145 L168,155 L140,158 L112,155 Z"/>
-        <!-- helmet detail lines -->
-        <line class="sk3" x1="140" y1="38" x2="140" y2="80"/>
-        <line class="sk3" x1="90" y1="58" x2="140" y2="48" />
-        <line class="sk3" x1="190" y1="58" x2="140" y2="48" />
-
-        <!-- NECK -->
-        <path class="sk" d="M118,158 L118,172 L122,176 L158,176 L162,172 L162,158"/>
-        <path class="sk2" d="M122,160 L158,160"/>
-        <path class="sk2" d="M122,166 L158,166"/>
-
-        <!-- CHEST -->
-        <path class="sk" d="M80,176 L68,185 L60,210 L58,255 L68,270 L80,278 L85,320 L90,330 L140,335 L190,330 L195,320 L200,278 L212,270 L222,255 L220,210 L212,185 L200,176 Z"/>
-        <!-- chest plate segments -->
-        <path class="sk2" d="M80,176 L88,185 L105,188 L140,186 L175,188 L192,185 L200,176"/>
-        <!-- pec plates -->
-        <path class="sk" d="M68,200 L110,196 L115,230 L78,235 Z"/>
-        <path class="sk" d="M212,200 L170,196 L165,230 L202,235 Z"/>
-        <!-- ARC REACTOR -->
-        <circle class="sk" cx="140" cy="220" r="28"/>
-        <circle class="sk2" cx="140" cy="220" r="22"/>
-        <circle class="glow" cx="140" cy="220" r="14"/>
-        <circle cx="140" cy="220" r="8" fill="rgba(232,185,35,0.25)" stroke="#e8b923" stroke-width="1.5"/>
-        <circle cx="140" cy="220" r="3" fill="#e8b923" opacity="0.9"/>
-        <!-- reactor tick marks -->
-        <line class="sk2" x1="140" y1="194" x2="140" y2="198"/>
-        <line class="sk2" x1="140" y1="242" x2="140" y2="246"/>
-        <line class="sk2" x1="114" y1="220" x2="118" y2="220"/>
-        <line class="sk2" x1="162" y1="220" x2="166" y2="220"/>
-        <line class="sk3" x1="122" y1="202" x2="124" y2="204"/>
-        <line class="sk3" x1="156" y1="236" x2="158" y2="238"/>
-        <line class="sk3" x1="122" y1="238" x2="124" y2="236"/>
-        <line class="sk3" x1="156" y1="204" x2="158" y2="202"/>
-        <!-- abs plates -->
-        <path class="sk2" d="M105,265 L140,262 L175,265 L175,285 L140,288 L105,285 Z"/>
-        <line class="sk3" x1="140" y1="262" x2="140" y2="288"/>
-        <line class="sk3" x1="105" y1="275" x2="175" y2="275"/>
-        <!-- waist -->
-        <path class="sk" d="M88,318 L105,326 L140,328 L175,326 L192,318 L195,330 L190,336 L140,340 L90,336 L85,330 Z"/>
-
-        <!-- LEFT SHOULDER -->
-        <path class="sk" d="M60,185 L38,192 L30,215 L34,235 L50,248 L64,248 L72,240 L74,220 L68,200 Z"/>
-        <path class="sk2" d="M42,200 L62,196 L66,210 L46,215 Z"/>
-        <!-- RIGHT SHOULDER -->
-        <path class="sk" d="M220,185 L242,192 L250,215 L246,235 L230,248 L216,248 L208,240 L206,220 L212,200 Z"/>
-        <path class="sk2" d="M238,200 L218,196 L214,210 L234,215 Z"/>
-
-        <!-- LEFT UPPER ARM -->
-        <path class="sk" d="M50,248 L38,260 L34,295 L38,315 L50,325 L64,322 L72,310 L74,275 L70,252 Z"/>
-        <path class="sk2" d="M40,275 L68,272"/>
-        <path class="sk2" d="M40,295 L68,292"/>
-        <!-- RIGHT UPPER ARM -->
-        <path class="sk" d="M230,248 L242,260 L246,295 L242,315 L230,325 L216,322 L208,310 L206,275 L210,252 Z"/>
-        <path class="sk2" d="M240,275 L212,272"/>
-        <path class="sk2" d="M240,295 L212,292"/>
-
-        <!-- LEFT ELBOW -->
-        <ellipse class="sk" cx="52" cy="325" rx="16" ry="12"/>
-        <ellipse class="sk2" cx="52" cy="325" rx="8" ry="6"/>
-        <!-- RIGHT ELBOW -->
-        <ellipse class="sk" cx="228" cy="325" rx="16" ry="12"/>
-        <ellipse class="sk2" cx="228" cy="325" rx="8" ry="6"/>
-
-        <!-- LEFT FOREARM -->
-        <path class="sk" d="M38,332 L34,370 L36,395 L50,405 L64,402 L72,390 L72,360 L68,332 Z"/>
-        <line class="sk3" x1="36" y1="355" x2="70" y2="352"/>
-        <line class="sk3" x1="36" y1="375" x2="70" y2="372"/>
-        <!-- RIGHT FOREARM -->
-        <path class="sk" d="M242,332 L246,370 L244,395 L230,405 L216,402 L208,390 L208,360 L212,332 Z"/>
-        <line class="sk3" x1="244" y1="355" x2="210" y2="352"/>
-        <line class="sk3" x1="244" y1="375" x2="210" y2="372"/>
-
-        <!-- LEFT HAND repulsor -->
-        <path class="sk" d="M36,400 L30,415 L32,430 L50,438 L68,432 L72,418 L70,402 Z"/>
-        <circle class="glow" cx="52" cy="420" r="10"/>
-        <circle cx="52" cy="420" r="4" fill="rgba(192,57,43,0.4)" stroke="#c0392b" stroke-width="1"/>
-        <!-- RIGHT HAND repulsor -->
-        <path class="sk" d="M244,400 L250,415 L248,430 L230,438 L212,432 L208,418 L210,402 Z"/>
-        <circle class="glow" cx="228" cy="420" r="10"/>
-        <circle cx="228" cy="420" r="4" fill="rgba(192,57,43,0.4)" stroke="#c0392b" stroke-width="1"/>
-
-        <!-- LEFT LEG -->
-        <path class="sk" d="M88,335 L80,345 L78,395 L82,425 L95,432 L108,428 L114,415 L114,380 L112,345 L105,335 Z"/>
-        <line class="sk3" x1="80" y1="370" x2="112" y2="368"/>
-        <line class="sk3" x1="80" y1="400" x2="112" y2="398"/>
-        <!-- RIGHT LEG -->
-        <path class="sk" d="M192,335 L200,345 L202,395 L198,425 L185,432 L172,428 L166,415 L166,380 L168,345 L175,335 Z"/>
-        <line class="sk3" x1="200" y1="370" x2="168" y2="368"/>
-        <line class="sk3" x1="200" y1="400" x2="168" y2="398"/>
-
-        <!-- LEFT KNEE -->
-        <ellipse class="sk" cx="96" cy="432" rx="18" ry="13"/>
-        <ellipse class="sk2" cx="96" cy="432" rx="10" ry="7"/>
-        <!-- RIGHT KNEE -->
-        <ellipse class="sk" cx="184" cy="432" rx="18" ry="13"/>
-        <ellipse class="sk2" cx="184" cy="432" rx="10" ry="7"/>
-
-        <!-- LEFT LOWER LEG -->
-        <path class="sk" d="M80,442 L76,468 L80,472 L115,472 L116,442 Z"/>
-        <path class="sk2" d="M80,455 L114,453"/>
-        <!-- RIGHT LOWER LEG -->
-        <path class="sk" d="M200,442 L204,468 L200,472 L165,472 L164,442 Z"/>
-        <path class="sk2" d="M200,455 L166,453"/>
-
-        <!-- BOOT THRUSTERS -->
-        <path class="sk" d="M76,472 L72,476 L80,478 L115,478 L120,474 L116,472 Z"/>
-        <path class="glow" d="M80,476 L115,476 L115,478 L80,478 Z" opacity="0.5"/>
-        <path class="sk" d="M204,472 L208,476 L200,478 L165,478 L160,474 L164,472 Z"/>
-        <path class="glow" d="M200,476 L165,476 L165,478 L200,478 Z" opacity="0.5"/>
-
-        <!-- HUD decorations -->
-        <text class="arc-label" x="8" y="220">D3F4U17</text>
-        <line class="sk3" x1="8" y1="222" x2="55" y2="220"/>
-        <text class="arc-label" x="8" y="238">CHRONOS</text>
-        <line class="sk3" x1="8" y1="240" x2="55" y2="240"/>
-        <text class="arc-label" x="200" y="220" text-anchor="start">15R431</text>
-        <line class="sk3" x1="225" y1="222" x2="170" y2="220"/>
-        <text class="arc-label" x="200" y="240" text-anchor="start">ONLINE</text>
-        <line class="sk3" x1="225" y1="242" x2="170" y2="240"/>
-        <circle cx="226" cy="239" r="2" fill="#27ae60" opacity="0.8"/>
-      </svg>
-    </div>
+<div class="hero-band">
+  <h1>Your Data <em>Stays With You</em></h1>
+  <p>Friday is a voice-powered AI assistant for Windows that controls your computer via Voice commands. Everything runs locally by default, no data is sent off your device, with one exception: the specific features that require the internet to function at all, like search, chat, news, weather, checking your messages, streaming music, and downloading files. This document defines exactly what those exceptions are, and how your privacy is protected everywhere else, including when you use Friday to download something via torrent.</p>
+  <div class="hero-stats">
+    <span class="hero-stat"><span class="dot"></span>Windows 10 / 11</span>
+    <span class="hero-stat"><span class="dot"></span>Offline-First Processing</span>
+    <span class="hero-stat"><span class="dot"></span>No Background Data Collection</span>
+    <span class="hero-stat"><span class="dot"></span>Internet Only Where a Feature Needs It</span>
   </div>
-</section>
+</div>
 
-<div class="glow-line"></div>
+<div class="page-body">
+  <aside class="sidebar">
+    <div class="toc-label">On this page</div>
+    <ul class="toc-list" id="toc">
+      <li class="active-toc"><a href="#overview">Overview</a></li>
+      <li><a href="#how">How privacy works</a></li>
+      <li><a href="#data">Data we handle</a></li>
+      <li><a href="#torrent">Torrent downloads</a></li>
+      <li><a href="#security">Security guarantees</a></li>
+      <li><a href="#components">Components &amp; services</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#provisions">Additional provisions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
 
-<!-- OVERVIEW -->
-<section id="overview" class="panel-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">System Overview</div>
-      <h2>What Is <span>Chronos</span></h2>
-      <p class="section-intro">Chronos is a locally-executed voice assistant built for Windows 10 and 11. It listens to your spoken commands, interprets them using the Vosk speech recognition engine, and launches or controls your applications — all without sending a single byte to external servers.</p>
-    </div>
+  <main class="main-content">
 
-    <div class="panel-grid reveal">
-      <div class="panel-cell" data-num="01">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <rect x="4" y="4" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M12 18l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <h3>Voice Recognition</h3>
-        <p>Powered by Vosk, an offline-first speech recognition engine. Vosk models are downloaded once and run entirely on your CPU. No microphone data ever leaves your device.</p>
-        <div class="cell-status">FULLY LOCAL</div>
+    <!-- OVERVIEW -->
+    <div id="overview">
+      <div class="sec-header">
+        <h2>What Is Friday</h2>
+        <p>Friday is a locally-executed voice assistant built for Windows 10 and 11. It listens to your spoken commands, interprets them using the Moonshine speech recognition engine, and launches or controls your applications, all without sending a single byte to external servers.</p>
       </div>
-      <div class="panel-cell" data-num="02">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M18 10v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <h3>TTS Voice Engine</h3>
-        <p>Chronos responds using KOKORO TTS — a neural voice that closely mirrors the iconic Jarvis tone. The voice synthesis runs within the Edge runtime already on your Windows system.</p>
-        <div class="cell-status warn">EDGE RUNTIME</div>
-      </div>
-      <div class="panel-cell" data-num="03">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <rect x="6" y="10" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M12 10V8a2 2 0 014 0v2" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M14 18h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <h3>Application Control</h3>
-        <p>Chronos executes local system commands to open, switch, and manage applications installed on your PC. All command resolution happens on-device via an editable local app registry.</p>
-        <div class="cell-status">ON-DEVICE ONLY</div>
-      </div>
-      <div class="panel-cell" data-num="04">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <path d="M6 28L14 20l6 6 10-12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3>Adaptive Offline Mode</h3>
-        <p>At first launch, Chronos may fetch the Edge-tts voices (one-time download). After this setup, the system transitions to fully offline operation — no recurring network traffic.</p>
-        <div class="cell-status warn">SETUP ONLY</div>
-      </div>
-      <div class="panel-cell" data-num="05">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <path d="M18 4l12 6v8c0 8-12 14-12 14S6 26 6 18v-8z" stroke="currentColor" stroke-width="1.5"/>
-        </svg>
-        <h3>No Cloud Dependencies</h3>
-        <p>After the initial model download, Chronos has zero cloud dependencies. There are no API calls, no telemetry pings, no usage analytics, and no crash reporting sent to any server.</p>
-        <div class="cell-status">ZERO CLOUD</div>
-      </div>
-      <div class="panel-cell" data-num="06">
-        <svg class="cell-icon" viewBox="0 0 36 36" fill="none">
-          <circle cx="18" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M6 30c0-6 5.4-10 12-10s12 4 12 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <h3>User Owned Data</h3>
-        <p>Your command history, app list, and preferences are stored exclusively in local configuration files on your machine. You can view, edit, or delete them at any time.</p>
-        <div class="cell-status">YOUR MACHINE</div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<div class="divider"></div>
-
-<!-- HOW IT WORKS -->
-<section id="how" class="flow-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Technical Architecture</div>
-      <h2>How <span>Privacy</span> Works</h2>
-      <p class="section-intro">Understanding the data lifecycle within Chronos — from the moment you speak to the moment your app launches.</p>
-    </div>
-
-    <div class="flow-timeline reveal">
-      <div class="flow-item">
-        <div class="flow-num">STEP 01</div>
-        <h3>Microphone Capture</h3>
-        <p>Your system microphone captures audio. This audio stream is piped directly into Chronos's local processing pipeline in memory. The raw audio is never written to disk, uploaded to any server, or retained after the recognition process completes.</p>
-        <span class="flow-tag">RAM only · never persisted</span>
-      </div>
-      <div class="flow-item">
-        <div class="flow-num">STEP 02</div>
-        <h3>Vosk Speech Recognition</h3>
-        <p>The audio is transcribed using the Vosk engine running entirely on your CPU. Vosk is an open-source, offline-capable speech recognition toolkit developed by Alpha Cephei. The language model (typically 40–500 MB depending on selected model) lives in your local AppData folder and performs inference without internet access.</p>
-        <span class="flow-tag">Offline · open source · CPU-bound</span>
-      </div>
-      <div class="flow-item">
-        <div class="flow-num">STEP 03</div>
-        <h3>Command Parsing &amp; Intent Matching</h3>
-        <p>The transcribed text string is matched against your local command registry — a configuration file listing your apps, aliases, and custom shortcuts. This matching is purely string-based pattern logic, executed on-device with no external model calls.</p>
-        <span class="flow-tag">Local config · editable by user</span>
-      </div>
-      <div class="flow-item">
-        <div class="flow-num">STEP 04</div>
-        <h3>System Process Execution</h3>
-        <p>Chronos calls the Windows API to launch or interact with the target application. It uses standard subprocess invocation — the same mechanism as double-clicking an icon. No elevated privileges are required or requested beyond what the application itself needs.</p>
-        <span class="flow-tag">Windows API · no elevation required</span>
-      </div>
-      <div class="flow-item">
-        <div class="flow-num">STEP 05</div>
-        <h3>Edge TTS Voice Response</h3>
-        <p>Chronos confirms the action using Microsoft Edge's built-in TTS engine. This voice synthesis is processed using the neural TTS runtime bundled with Microsoft Edge — the same voice engine that powers Edge's read-aloud feature. For offline use, Chronos falls back to Windows SAPI voices available on your system.</p>
-        <span class="flow-tag">Edge runtime · local SAPI fallback</span>
+      <div class="req-grid">
+        <div class="req-card">
+          <h4>Voice Recognition</h4>
+          <p>Powered by Moonshine, an offline-first speech recognition engine. Models are downloaded once and run entirely on your CPU. No microphone data ever leaves your device.</p>
+          <span class="req-tag solid">Fully local</span>
+        </div>
+        <div class="req-card">
+          <h4>TTS Voice Engine</h4>
+          <p>Friday responds using an Edge-TTS-based neural voice. Voice synthesis runs through the Edge runtime already installed on your Windows system.</p>
+          <span class="req-tag outline">Edge runtime</span>
+        </div>
+        <div class="req-card">
+          <h4>Application Control</h4>
+          <p>Friday executes local system commands to open, switch, and manage applications installed on your PC. Command resolution happens entirely on-device.</p>
+          <span class="req-tag solid">On-device only</span>
+        </div>
+        <div class="req-card">
+          <h4>Feature-Triggered Internet Use</h4>
+          <p>Friday runs offline by default. It only reaches the internet when you ask for something that needs it, news, weather, a web search, an AI chat reply, checking your email, Discord, or Telegram messages, streaming music, or downloading a file. Nothing else goes online.</p>
+          <span class="req-tag outline">Only when asked</span>
+        </div>
+        <div class="req-card">
+          <h4>No Telemetry or Tracking</h4>
+          <p>Friday itself never phones home about your usage, no analytics, no crash reporting, no telemetry pings, no background check-ins. Every network request it makes is one you directly triggered, for the task you triggered it for.</p>
+          <span class="req-tag solid">Zero telemetry</span>
+        </div>
+        <div class="req-card">
+          <h4>User-Owned Data</h4>
+          <p>Your command history, app list, and preferences are stored exclusively in local configuration files. View, edit, or delete them whenever you like.</p>
+          <span class="req-tag solid">Your machine</span>
+        </div>
       </div>
     </div>
 
-    <div class="terminal reveal">
-      <div class="terminal-bar">
-        <div class="terminal-dot" style="background:#e74c3c"></div>
-        <div class="terminal-dot" style="background:#f39c12"></div>
-        <div class="terminal-dot" style="background:#27ae60"></div>
-        <span>CHRONOS · DATA FLOW AUDIT</span>
+    <div class="divider"></div>
+
+    <!-- HOW PRIVACY WORKS -->
+    <div id="how">
+      <div class="sec-header">
+        <h2>How Privacy Works</h2>
+        <p>The data lifecycle inside Friday, from the moment you speak to the moment your app launches.</p>
       </div>
-      <div class="terminal-body">
-        <div class="comment"># Data flow verification — Chronos v2.4.1</div>
-        <div>audio_input = <span class="val">microphone.stream()</span>         <span class="comment"># stays in RAM</span></div>
-        <div>transcript  = <span class="val">vosk.transcribe(audio_input)</span>  <span class="comment"># local model</span></div>
-        <div>command     = <span class="val">registry.match(transcript)</span>     <span class="comment"># local config</span></div>
-        <div>result      = <span class="val">os.execute(command)</span>            <span class="comment"># system call</span></div>
-        <div>response    = <span class="val">edge_tts.speak(result)</span>         <span class="comment"># local runtime</span></div>
-        <div>&nbsp;</div>
-        <div><span class="comment"># Network requests during this session:</span></div>
-        <div class="cmd">external_calls = <span class="val">0</span>  <span class="comment"># ✓ verified</span></div>
+
+      <div class="startup-steps">
+        <div class="startup-step">
+          <div class="startup-step-num">01</div>
+          <div class="startup-step-text">
+            <h4>Microphone capture</h4>
+            <p>Your system microphone captures audio, piped directly into Friday's local processing pipeline in memory. Raw audio is never written to disk, uploaded anywhere, or retained after recognition completes.</p>
+            <span class="startup-step-tag">RAM only · never persisted</span>
+          </div>
+        </div>
+        <div class="startup-step">
+          <div class="startup-step-num">02</div>
+          <div class="startup-step-text">
+            <h4>Moonshine speech recognition</h4>
+            <p>Audio is transcribed using Moonshine, running entirely on your CPU. The language model lives in your Friday Installation folder and performs inference with no internet access.</p>
+            <span class="startup-step-tag">Offline · open source · CPU-bound</span>
+          </div>
+        </div>
+        <div class="startup-step">
+          <div class="startup-step-num">03</div>
+          <div class="startup-step-text">
+            <h4>Command parsing &amp; intent matching</h4>
+            <p>Transcribed text is matched against your local command registry, a config file listing your apps, aliases, and shortcuts. This is on-device pattern logic with no external model calls. If the command is one of Friday's online features (search, chat, news, weather, messaging, music, or downloads), only then is a request sent, to that feature's service, and nothing else.</p>
+            <span class="startup-step-tag">Local config · online only for online features</span>
+          </div>
+        </div>
+        <div class="startup-step">
+          <div class="startup-step-num">04</div>
+          <div class="startup-step-text">
+            <h4>System process execution</h4>
+            <p>Friday calls the Windows API to launch or interact with the target application, the same mechanism as double-clicking an icon. No elevated privileges are requested.</p>
+            <span class="startup-step-tag">Windows API · no elevation required</span>
+          </div>
+        </div>
+        <div class="startup-step">
+          <div class="startup-step-num">05</div>
+          <div class="startup-step-text">
+            <h4>Edge TTS voice response</h4>
+            <p>Friday confirms the action using the programmed logic. And answers directly using the best voice.</p>
+            <span class="startup-step-tag">Edge runtime</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-flow">
+        <div class="code-flow-bar">
+          <div class="code-flow-dot"></div><div class="code-flow-dot"></div><div class="code-flow-dot"></div>
+          <span>Friday · data flow audit</span>
+        </div>
+        <div class="code-flow-body">
+          <div class="c"># Data flow verification, Friday runtime</div>
+          <div><span class="k">audio_input</span> = <span class="v">microphone.stream()</span> <span class="c"># stays in RAM</span></div>
+          <div><span class="k">transcript</span>&nbsp;&nbsp; = <span class="v">moonshine.transcribe(audio_input)</span> <span class="c"># local model</span></div>
+          <div><span class="k">command</span>&nbsp;&nbsp;&nbsp;&nbsp; = <span class="v">registry.match(transcript)</span> <span class="c"># local config</span></div>
+          <div><span class="k">result</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = <span class="v">os.execute(command)</span> <span class="c"># system call</span></div>
+          <div><span class="k">response</span>&nbsp;&nbsp;&nbsp; = <span class="v">edge_tts.speak(result)</span> <span class="c"># local runtime</span></div>
+          <div>&nbsp;</div>
+          <div class="c"># Network requests for local commands (e.g. "open Chrome"):</div>
+          <div><span class="k">external_calls</span> = <span class="v">0</span> <span class="c"># verified</span></div>
+          <div class="c"># Commands that route to news, weather, search, chat, messaging,</div>
+          <div class="c"># music, or downloads make one call to that feature's service only.</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
-<!-- DATA TABLE -->
-<section id="data" class="table-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Data Inventory</div>
-      <h2>What <span>Data</span> We Handle</h2>
-      <p class="section-intro">A complete, transparent breakdown of every category of information Chronos interacts with and where that data goes.</p>
+    <!-- DATA TABLE -->
+    <div id="data">
+      <div class="sec-header">
+        <h2>What Data We Handle</h2>
+        <p>A complete, transparent breakdown of every category of information Friday interacts with and where it goes, including the handful of items that leave your device when you use an online feature. See <a href="#torrent" style="color:var(--white)">Torrent Downloads</a> below for the torrent-specific disclosure.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="priv-table">
+          <thead>
+            <tr>
+              <th>Data type</th>
+              <th>Purpose</th>
+              <th>Storage location</th>
+              <th>Retention</th>
+              <th>External access</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Microphone audio stream</td>
+              <td>Speech recognition input</td>
+              <td>RAM (transient)</td>
+              <td>Discarded after recognition</td>
+              <td><span class="badge badge-never">NEVER</span></td>
+            </tr>
+            <tr>
+              <td>Transcribed command text</td>
+              <td>Intent matching</td>
+              <td>RAM (transient)</td>
+              <td>Discarded after execution</td>
+              <td><span class="badge badge-never">NEVER</span></td>
+            </tr>
+            <tr>
+              <td>App registry / command config</td>
+              <td>Command resolution</td>
+              <td><code>%AppData%\Friday\config.json</code></td>
+              <td>Until user deletes</td>
+              <td><span class="badge badge-local">LOCAL ONLY</span></td>
+            </tr>
+            <tr>
+              <td>User preferences &amp; settings</td>
+              <td>Customization</td>
+              <td><code>%AppData%\Friday\config.json</code></td>
+              <td>Until user deletes</td>
+              <td><span class="badge badge-local">LOCAL ONLY</span></td>
+            </tr>
+            <tr>
+              <td>Moonshine language model</td>
+              <td>Offline speech recognition</td>
+              <td><code>Selected Installation folder\Friday</code></td>
+              <td>Persistent (user-removable)</td>
+              <td><span class="badge badge-once">DOWNLOADED ONCE</span></td>
+            </tr>
+            <tr>
+              <td>Command execution logs</td>
+              <td>Debugging (opt-in only)</td>
+              <td><code>%AppData%\Friday\routines\</code></td>
+              <td>30-day rolling (if enabled)</td>
+              <td><span class="badge badge-local">LOCAL ONLY</span></td>
+            </tr>
+            <tr>
+              <td>Crash reports</td>
+              <td>Not collected</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td><span class="badge badge-never">NEVER</span></td>
+            </tr>
+            <tr>
+              <td>Usage telemetry</td>
+              <td>Not collected</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td><span class="badge badge-never">NEVER</span></td>
+            </tr>
+            <tr>
+              <td>Personal identifiers</td>
+              <td>Not collected</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td><span class="badge badge-never">NEVER</span></td>
+            </tr>
+            <tr>
+              <td>Search queries</td>
+              <td>Web search, via DuckDuckGo</td>
+              <td>Sent to DuckDuckGo at query time</td>
+              <td>Not retained by Friday</td>
+              <td><span class="badge badge-net">SENT PER SEARCH</span></td>
+            </tr>
+            <tr>
+              <td>Chat messages</td>
+              <td>AI chat, via Groq and Ollama</td>
+              <td>Sent to Groq and Ollama at chat time</td>
+              <td>Not retained by Friday beyond the reply</td>
+              <td><span class="badge badge-net">SENT PER MESSAGE</span></td>
+            </tr>
+            <tr>
+              <td>News &amp; weather requests</td>
+              <td>Fetching current news and weather</td>
+              <td>Sent to the news/weather provider at request time</td>
+              <td>Not retained by Friday</td>
+              <td><span class="badge badge-net">SENT PER REQUEST</span></td>
+            </tr>
+            <tr>
+              <td>Email, Discord &amp; Telegram messages</td>
+              <td>Checking your inbox and messages on request</td>
+              <td>Fetched from your provider at check time; account credentials in <code>%AppData%\Friday\accounts.json</code></td>
+              <td>Credentials kept until you remove the account; messages not retained by Friday</td>
+              <td><span class="badge badge-net">PROVIDER ACCESS</span></td>
+            </tr>
+            <tr>
+              <td>Music streaming requests</td>
+              <td>Streaming music on request</td>
+              <td>Sent to programmed streaming provider at play time</td>
+              <td>Not retained by Friday</td>
+              <td><span class="badge badge-net">SENT PER REQUEST</span></td>
+            </tr>
+            <tr>
+              <td>Downloaded files (video, music, torrent files, other)</td>
+              <td>Saving a file you asked Friday to download</td>
+              <td>Your chosen downloads folder on your machine</td>
+              <td>Until you delete it</td>
+              <td><span class="badge badge-local">LOCAL, USER-INITIATED</span></td>
+            </tr>
+            <tr class="torrent-row">
+              <td>IP address during a torrent transfer</td>
+              <td>Peer-to-peer file transfer <em>(only when Friday downloads a file for you via torrent)</em></td>
+              <td>Not stored by Friday, visible only to the swarm/tracker, protocol-level</td>
+              <td>Governed by the tracker/swarm, not Friday</td>
+              <td><span class="badge badge-p2p">SWARM VISIBLE</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout-tip">
+        <span class="callout-icon">◆</span>
+        <span><strong>Network activity is feature-triggered, not constant.</strong> No data is sent off your device except when you use one of these specific features: fetching news or weather, searching with DuckDuckGo, chatting via Groq, checking your email, Discord, or Telegram messages, streaming music, and downloading files (including videos, music, and torrent files). Every other part of Friday, voice recognition, command parsing, and app launching, is fully offline. You can verify this at any time with Windows Firewall, Wireshark, or GlassWire: you'll only see a connection when one of these features is actively in use.</span>
+      </div>
     </div>
 
-    <div class="reveal" style="overflow-x:auto;">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Data Type</th>
-            <th>Purpose</th>
-            <th>Storage Location</th>
-            <th>Retention</th>
-            <th>External Access</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Microphone audio stream</td>
-            <td>Speech recognition input</td>
-            <td>RAM (transient)</td>
-            <td>Discarded after recognition</td>
-            <td><span class="badge never">NEVER</span></td>
-          </tr>
-          <tr>
-            <td>Transcribed command text</td>
-            <td>Intent matching</td>
-            <td>RAM (transient)</td>
-            <td>Discarded after execution</td>
-            <td><span class="badge never">NEVER</span></td>
-          </tr>
-          <tr>
-            <td>App registry / command config</td>
-            <td>Command resolution</td>
-            <td>%AppData%\Chronos\config.json</td>
-            <td>Until user deletes</td>
-            <td><span class="badge local">LOCAL ONLY</span></td>
-          </tr>
-          <tr>
-            <td>User preferences &amp; settings</td>
-            <td>Customization</td>
-            <td>%AppData%\Chronos\settings.json</td>
-            <td>Until user deletes</td>
-            <td><span class="badge local">LOCAL ONLY</span></td>
-          </tr>
-          <tr>
-            <td>Vosk language model</td>
-            <td>Offline speech recognition</td>
-            <td>%AppData%\Chronos\models\</td>
-            <td>Persistent (user-removable)</td>
-            <td><span class="badge device">DOWNLOADED ONCE</span></td>
-          </tr>
-          <tr>
-            <td>Command execution logs</td>
-            <td>Debugging (opt-in only)</td>
-            <td>%AppData%\Chronos\logs\</td>
-            <td>30-day rolling (if enabled)</td>
-            <td><span class="badge local">LOCAL ONLY</span></td>
-          </tr>
-          <tr>
-            <td>Crash reports</td>
-            <td>Not collected</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td><span class="badge never">NEVER</span></td>
-          </tr>
-          <tr>
-            <td>Usage telemetry</td>
-            <td>Not collected</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td><span class="badge never">NEVER</span></td>
-          </tr>
-          <tr>
-            <td>Personal identifiers</td>
-            <td>Not collected</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td><span class="badge never">NEVER</span></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="divider"></div>
+
+    <!-- TORRENT -->
+    <div id="torrent">
+      <div class="sec-header">
+        <h2>Torrent Downloads &amp; Your Privacy</h2>
+        <p>Friday can download files for you on request, including over the BitTorrent protocol. This section explains exactly what that means for your privacy, and for your responsibility as a user.</p>
+      </div>
+
+      <div class="torrent-panel">
+        <h4>◆ Using Friday to download torrent files</h4>
+        <p>Friday can download files for you on request, videos, music, torrent files, and other user files, including over the BitTorrent protocol. This is a tool you direct: Friday downloads what you ask it to, when you ask it to, and nothing runs in the background without a request from you.</p>
+        <p>BitTorrent is a peer-to-peer protocol: when Friday downloads something via torrent on your behalf, your IP address is visible to the tracker coordinating the swarm and to the other peers you exchange data with, for as long as the download is running, exactly as it would be with any other torrent client. <strong>This is a property of the BitTorrent protocol itself</strong>, not something Friday adds, controls, or can suppress. Some trackers or peers may log IP addresses for longer than the transfer itself, that logging is entirely outside Friday's control and outside this policy's scope, since it belongs to the third-party tracker infrastructure, not to us.</p>
+        <p>Downloaded files are saved locally to your chosen folder, Friday does not upload, relay, or report what you've downloaded to us or to anyone else.</p>
+      </div>
+
+      <div class="callout callout-warn">
+        <span class="callout-icon">◆</span>
+        <span><strong>You're responsible for what you download.</strong> Friday does not vet, filter, curate, or recommend what you choose to download, torrent or otherwise. Friday is provided as-is, and neither Friday nor its developer is liable for the legality, safety, or content of anything you download using it. Make sure you have the right to download what you're downloading, and that doing so complies with the laws that apply to you.</span>
+      </div>
     </div>
 
-    <div class="highlight-box reveal">
-      <strong style="color: var(--gold); font-family: 'Rajdhani', sans-serif; letter-spacing: 1px; font-size: 15px; text-transform: uppercase;">One-Time Network Activity</strong><br>
-      The only time Chronos initiates a network request is during first-run setup, when it downloads the Microsoft Edge-TTS voices for response. This is a one-time download. The downloaded URL, model version, and timestamp are logged locally. After installation, Chronos operates in complete network isolation. You can verify this using Windows Firewall, Wireshark, or any network monitoring tool.
-    </div>
-  </div>
-</section>
+    <div class="divider"></div>
 
-<div class="divider"></div>
+    <!-- SECURITY -->
+    <div id="security">
+      <div class="sec-header">
+        <h2>Security Guarantees</h2>
+        <p>Privacy is only as strong as the security underneath it. These are the technical safeguards built into every release of Friday.</p>
+      </div>
 
-<!-- SECURITY -->
-<section id="security" class="security-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Security Architecture</div>
-      <h2>Security <span>Guarantees</span></h2>
-      <p class="section-intro">Privacy is only as strong as the security underneath it. These are the technical safeguards built into every release of Chronos.</p>
-    </div>
-
-    <div class="security-grid reveal">
-      <div>
-        <ul class="security-list">
-          <li>All audio processing occurs entirely in-process within the Chronos runtime, never written to disk and not accessible to other applications or users on the machine.</li>
-          <li>The Vosk inference engine runs as a sandboxed library call with no filesystem write access outside the designated AppData directory.</li>
-          <li>Chronos does not register as a Windows startup service by default. You control when it runs.</li>
+      <div class="two-col">
+        <ul class="sec-list">
+          <li>Internet access is limited exclusively to the specific commands that need it, news, weather, search, chat, checking your messages, streaming music, and downloads, triggered by you, not by background telemetry.</li>
+          <li>All audio processing occurs entirely in-process within the Friday runtime, never written to disk and not accessible to other applications or users on the machine.</li>
+          <li>The Moonshine inference engine runs as a sandboxed library call with no filesystem write access outside the designated AppData directory.</li>
+          <li>Friday does not register as a Windows startup service by default. You control when it runs.</li>
           <li>No Windows registry entries are created outside the standard user-scoped HKCU hive for application registration.</li>
           <li>The Edge TTS integration uses the documented Windows Speech Synthesis API and does not establish independent network connections.</li>
-          <li>Command execution uses CreateProcess with the user's own token — no privilege escalation, no UAC bypass, no administrator requirements.</li>
-          <li>All configuration files are stored in plaintext JSON in your personal AppData folder — fully readable, auditable, and editable by you at any time.</li>
-          <li>No DRM, no license servers, no activation pings. Chronos runs entirely from local files.</li>
+          <li>Command execution uses <code>CreateProcess</code> with the user's own token, no privilege escalation, no UAC bypass, no administrator requirements.</li>
+          <li>All configuration files are stored in plaintext JSON in your personal AppData folder, fully readable, auditable, and editable by you at any time.</li>
+          <li>No DRM, no license servers, no activation pings. Friday runs entirely from local files.</li>
           <li>The local command log (if enabled) is stored with user-level file permissions and is never transmitted anywhere.</li>
-          <li>Chronos does not inject into other processes, hook keyboard events globally, or monitor system-wide activity beyond its own microphone capture when activated.</li>
+          <li>Friday does not inject into other processes, hook keyboard events globally, or monitor system-wide activity beyond its own microphone capture when activated.</li>
         </ul>
-      </div>
-      <div>
-        <div class="terminal">
-          <div class="terminal-bar">
-            <div class="terminal-dot" style="background:#e74c3c"></div>
-            <div class="terminal-dot" style="background:#f39c12"></div>
-            <div class="terminal-dot" style="background:#27ae60"></div>
-            <span>SECURITY PROFILE</span>
+
+        <div class="code-flow">
+          <div class="code-flow-bar">
+            <div class="code-flow-dot"></div><div class="code-flow-dot"></div><div class="code-flow-dot"></div>
+            <span>Security profile</span>
           </div>
-          <div class="terminal-body">
-            <div><span class="cmd">network_access</span>: <span class="val">false</span></div>
-            <div><span class="cmd">admin_required</span>: <span class="val">false</span></div>
-            <div><span class="cmd">registry_writes</span>: <span class="val">HKCU only</span></div>
-            <div><span class="cmd">global_keyboard_hook</span>: <span class="val">false</span></div>
-            <div><span class="cmd">process_injection</span>: <span class="val">false</span></div>
-            <div><span class="cmd">telemetry</span>: <span class="val">none</span></div>
-            <div><span class="cmd">crash_reporting</span>: <span class="val">none</span></div>
-            <div><span class="cmd">audio_written_to_disk</span>: <span class="val">false</span></div>
-            <div><span class="cmd">data_encryption</span>: <span class="val">N/A (no stored secrets)</span></div>
-            <div><span class="cmd">auto_update</span>: <span class="val">manual only</span></div>
+          <div class="code-flow-body">
+            <div><span class="k">network_access</span>: <span class="v">feature-triggered only</span></div>
+            <div><span class="k">admin_required</span>: <span class="v">false</span></div>
+            <div><span class="k">registry_writes</span>: <span class="v">HKCU only</span></div>
+            <div><span class="k">global_keyboard_hook</span>: <span class="v">false</span></div>
+            <div><span class="k">process_injection</span>: <span class="v">false</span></div>
+            <div><span class="k">telemetry</span>: <span class="v">none</span></div>
+            <div><span class="k">crash_reporting</span>: <span class="v">none</span></div>
+            <div><span class="k">audio_written_to_disk</span>: <span class="v">false</span></div>
+            <div><span class="k">data_encryption</span>: <span class="v">N/A (no stored secrets)</span></div>
+            <div><span class="k">auto_update</span>: <span class="v">manual only</span></div>
             <div>&nbsp;</div>
-            <div class="comment"># Verified by: local file audit</div>
-            <div class="comment"># Network monitor: 0 external IPs</div>
-            <div class="comment"># Status: CLEAN</div>
+            <div class="c"># Verified by: local file audit</div>
+            <div class="c"># Network monitor: 0 external IPs while idle</div>
+            <div class="c"># Status: clean, connections only during an online feature</div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<div class="divider"></div>
+    <div class="divider"></div>
 
-<!-- THIRD PARTIES -->
-<section class="panel-section" style="padding: 64px 0; background: var(--dark2);">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Third-Party Components</div>
-      <h2>Open Source <span>Components</span></h2>
-      <p class="section-intro">Chronos is built on trusted, auditable open-source technology. No black-box SDKs. No proprietary analytics libraries.</p>
-    </div>
-    <div class="panel-grid reveal" style="grid-template-columns: repeat(2, 1fr);">
-      <div class="panel-cell" data-num="~">
-        <h3>Vosk Speech Recognition</h3>
-        <p>Developed by Alpha Cephei. Vosk is open-source (Apache 2.0) and runs 100% on-device. The model is downloaded once from the official Vosk model repository and stored locally. No Vosk servers are contacted during recognition.</p>
-        <div class="cell-status">APACHE 2.0 LICENSE</div>
+    <!-- OPEN SOURCE COMPONENTS -->
+    <div id="components">
+      <div class="sec-header">
+        <h2>Open Source Components</h2>
+        <p>Friday is built on trusted, auditable open-source technology. No black-box SDKs. No proprietary analytics libraries.</p>
       </div>
-      <div class="panel-cell" data-num="~">
-        <h3>Microsoft Edge TTS</h3>
-        <p>Chronos uses the edge-tts Python library which interfaces with the Microsoft Edge Read Aloud feature. This library sends the response text to Microsoft's TTS service during synthesis. For fully offline operation, Chronos falls back to Windows SAPI voices installed on your system.</p>
-        <div class="cell-status warn">NETWORK DURING SYNTHESIS</div>
-      </div>
-    </div>
-    <div class="highlight-box reveal" style="margin-top: 20px;">
-      <strong style="color: var(--gold); font-family: 'Rajdhani', sans-serif; letter-spacing: 1px; font-size: 15px; text-transform: uppercase;">About Edge TTS Network Usage</strong><br>
-      When Edge TTS is active, the text of Chronos's verbal response (e.g., "Opening Chrome") is sent to Microsoft's Edge Read Aloud service for synthesis. This text contains no personal data, no command history, and no audio. If you prefer zero network activity at all times, enable Windows SAPI mode in Chronos settings — this routes all voice synthesis through offline Windows voices at the cost of voice quality.
-    </div>
-  </div>
-</section>
 
-<div class="divider"></div>
+      <div class="req-grid">
+        <div class="req-card">
+          <h4>Moonshine Speech Recognition</h4>
+          <p>Moonshine is open-source (Apache 2.0) and runs 100% on-device. The model is downloaded once from the official Moonshine model repository and stored locally. No Moonshine servers are contacted during recognition.</p>
+          <span class="req-tag solid">Apache 2.0 license</span>
+        </div>
+        <div class="req-card">
+          <h4>Voice TTS</h4>
+          <p>Friday uses the voice-TTS Python library, which interfaces with Microsoft Edge's Read Aloud feature. This library sends the response text to the programmed voice engine during synthesis. For fully offline operation, I am still working for friday to fallback to to Windows SAPI voices installed on your system only when the programmed voice engine gets a problem.</p>
+          <span class="req-tag outline">Network during synthesis</span>
+        </div>
+      </div>
 
-<!-- RIGHTS -->
-<section id="rights" class="rights-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">User Rights</div>
-      <h2>Your <span>Rights</span> &amp; Controls</h2>
-      <p class="section-intro">Because all your data stays on your machine, you already have the highest level of control possible. These are the specific actions you can take.</p>
-    </div>
-    <div class="rights-grid reveal">
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 1v6l4 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.2"/></svg>
-          Access Your Data
-        </h3>
-        <p>Navigate to <code style="font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--gold2);">%AppData%\Chronos\</code> in File Explorer at any time to view all configuration files, logs, and model data stored by Chronos. No special tools required — it's all plaintext JSON and binary model files.</p>
+      <div class="sec-header" style="margin-top:2.5rem">
+        <h2>Connected Services</h2>
+        <p>Beyond speech and app control, Friday's online features each rely on one outside provider, contacted only when you use that specific feature.</p>
       </div>
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Edit Your Config
-        </h3>
-        <p>Your app registry, voice preferences, wake-word settings, and all other configuration values live in human-readable JSON files. Open them in any text editor (Notepad, VS Code) and modify them freely. Chronos reloads on next launch.</p>
-      </div>
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4L4 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-          Delete All Data
-        </h3>
-        <p>Uninstalling Chronos or manually deleting the <code style="font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--gold2);">%AppData%\Chronos\</code> folder removes everything completely. There is no server-side data to delete because none was ever sent.</p>
-      </div>
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 1l2 5h5l-4 3 2 5-5-3-5 3 2-5L1 6h5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
-          Disable Logging
-        </h3>
-        <p>Command logging is disabled by default. If you enabled it for debugging, set <code style="font-family:'Share Tech Mono',monospace; font-size:12px; color:var(--gold2);">"logging": false</code> in settings.json or toggle it from the Chronos system tray menu. Existing logs can be deleted from the logs subfolder.</p>
-      </div>
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M6 8h4M8 6v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-          Offline Mode
-        </h3>
-        <p>After the initial Vosk model download, enable full offline mode in settings. In this mode, Chronos uses Windows SAPI for voice output instead of Edge TTS, eliminating all network activity. The assistant functions identically — only voice quality differs.</p>
-      </div>
-      <div class="right-card">
-        <h3>
-          <svg viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="currentColor" stroke-width="1.2"/><path d="M8 7v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11" r="0.8" fill="currentColor"/></svg>
-          Audit Network Activity
-        </h3>
-        <p>We encourage you to verify Chronos's network behavior using Windows Firewall logs, Wireshark, or GlassWire. With offline mode enabled, you should see zero external connections from the Chronos process. The Vosk model download is the only expected outbound request.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<div class="divider"></div>
+      <div class="req-grid">
+        <div class="req-card">
+          <h4>DuckDuckGo</h4>
+          <p>Powers Friday's web search feature. Your query is sent to DuckDuckGo at search time and nowhere else.</p>
+          <span class="req-tag outline">Search only</span>
+        </div>
+        <div class="req-card">
+          <h4>Groq</h4>
+          <p>Powers Friday's AI chat feature. Your message is sent to Groq to generate a reply, only while you're chatting.</p>
+          <span class="req-tag outline">Chat only</span>
+        </div>
+        <div class="req-card">
+          <h4>News &amp; weather provider</h4>
+          <p>Supplies current news and weather when you ask for it. Contacted only for that request.</p>
+          <span class="req-tag outline">Request only</span>
+        </div>
+        <div class="req-card">
+          <h4>Email, Discord &amp; Telegram</h4>
+          <p>Friday checks these on your behalf using your own account credentials, only when you ask it to check your messages.</p>
+          <span class="req-tag outline">Check only</span>
+        </div>
+        <div class="req-card">
+          <h4>Music streaming provider</h4>
+          <p>Streams music you ask Friday to play. Contacted only while a track is playing.</p>
+          <span class="req-tag outline">Playback only</span>
+        </div>
+        <div class="req-card">
+          <h4>Download &amp; torrent client</h4>
+          <p>Fetches videos, music, torrent files, and other files you ask Friday to download, straight to your local downloads folder.</p>
+          <span class="req-tag outline">Download only</span>
+        </div>
+      </div>
+    </div>
 
-<!-- CHILDREN -->
-<section class="panel-section" style="padding: 64px 0;">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Additional Policies</div>
-      <h2>Additional <span>Provisions</span></h2>
-    </div>
-    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
-      <div>
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Children's Privacy</h3>
-        <p style="font-size: 13.5px; color: var(--muted); line-height: 1.8;">Chronos does not collect any personal information from anyone, including children under the age of 13. Because Chronos operates entirely locally and collects no user data whatsoever, COPPA compliance is inherently satisfied. No registration, no account, no data — for users of any age.</p>
-      </div>
-      <div>
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Policy Changes</h3>
-        <p style="font-size: 13.5px; color: var(--muted); line-height: 1.8;">If this privacy policy changes, the updated version will be posted with a new effective date. Since Chronos does not collect contact information, we cannot notify you directly — we recommend bookmarking this page if you wish to stay informed. Breaking changes in data handling will always accompany a major version update with release notes.</p>
-      </div>
-      <div>
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Jurisdiction</h3>
-        <p style="font-size: 13.5px; color: var(--muted); line-height: 1.8;">Because Chronos does not transmit or store data on external servers, no cross-border data transfers occur. This policy is published in English and is intended to meet the spirit of major privacy frameworks including GDPR and the Worldwide Consumer Privacy rules, even though traditional compliance obligations do not apply to a fully local application.</p>
-      </div>
-      <div>
-        <h3 style="font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Open Source Verification</h3>
-        <p style="font-size: 13.5px; color: var(--muted); line-height: 1.8;">We believe trust must be earned through transparency. The Chronos source code is available for review on GitHub. You are encouraged to audit the codebase, inspect network calls, or run it through any static analysis tool. If you identify a discrepancy between the code and this policy, please open an issue immediately.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="divider"></div>
 
-<div class="divider"></div>
+    <!-- RIGHTS -->
+    <div id="rights">
+      <div class="sec-header">
+        <h2>Your Rights &amp; Controls</h2>
+        <p>Because all your data stays on your machine, you already have the highest level of control possible. These are the specific actions you can take.</p>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-tag">Get In Touch</div>
-      <h2>Privacy <span>Contact</span></h2>
-    </div>
-    <div class="contact-box reveal">
-      <div>
-        <h3>Questions About This Policy?</h3>
-        <p>If you have any questions about how Chronos handles your data, want to report a privacy concern, or would like clarification on any point in this document, reach out directly. We respond to all privacy-related queries within 72 hours.</p>
-        <p style="margin-top: 8px; font-family: 'Share Tech Mono', monospace; font-size: 11px; color: var(--gold2); letter-spacing: 1px;"><a style="color: dimgray; text-decoration: none;" href="t.me/l5r431">Telegram</a></p>
-      </div>
-      <a href="mailto:contact@fridaycore.win" class="btn">Contact Us</a>
-    </div>
-    <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--border);" class="reveal">
-      <div style="background: var(--panel); padding: 20px 24px; text-align: center;">
-        <div style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 28px; color: var(--gold); letter-spacing: 2px;">0</div>
-        <div style="font-family: 'Share Tech Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-top: 4px;">SERVERS STORING YOUR DATA</div>
-      </div>
-      <div style="background: var(--panel); padding: 20px 24px; text-align: center;">
-        <div style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 28px; color: var(--gold); letter-spacing: 2px;">0</div>
-        <div style="font-family: 'Share Tech Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-top: 4px;">EXTERNAL API CALLS IN OPERATION</div>
-      </div>
-      <div style="background: var(--panel); padding: 20px 24px; text-align: center;">
-        <div style="font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 28px; color: var(--gold); letter-spacing: 2px;">100%</div>
-        <div style="font-family: 'Share Tech Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 2px; margin-top: 4px;">OF YOUR DATA STAYS ON YOUR DEVICE</div>
+      <div class="rights-grid">
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><path d="M8 1v6l4 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.2"/></svg>Access your data</h3>
+          <p>Navigate to <code>%AppData%\Friday\</code> in File Explorer at any time to view all configuration files, logs, and model data stored by Friday. No special tools required, it's all plaintext JSON and binary model files.</p>
+        </div>
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Edit your config</h3>
+          <p>Your app registry, voice preferences, wake-word settings, and all other configuration values live in human-readable JSON files. Open them in any text editor and modify them freely. Friday reloads on next launch.</p>
+        </div>
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4L4 12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Delete all data</h3>
+          <p>Uninstalling Friday or manually deleting the <code>%AppData%\Friday\</code> folder removes everything completely. There is no server-side data to delete because none was ever sent.</p>
+        </div>
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><path d="M8 1l2 5h5l-4 3 2 5-5-3-5 3 2-5L1 6h5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Disable logging</h3>
+          <p>Command logging is disabled by default. If you enabled it for debugging, set <code>"logging": false</code> in settings.json or toggle it from Friday's system tray menu. Existing logs can be deleted from the logs subfolder.</p>
+        </div>
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M6 8h4M8 6v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Offline voice mode</h3>
+          <p>After the initial Moonshine model download, enable full offline mode in settings. Friday uses Windows SAPI for voice output instead of Edge TTS. This removes the one network call tied to voice synthesis, it doesn't affect the online features (search, chat, news, weather, messaging, streaming, downloads), which simply go unused if you don't invoke them.</p>
+        </div>
+        <div class="right-card">
+          <h3><svg viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="currentColor" stroke-width="1.2"/><path d="M8 7v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11" r="0.8" fill="currentColor"/></svg>Audit network activity</h3>
+          <p>We encourage you to verify Friday's network behavior using Windows Firewall logs, Wireshark, or GlassWire. At idle, or while using a purely local command, you should see zero external connections, a connection should only appear the moment you use an online feature.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+
+    <div class="divider"></div>
+
+    <!-- PROVISIONS -->
+    <div id="provisions">
+      <div class="sec-header">
+        <h2>Additional Provisions</h2>
+      </div>
+
+      <div class="provision-grid">
+        <div class="provision-item">
+          <h4>Children's privacy</h4>
+          <p>Friday itself does not collect any personal information from anyone, including children under the age of 13, and requires no registration or account. If a household chooses to use Friday's online features, chat, search, messaging, or streaming, those requests are handled by the relevant third-party service under that service's own terms, so Friday isn't intended for use by children without a guardian's supervision.</p>
+        </div>
+        <div class="provision-item">
+          <h4>Policy changes</h4>
+          <p>If this privacy policy changes, the updated version will be posted with a new effective date. Since Friday does not collect contact information, we cannot notify you directly, bookmark this page if you'd like to stay informed. Breaking changes in data handling always accompany a major version update with release notes.</p>
+        </div>
+        <div class="provision-item">
+          <h4>Jurisdiction</h4>
+          <p>Friday itself does not transmit or store your data on any server it operates. When you use an online feature, your request is sent directly to that feature's own provider (e.g. Groq, DuckDuckGo, your email/Discord/Telegram service), which may involve a cross-border transfer governed by that provider's own policy, not Friday's. This policy is published in English and is intended to meet the spirit of major privacy frameworks including GDPR.</p>
+        </div>
+        <div class="provision-item">
+          <h4>Open source verification</h4>
+          <p>We believe trust must be earned through transparency. Friday's source code is available for review on <a href="https://github.com/l5r431" target="_blank" rel="noopener">GitHub</a>. You're encouraged to audit the codebase, inspect network calls, or run it through any static analysis tool.</p>
+        </div>
+        <div class="provision-item">
+          <h4>Torrent consent</h4>
+          <p>Asking Friday to download a file via torrent means your IP address is visible to that swarm and tracker for the duration of the transfer, a property of the BitTorrent protocol, not of Friday. See <a href="#torrent">Torrent Downloads &amp; Your Privacy</a> above for the full disclosure.</p>
+        </div>
+        <div class="provision-item">
+          <h4>Disclaimer &amp; liability</h4>
+          <p>Friday is provided "as is," without warranty of any kind. You're responsible for how you use it. Neither Friday nor its developer is liable for any illegal or unauthorized use of the software, including anything downloaded, accessed, or sent through its online features.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="sec-header">
+        <h2>Privacy Contact</h2>
+      </div>
+
+      <div class="dl-hero">
+        <div class="dl-hero-text">
+          <h3>Questions about this policy?</h3>
+          <p>If you have any questions about how Friday handles your data, want to report a privacy concern, or would like clarification on any point in this document, reach out directly. We respond to all privacy-related queries within 72 hours.</p>
+          <p class="tg-link"><a href="https://t.me/l5r431" target="_blank" rel="noopener">Telegram</a></p>
+        </div>
+        <a href="mailto:contact@fridaycore.win" class="dl-btn">Contact Us</a>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-cell">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Servers Friday operates that store your data</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Background API calls without a request from you</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Of local commands stay on your device</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
 
 <!-- FOOTER -->
 <footer>
-  <div class="logo-sm">Chronos</div>
-  <p>EFFECTIVE DATE: MAY 3, 2026 &nbsp;·&nbsp; VERSION 1.1.1</p>
-  <div class="footer-version">© 2026 CHRONOS PROJECT</div>
+  <div class="footer-logo">Fri<span>day</span></div>
+  <div class="foot-links">
+    <a href="index.html">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">Download</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+  <small>EFFECTIVE DATE: JULY 25, 2026 &nbsp;·&nbsp; VERSION 2.1 &nbsp;·&nbsp; Windows Voice Assistant · Offline-First, Online Where It Counts · © 2026 Friday</small>
 </footer>
 
 <script>
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  reveals.forEach(el => observer.observe(el));
+// hamburger
+const burger = document.getElementById('burger');
+const mobNav = document.getElementById('mobNav');
+burger.addEventListener('click', () => mobNav.classList.toggle('open'));
+document.addEventListener('click', e => {
+  if (!burger.contains(e.target) && !mobNav.contains(e.target))
+    mobNav.classList.remove('open');
+});
+
+// TOC highlight
+const sections = document.querySelectorAll('main [id]');
+const tocItems = document.querySelectorAll('.toc-list li');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 130) current = sec.id;
+  });
+  tocItems.forEach(li => {
+    const a = li.querySelector('a');
+    li.classList.toggle('active-toc', a && a.getAttribute('href') === '#' + current);
+  });
+}, { passive: true });
 </script>
 </body>
 </html>

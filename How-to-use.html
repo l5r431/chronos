@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Use — Chronos Voice Assistant</title>
+<title>How to Use, Friday Voice Assistant</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="css/how-to-use.css">
 <link rel="icon" type="image/ico" href="images/imageicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Literata:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="logo">
     <div class="logo-pulse"></div>
-    Chron<em>os</em>
+    Fri<em>day</em>
   </a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -36,21 +36,17 @@
 
 <!-- HERO -->
 <div class="hero-band">
-  <div class="hero-eyebrow">
-    <div class="logo-pulse"></div>
-    User Manual · v.2.0
-  </div>
-  <h1>How to Use <span>Chronos</span></h1>
-  <p>From zero to voice-controlling your Windows PC in under five minutes — no experience required.</p>
+  <h1>How to Use <span>Friday</span></h1>
+  <p>From zero to voice-controlling your Windows PC in under five minutes, no experience required.</p>
   <div class="breadcrumb">
     <div class="breadcrumb-item done"><div class="breadcrumb-num">1</div> Download</div>
-    <div class="breadcrumb-sep">——</div>
-    <div class="breadcrumb-item done"><div class="breadcrumb-num">2</div> Run Installer</div>
-    <div class="breadcrumb-sep">——</div>
+    <div class="breadcrumb-sep">|</div>
+    <div class="breadcrumb-item done"><div class="breadcrumb-num">2</div> Install</div>
+    <div class="breadcrumb-sep">|</div>
     <div class="breadcrumb-item done"><div class="breadcrumb-num">3</div> Launch</div>
-    <div class="breadcrumb-sep">——</div>
+    <div class="breadcrumb-sep">|</div>
     <div class="breadcrumb-item done"><div class="breadcrumb-num">4</div> Auto-start</div>
-    <div class="breadcrumb-sep">——</div>
+    <div class="breadcrumb-sep">|</div>
     <div class="breadcrumb-item done"><div class="breadcrumb-num">5</div> Speak</div>
   </div>
 </div>
@@ -60,11 +56,12 @@
     <div class="toc-label">On this page</div>
     <ul class="toc-list" id="toc">
       <li class="active-toc"><a href="#requirements">Requirements</a></li>
-      <li><a href="#step1">Step 1 — Download</a></li>
-      <li><a href="#step2">Step 2 — Install</a></li>
-      <li><a href="#step3">Step 3 — Launch</a></li>
-      <li><a href="#step4">Step 4 — Auto-start</a></li>
-      <li><a href="#step5">Step 5 — Start talking</a></li>
+      <li><a href="#step1">Step 1 : Download</a></li>
+      <li><a href="#step2">Step 2 : Install</a></li>
+      <li><a href="#step3">Step 3 : Launch</a></li>
+      <li><a href="#step4">Step 4 : Auto-start</a></li>
+      <li><a href="#step5">Step 5 : Start talking</a></li>
+      <li><a href="#customise">Customising commands</a></li>
       <li><a href="#commands">Voice commands</a></li>
       <li><a href="#tips">Tips &amp; best practices</a></li>
       <li><a href="#troubleshoot">Troubleshooting</a></li>
@@ -80,71 +77,51 @@
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Before you begin</div>
         <h2>System requirements</h2>
-        <p>Chronos is designed to run on virtually any modern Windows PC. Check these before starting.</p>
+        <p>Friday is designed to run on virtually any modern Windows PC. Check these before starting.</p>
       </div>
       <div class="req-grid reveal">
         <div class="req-card">
-          <div class="req-icon">🪟</div>
           <h4>Windows 10 or 11</h4>
-          <p>Both 32-bit and 64-bit editions are supported. Windows 7/8 are not.</p>
+          <p>64-bit builds are recommended, the bundled speech and voice models run noticeably better on modern hardware.</p>
         </div>
         <div class="req-card">
-          <div class="req-icon">💾</div>
-          <h4>~400 MB disk space</h4>
-          <p>The installed footprint after setup. The installer itself is 170 MB — smaller download, expanded on install.</p>
+          <h4>Free disk space</h4>
+          <p>The Installation of Friday needs atleast 1.5GB of free space (Friday files + Ollama).</p>
         </div>
         <div class="req-card">
-          <div class="req-icon">🎤</div>
           <h4>Microphone</h4>
           <p>Any USB, built-in, or Bluetooth mic. Set it as the default recording device in Windows Sound Settings.</p>
         </div>
         <div class="req-card">
-          <div class="req-icon">🔊</div>
           <h4>Audio output</h4>
-          <p>Speakers or headphones required to hear Chronos' TTS voice responses.</p>
-        </div>
-        <div class="req-card">
-          <div class="req-icon">⚡</div>
-          <h4>No internet required</h4>
-          <p>After the initial download, Chronos runs entirely offline. No Wi-Fi, no cloud, no accounts.</p>
-        </div>
-        <div class="req-card">
-          <div class="req-icon">🐙</div>
-          <h4>GitHub Releases</h4>
-          <p>Chronos is distributed via GitHub Releases — free, versioned, and always the latest official build.</p>
+          <p>Speakers or headphones required to hear Friday's voice responses.</p>
         </div>
       </div>
       <div class="status-row reveal">
-        <div class="status-badge"><div class="status-dot green"></div> Fully offline</div>
-        <div class="status-badge"><div class="status-dot cyan"></div> No account needed</div>
-        <div class="status-badge"><div class="status-dot green"></div> Simple EXE installer</div>
-        <div class="status-badge"><div class="status-dot amber"></div> Microphone permission required</div>
+        <div class="status-badge"><div class="status-dot on"></div> Speech &amp; voice run offline</div>
+        <div class="status-badge"><div class="status-dot ring"></div> Internet only for optional features</div>
+        <div class="status-badge"><div class="status-dot ring"></div> Microphone permission required</div>
       </div>
     </div>
 
     <hr class="divider">
 
-    <!-- STEP 1 — DOWNLOAD -->
+    <!-- STEP 1  DOWNLOAD -->
     <div id="step1">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 01</div>
         <h2>Download the installer</h2>
-        <p>Grab the latest official Chronos release directly from GitHub.</p>
+        <p>Grab the latest official Friday release directly from GitHub Releases and the Download Page.</p>
       </div>
 
       <div class="dl-hero reveal">
         <div class="dl-hero-text">
-          <h3>Chronos Installer (.exe)</h3>
-          <p>A single self-contained installer — everything Chronos needs to run is bundled inside. One click to download, one click to install.</p>
-          <div class="dl-size-badges">
-            <div class="dl-badge"><div class="dot dot-cyan"></div> 170 MB download</div>
-            <div class="dl-badge"><div class="dot dot-amber"></div> ~400 MB installed</div>
-            <div class="dl-badge"><div class="dot dot-cyan"></div> Windows 10 / 11</div>
-          </div>
+          <h3>Friday-Setup.exe</h3>
+          <p>Download the Friday Installer by using the button below or visiting the download page.</p>
         </div>
-        <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener noreferrer" class="dl-btn">
+        <a href="download.html" target="_blank" rel="noopener noreferrer" class="dl-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download on GitHub
+          Download Friday
         </a>
       </div>
 
@@ -155,14 +132,12 @@
           <div class="step-tag">Download</div>
         </div>
         <div class="step-card-body">
-          <p>Click the button above or go to the <strong>GitHub Releases page</strong>. Under the latest release, look for the <strong>Assets</strong> section and click the <code>Chronos-Setup.exe</code> file to download it.</p>
+          <p>Click the button above or go to the <strong>GitHub Releases page or the Download Page</strong>. Under the latest release, look for the <strong>Assets</strong> section and click <code>Friday-Setup.exe</code> to download it.</p>
           <div class="callout callout-info">
-            <div class="callout-icon">📥</div>
-            <div>Always download Chronos from the official GitHub Releases page. Third-party mirrors or file-sharing sites may serve outdated or tampered builds.</div>
+            <div>Always download Friday from the official GitHub Releases page and My Website. Third-party mirrors or file-sharing sites may serve outdated or tampered builds.</div>
           </div>
           <div class="callout callout-warn">
-            <div class="callout-icon">⚠️</div>
-            <div><strong>Browser warning:</strong> Your browser may show <em>"This file type may be harmful."</em> This is a standard warning for any unsigned .exe. Click <strong>Keep</strong> or <strong>Download anyway</strong> — Chronos contains no malware. See the Troubleshooting section if Windows Defender or antivirus flags it.</div>
+            <div><strong>Browser warning:</strong> Your browser may show <em>"This file type may be harmful."</em> This is standard for any unsigned installer. Click <strong>Keep</strong> or <strong>Download anyway</strong>, Friday contains no malware. See Troubleshooting if Windows Defender or antivirus flags it.</div>
           </div>
         </div>
       </div>
@@ -170,31 +145,29 @@
 
     <hr class="divider">
 
-    <!-- STEP 2 — INSTALL -->
+    <!-- STEP 2  INSTALL -->
     <div id="step2">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 02</div>
         <h2>Run the installer</h2>
-        <p>Double-click the downloaded .exe and follow the short setup wizard.</p>
+        <p>Double-click the downloaded .exe and follow the short Setup wizard.</p>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">02</div>
-          <h3>Installing Chronos</h3>
+          <h3>Installing Friday</h3>
           <div class="step-tag">Install</div>
         </div>
         <div class="step-card-body">
-          <p>Double-click the downloaded <code>Chronos-Setup.exe</code>. The installer will set up all required files and unpack Chronos (~400 MB total) into a folder of your choosing.</p>
+          <p>Double-click <code>Friday-Setup.exe</code>. The Setup wizard unpacks the frozen application  files and Ollama Offline model into a folder of your choosing, and creates Start Menu shortcuts.</p>
           <div class="callout callout-warn">
-            <div class="callout-icon">🛡️</div>
-            <div><strong>Windows SmartScreen:</strong> You may see a blue dialog — <em>"Windows protected your PC."</em> This appears because Chronos is not signed with a commercial certificate. Click <strong>"More info"</strong> → <strong>"Run anyway"</strong>. You'll only see this once.</div>
+            <div><strong>Windows SmartScreen:</strong> You may see a blue dialog, <em>"Windows protected your PC."</em> This appears because the installer  isn't signed with a commercial certificate. Click <strong>"More info"</strong> → <strong>"Run anyway"</strong>. You'll only see this once.</div>
           </div>
           <div class="callout callout-tip">
-            <div class="callout-icon">💡</div>
-            <div><strong>Recommended install path:</strong> Install to <code>C:\Users\YourName\AppData\Local\Chronos</code> or <code>C:\Users\YourName\Documents\Chronos</code> to avoid write-permission issues. Avoid <code>C:\Program Files</code> unless you run as admin — Chronos needs to write its TTS cache to its own folder.</div>
+            <div><strong>Recommended install path:</strong> Install to <code>C:\Users\YourName\AppData\Local\Friday</code> or <code>C:\Users\YourName\Documents\Friday</code>. Avoid <code>C:\Program Files</code> unless you run as admin, Friday's runtime files (config, TTS cache) live alongside the executable.</div>
           </div>
-          <p>Once the installer finishes, Chronos is ready — no additional setup, no dependencies to install, no configuration files to edit.</p>
+          <p>Once the wizard finishes, Friday is ready, no additional setup, no dependencies to install, no configuration files to edit by hand.</p>
         </div>
       </div>
 
@@ -205,14 +178,13 @@
           <div class="step-tag">Info</div>
         </div>
         <div class="step-card-body">
-          <p>The installer unpacks everything Chronos needs to run completely offline:</p>
+          <p>The installer unpacks everything Friday needs to run:</p>
           <div class="callout callout-info">
-            <div class="callout-icon">📦</div>
             <div>
-              <strong>Vosk speech model</strong> — the offline recognition engine that processes your voice entirely on-device.<br><br>
-              <strong>edge-tts runtime</strong> — the text-to-speech system Chronos uses to speak back to you.<br><br>
-              <strong>TTS cache folder</strong> — created on first launch; stores generated audio files permanently for instant playback on repeat.<br><br>
-              <strong>Chronos.exe</strong> — the main executable you'll launch each session.
+              <strong>Friday.exe</strong>, the frozen application itself.<br><br>
+              <strong>Moonshine speech model</strong>, the offline recognition engine that hears your wake word, commands, and dictation entirely on-device.<br><br>
+              <strong>Piper voice model + TTS cache</strong>, the offline text-to-speech engine Friday speaks with, plus a cache folder that fills up over time for instant playback of repeated phrases.<br><br>
+              <strong>Config &amp; secrets files</strong>, written to <code>%APPDATA%\Friday</code> on first run, and DPAPI-encrypted so they're unreadable outside your own Windows login.
             </div>
           </div>
         </div>
@@ -221,29 +193,27 @@
 
     <hr class="divider">
 
-    <!-- STEP 3 — LAUNCH -->
+    <!-- STEP 3  LAUNCH -->
     <div id="step3">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 03</div>
-        <h2>Launch Chronos</h2>
-        <p>Open the installed folder and double-click Chronos.exe to fire it up for the first time.</p>
+        <h2>Launch Friday</h2>
+        <p>Open the installed folder and double-click Friday.exe to fire it up for the first time.</p>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">03</div>
-          <h3>Running Chronos.exe</h3>
+          <h3>Running Friday.exe</h3>
           <div class="step-tag">Launch</div>
         </div>
         <div class="step-card-body">
-          <p>Open your Chronos install folder and double-click <strong>Chronos.exe</strong>. On first launch it may take a few extra seconds as Chronos initialises the Vosk speech model and creates its TTS cache directory.</p>
+          <p>Open your Friday install folder and double-click <strong>Friday.exe</strong>, or use the Start Menu shortcut. On first launch it may take a few extra seconds while Friday warms up.</p>
           <div class="callout callout-warn">
-            <div class="callout-icon">🎤</div>
-            <div><strong>Microphone permission:</strong> Windows may ask <em>"Do you want to allow Chronos to access your microphone?"</em> Click <strong>Yes</strong> — this is essential for voice recognition. You can manage this later under <strong>Settings → Privacy → Microphone</strong>.</div>
+            <div><strong>Microphone permission:</strong> Windows may ask <em>"Do you want to allow Friday to access your microphone?"</em> Click <strong>Yes</strong> , this is essential for voice recognition. You can manage this later under <strong>Settings → Privacy → Microphone</strong>.</div>
           </div>
           <div class="callout callout-tip">
-            <div class="callout-icon">📌</div>
-            <div>Create a desktop shortcut for quick access: right-click <strong>Chronos.exe</strong> → <strong>Send to → Desktop (create shortcut)</strong>. You can also pin it to your taskbar.</div>
+            <div>The first run takes some seconds because friday os busy setting up everything needed, so <strong>WAIT</strong> until friday finishes and You will be greeted.</div>
           </div>
         </div>
       </div>
@@ -255,23 +225,23 @@
           <div class="step-tag">Info</div>
         </div>
         <div class="step-card-body">
-          <p>When Chronos starts successfully it will:</p>
+          <p>When Friday starts successfully it will:</p>
           <div class="startup-steps">
             <div class="startup-step">
               <div class="startup-step-num">1</div>
-              <div class="startup-step-text"><strong>Greet you with today's date and time</strong> — Chronos speaks a welcome message including the current date using its natural TTS voice.</div>
+              <div class="startup-step-text"><strong>Greet you with a small briefing containing your system info, headlines, et-cetera</strong>, Friday speaks a welcome message using a natural-sounding voice containing your system Info, headlines, reports and others.</div>
             </div>
             <div class="startup-step">
               <div class="startup-step-num">2</div>
-              <div class="startup-step-text"><strong>Begin listening immediately</strong> — the microphone activates and Vosk starts processing audio. Chronos is ready for commands right after the greeting.</div>
+              <div class="startup-step-text"><strong>Begin listening immediately</strong>, the microphone activates and Friday starts listening for a wake word. Friday is ready right after the greeting.</div>
             </div>
             <div class="startup-step">
               <div class="startup-step-num">3</div>
-              <div class="startup-step-text"><strong>Load the TTS cache</strong> — any previously cached audio is available for instant playback. On first run the cache is empty, so the first responses generate fresh audio which takes a moment — this is normal.</div>
+              <div class="startup-step-text"><strong>Load the TTS cache</strong>, any previously generated audio is available for instant playback. On first run the cache is empty, so the first few responses generate fresh audio, this is normal.</div>
             </div>
             <div class="startup-step">
               <div class="startup-step-num">4</div>
-              <div class="startup-step-text"><strong>Scan all Application on your Computer</strong> — Chronos will scan all installed applications on your computer for easy opening and closing</div>
+              <div class="startup-step-text"><strong>Scan installed applications</strong>, Friday builds a catalogue of everything installed on your PC so it can open (or close) apps by name.</div>
             </div>
           </div>
         </div>
@@ -280,23 +250,23 @@
 
     <hr class="divider">
 
-    <!-- STEP 4 — AUTO-START -->
+    <!-- STEP 4  AUTO-START -->
     <div id="step4">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 04</div>
-        <h2>Set Chronos to auto-start</h2>
-        <p>Add Chronos to your Windows startup folder so it launches automatically every time you log in.</p>
+        <h2>Set Friday to auto-start</h2>
+        <p>Add Friday to your Windows startup folder so she launches automatically every time you log in.</p>
       </div>
 
       <div class="startup-highlight reveal">
-        <h4>⚡ Recommended — Shell:startup</h4>
-        <p style="font-size:.9rem;color:var(--muted2);line-height:1.7">The easiest way to have Chronos ready the moment your PC boots. Place a shortcut in the Windows startup folder and you'll never have to open it manually again.</p>
+        <h4> Don't skip this step</h4>
+        <p style="font-size:.9rem;color:var(--muted2);line-height:1.7">Installing Friday only puts the files on disk, it does not make her launch on its own. If you want Friday ready the moment your PC boots, her shortcut needs to be sitting inside the Windows startup folder.</p>
       </div>
 
       <div class="step-card reveal" style="margin-top:1.5rem">
         <div class="step-card-header">
           <div class="step-num-badge">04</div>
-          <h3>Adding Chronos to Windows startup</h3>
+          <h3>Adding Friday to Windows startup</h3>
           <div class="step-tag">Auto-start</div>
         </div>
         <div class="step-card-body">
@@ -304,7 +274,7 @@
           <div class="startup-steps">
             <div class="startup-step">
               <div class="startup-step-num">1</div>
-              <div class="startup-step-text">Navigate to your Chronos install folder, right-click <strong>Chronos.exe</strong> → <strong>Send to → Desktop (create shortcut)</strong>. This creates a shortcut on your desktop.</div>
+              <div class="startup-step-text">Navigate to your Friday install folder, right-click <strong>Friday.exe</strong> → <strong>Send to → Desktop (create shortcut)</strong>. This creates a shortcut on your desktop.</div>
             </div>
             <div class="startup-step">
               <div class="startup-step-num">2</div>
@@ -316,20 +286,21 @@
             </div>
             <div class="startup-step">
               <div class="startup-step-num">4</div>
-              <div class="startup-step-text">Copy the Chronos shortcut from your desktop and paste it into the startup folder that just opened.</div>
+              <div class="startup-step-text">Copy the Friday shortcut from your desktop and paste it into the startup folder that just opened. You can also say <span class="cmd-phrase" style="font-size:.78rem">open the startup folder</span> once Friday is already running, since <code>start up</code> is one of the folder shortcuts she recognises.</div>
             </div>
             <div class="startup-step">
               <div class="startup-step-num">5</div>
-              <div class="startup-step-text">Done. Chronos will now launch automatically every time you log into Windows — no manual opening required.</div>
+              <div class="startup-step-text">Done. Friday will now launch automatically every time you log into Windows, no manual opening required.</div>
             </div>
           </div>
+          <div class="callout callout-warn">
+            <div><strong>Reminder:</strong> a fresh install of Friday will <em>not</em> auto-start unless you complete this step. The shortcut is what makes it happen, the install folder alone does nothing at boot.</div>
+          </div>
           <div class="callout callout-info">
-            <div class="callout-icon">ℹ️</div>
-            <div>The startup folder path is <code>%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code>. Only your shortcut goes here — never move the actual Chronos folder. The shortcut is just a pointer; Chronos stays where you installed it.</div>
+            <div>The startup folder path is <code>%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup</code>. Only your shortcut goes here, never move the actual Friday install folder. The shortcut is just a pointer; Friday stays where you installed her.</div>
           </div>
           <div class="callout callout-tip">
-            <div class="callout-icon">💡</div>
-            <div>If you ever want to stop Chronos from launching on startup, simply delete the shortcut from the <code>shell:startup</code> folder. The actual Chronos installation is untouched.</div>
+            <div>If you ever want to stop Friday from launching on startup, simply delete the shortcut from the <code>shell:startup</code> folder. The Friday installation itself is untouched.</div>
           </div>
         </div>
       </div>
@@ -337,12 +308,12 @@
 
     <hr class="divider">
 
-    <!-- STEP 5 — START TALKING -->
+    <!-- STEP 5  START TALKING -->
     <div id="step5">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 05</div>
-        <h2>Start talking to Chronos</h2>
-        <p>Just speak naturally — Chronos listens, understands, and responds.</p>
+        <h2>Start talking to Friday</h2>
+        <p>Say a wake word, then just speak naturally, Friday listens, understands, and responds.</p>
       </div>
 
       <div class="step-card reveal">
@@ -352,94 +323,92 @@
           <div class="step-tag">Use it</div>
         </div>
         <div class="step-card-body">
-          <p>Chronos uses the <strong>Vosk</strong> offline speech recognition engine. Vosk performs best when you speak clearly at a moderate pace. You don't need to yell or over-enunciate — talk the way you normally would.</p>
+          <p>Friday uses <strong>Moonshine</strong> for fully offline speech recognition, the same engine handles the wake word, spoken commands, and free-form dictation. It performs best when you speak clearly at a moderate pace. You don't need to yell or over-enunciate.</p>
           <div class="callout callout-tip">
-            <div class="callout-icon">💡</div>
-            <div><strong>Background noise:</strong> Vosk handles mild ambient noise well, but loud music, TV, or echo-heavy rooms reduce accuracy. A headset microphone will give the best results by far.</div>
+            <div><strong>Background noise:</strong> Moonshine handles mild ambient noise well, but loud music, TV, or echo-heavy rooms reduce accuracy. A headset microphone gives the best results by far.</div>
           </div>
-          <p>All audio is processed entirely on-device by your CPU — no internet round-trip, which means recognition is fast regardless of your connection speed or whether you're offline.</p>
+          <p>All audio is processed entirely on-device by your CPU, no round trip to the internet, so recognition is fast regardless of your connection.</p>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">05b</div>
-          <h3>How the TTS cache works</h3>
+          <h3>How the Piper TTS cache works</h3>
           <div class="step-tag">Performance</div>
         </div>
         <div class="step-card-body">
-          <p>Every time Chronos speaks a new phrase using <strong>edge-tts</strong>, the generated audio is saved permanently in a local cache folder inside the Chronos directory. The next time Chronos needs that exact phrase, it plays the cached file instantly.</p>
+          <p>Every time Friday speaks a new phrase, the generated audio is saved in a local cache folder inside the Appdata directory. The next time she needs that exact phrase, it plays back instantly instead of generating it again.</p>
           <div class="callout callout-info">
-            <div class="callout-icon">⚡</div>
-            <div>The TTS cache <strong>is never cleared</strong> — it only ever grows, and Chronos only gets faster with use. Greetings, time responses, and frequently spoken phrases will snap back instantly after their first generation. This is by design.</div>
+            <div>The TTS cache <strong>is never cleared automatically</strong>, it only grows, and Friday only gets faster with use. Greetings, time responses, and frequently spoken phrases snap back instantly after their first generation.</div>
           </div>
-          <p>The daily greeting is a great example: the first time Chronos greets you on a new date, it generates fresh audio (brief pause). Every subsequent launch that same day plays the cached file in milliseconds.</p>
         </div>
       </div>
     </div>
 
     <hr class="divider">
 
-    <!-- VOICE COMMANDS -->
+    <!-- CUSTOMISE -->
+    <div id="customise">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Make her yours</div>
+        <h2>Customising every command in the Settings GUI</h2>
+        <p>Almost nothing you say to Friday is hardcoded, every wake word and command phrase shown in this guide can be edited, extended, or removed.</p>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card-header">
+          <div class="step-num-badge">⚙</div>
+          <h3>Opening the Settings interface</h3>
+          <div class="step-tag">Customise</div>
+        </div>
+        <div class="step-card-body">
+          <p>Say <span class="cmd-phrase" style="font-size:.8rem">Configuration</span>, <span class="cmd-phrase" style="font-size:.8rem">configure</span>, or <span class="cmd-phrase" style="font-size:.8rem">open config</span> at any time to open the on-screen <strong>FRIDAY | SYSTEM INTERFACE</strong> window. Every tab holds a set of editable phrase lists, add a phrase, remove one, or add your own alternate wording for how you naturally speak.</p>
+          <div class="callout callout-info">
+            <div>Before saving a new phrase, Friday checks it against every other command list in the app. If the phrase is already claimed elsewhere, she'll refuse it and tell you exactly which list is using it, so two commands can never silently race each other.</div>
+          </div>
+          <p>The tabs below map directly onto the command groups in this guide, open the matching tab to edit any command you see in the explorer further down the page:</p>
+          <div class="gui-tab-grid">
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">GENERAL</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">VOICE</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">MEDIA</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">WINDOWS</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">MOUSE</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">SYSTEM</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">APPS &amp; WEB</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">TIMERS</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">WEATHER</span></div>
+            <div class="gui-tab-chip"><span class="n"></span><span class="t">NEWS</span></div>
+          </div>
+          <p style="margin-top:.5rem">A few extra tabs round out the rest of the interface: <strong>MODES</strong> for building your own custom activation phrases and routines, <strong>FOLDERS</strong> and <strong>REMINDERS</strong> for the paths and health nudges Friday uses, <strong>TEXT TO SPEECH</strong> for the Friday's voice itself, plus <strong>CONVERTER</strong>, <strong>DOWNLOADER</strong>, <strong>CONVERSATION</strong>, and <strong>CHAT</strong> for everything else.</p>
+          <div class="callout callout-tip">
+            <div>Even the <strong>wake word</strong> itself is editable, from the GENERAL tab, if "Friday" collides with something else in your daily conversation, add an alternative there.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- VOICE COMMANDS EXPLORER -->
     <div id="commands">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Voice commands</div>
         <h2>What you can say</h2>
-        <p>Chronos understands a range of natural commands. Here are the core ones to get you started.</p>
+        <p>Every command Friday ships with, grouped exactly the way they're grouped in the Settings GUI. Browse the strip below, or let it play through each group on its own.</p>
       </div>
 
-      <div class="reveal">
-        <table class="cmd-table">
-          <thead>
-            <tr>
-              <th>What to say</th>
-              <th>What Chronos does</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="cmd-phrase">open [app name]</span></td>
-              <td>Launches the named application</td>
-              <td>Searches installed apps via Windows APIs. Works with any app on your system.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">rescan</span> / <span class="cmd-phrase">rebuild</span></td>
-              <td>Rescans all applications on your system</td>
-              <td>Run after installing new apps so Chronos can find them.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">reset</span> / <span class="cmd-phrase">clear</span></td>
-              <td>Soft purge — drains the audio queue, resets Vosk, rebuilds app catalogue, replays greeting</td>
-              <td>Use this if Chronos feels sluggish or out-of-sync. Does not touch the TTS cache.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">stop listening</span></td>
-              <td>Pauses microphone input</td>
-              <td>Say <strong>"november"</strong> to resume listening.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">what time is it</span> <span class="badge-upcoming">Upcoming</span></td>
-              <td>Speaks the current time</td>
-              <td>Uses system clock — no internet needed.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">what's today's date</span> <span class="badge-upcoming">Upcoming</span></td>
-              <td>Speaks the current date</td>
-              <td>Same date spoken during the startup greeting.</td>
-            </tr>
-            <tr>
-              <td><span class="cmd-phrase">goodbye</span> / <span class="cmd-phrase">exit</span></td>
-              <td>Speaks a farewell and closes Chronos</td>
-              <td>Graceful shutdown — always use this instead of force-closing.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout callout-info reveal" style="margin-top:1.25rem">
-        <div class="callout-icon">ℹ️</div>
-        <div>Commands marked <strong>Upcoming</strong> are in active development and will be available in a future release. Check the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> for changelogs with each update.</div>
+      <div class="cmd-explorer reveal" id="cmdExplorer">
+        <div class="cmd-tabstrip-wrap">
+          <div class="cmd-tabstrip" id="cmdTabstrip"></div>
+        </div>
+        <div class="cmd-progress"><div class="cmd-progress-bar" id="cmdProgressBar"></div></div>
+        <div class="cmd-panel-head">
+          <div class="cmd-panel-title" id="cmdPanelTitle"></div>
+          <div class="cmd-panel-sub" id="cmdPanelSub"></div>
+        </div>
+        <div class="cmd-list" id="cmdList"></div>
+        <div class="cmd-note">Phrases shown are the primary way to say each command, most also recognise a handful of alternate phrasings and common misheard variants. Say <strong>settings</strong> to see (and edit) every variant yourself.</div>
       </div>
     </div>
 
@@ -449,65 +418,65 @@
     <div id="tips">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Tips &amp; best practices</div>
-        <h2>Getting the most out of Chronos</h2>
+        <h2>Getting the most out of Friday</h2>
         <p>Small habits that make a big difference in day-to-day use.</p>
       </div>
 
       <div class="checklist reveal">
-        <div class="check-item">
+        <div class="check-item important">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Add Chronos to shell:startup</h4>
-            <p>See Step 4 above. Placing the Chronos shortcut in your Windows startup folder means it's always ready the moment you log in — no manual launching required.</p>
+            <h4>Add Friday to shell:startup</h4>
+            <p>See Step 4 above. Placing the Friday shortcut in your Windows startup folder means she's always ready the moment you log in, no manual launching required. This is the single most-missed step during setup.</p>
+          </div>
+        </div>
+        <div class="check-item important">
+          <div class="check-icon">✓</div>
+          <div class="check-item-text">
+            <h4>Open the Settings GUI and make the commands your own</h4>
+            <p>Say <strong>"Configuration"</strong> and spend two minutes adding the phrasing you'd naturally use. Friday's collision check means you can't accidentally break another command while doing it.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Use a headset or close-field mic</h4>
-            <p>Vosk accuracy improves significantly with a microphone closer to your mouth. Even a budget USB headset beats a far-field laptop mic in a noisy environment.</p>
+            <p>Friday's accuracy improves significantly with a microphone closer to your mouth. Even a budget USB headset beats a far-field laptop mic in a noisy environment.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Set your mic as the Windows default</h4>
-            <p>Go to <strong>Settings → System → Sound → Input</strong> and confirm your intended microphone is set as the default recording device. Chronos uses whatever Windows reports as default.</p>
+            <p>Go to <strong>Settings → System → Sound → Input</strong> and confirm your intended microphone is set as the default recording device.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
             <h4>Never move just the .exe</h4>
-            <p>The TTS cache lives inside the Chronos folder. Moving only Chronos.exe breaks the cache lookup. If you need to relocate Chronos, move the <em>entire</em> install folder together and update your shortcut path.</p>
+            <p>The TTS cache and config files live inside the Friday Appdata folder. Moving only Friday.exe breaks the lookup. If you need to relocate Friday, move the <em>entire</em> install folder and update your shortcut path.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Wait for Chronos to finish speaking</h4>
-            <p>Chronos processes one command at a time sequentially. Issuing another command while it's mid-speech may cause that command to be missed. Wait for the response to complete.</p>
+            <h4>Wait for Friday to finish speaking</h4>
+            <p>Friday processes one command at a time. Issuing another command while she's mid-speech may cause it to be missed. Wait for the response to finish.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Check the console window for feedback</h4>
-            <p>Chronos opens a console alongside its main process. If Chronos isn't responding to voice, the console will usually show the reason — such as no audio input detected or a recognition error.</p>
+            <h4>Say "rescan" after installing a new app</h4>
+            <p>The app catalogue is built at startup and doesn't update automatically while Friday is running. Say <strong>"rescan"</strong> or <strong>"rebuild"</strong> to refresh it after installing something new.</p>
           </div>
         </div>
         <div class="check-item">
           <div class="check-icon">✓</div>
           <div class="check-item-text">
-            <h4>Say "reset" if things feel out of sync</h4>
-            <p>Saying <strong>"reset"</strong> or <strong>"clear"</strong> triggers a soft purge: drains the audio queue, resets Vosk, rebuilds the app catalogue, and replays the greeting — all without closing Chronos or touching the TTS cache.</p>
-          </div>
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>
-          <div class="check-item-text">
-            <h4>Say "rescan" after installing new apps</h4>
-            <p>When you install a new application and want to open it with Chronos, say <strong>"rescan"</strong> or <strong>"rebuild"</strong> first. This rebuilds the app catalogue so Chronos can find the newly installed app.</p>
+            <h4>Know the difference between "clear memory" and "reset to defaults"</h4>
+            <p><strong>"clear memory"</strong> only wipes the short-term conversation buffer. <strong>"reset to defaults"</strong> is a full factory reset, it wipes every command you've customised in the Settings GUI too, so use it deliberately.</p>
           </div>
         </div>
       </div>
@@ -526,17 +495,17 @@
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>Chronos doesn't hear me / no response to voice</h3>
+          <h3>Friday doesn't hear me / no response to voice</h3>
         </div>
         <div class="step-card-body">
           <p>Almost always a microphone configuration issue, not a bug.</p>
           <div class="callout callout-info">
             <div class="callout-icon">🔧</div>
             <div>
-              1. <strong>Settings → System → Sound → Input</strong> — confirm your mic is selected as the default device.<br><br>
+              1. <strong>Settings → System → Sound → Input</strong>, confirm your mic is selected as the default device.<br><br>
               2. Make sure the microphone volume is above 50%.<br><br>
               3. Check microphone permission: <strong>Settings → Privacy → Microphone</strong> → toggle on for desktop apps.<br><br>
-              4. Look at the Chronos console window — it will show whether audio is being received.
+              4. Confirm you said one of your configured wake words first, commands don't fire without one.
             </div>
           </div>
         </div>
@@ -545,13 +514,12 @@
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>Chronos crashes on startup</h3>
+          <h3>Friday crashes on startup</h3>
         </div>
         <div class="step-card-body">
-          <p>A crash on launch usually means a missing or corrupted file inside the Chronos folder, or the installer didn't complete successfully.</p>
+          <p>A crash on launch usually means a missing or corrupted file inside the install folder, or the installer didn't complete successfully, occasionally the case when a PyInstaller one-file build's temp extraction gets interrupted by another process (antivirus included).</p>
           <div class="callout callout-warn">
-            <div class="callout-icon">⚠️</div>
-            <div>Re-download the installer from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it again. The original download may have been interrupted or corrupted mid-transfer.</div>
+            <div>Re-download <code>Friday-Setup.exe</code> from the <a href="download.html" target="_blank" rel="noopener">GitHub Releases page</a>and the <a href="download.html" target="_blank" rel="noopener">Downloads page</a> and run it again. The original download may have been interrupted or corrupted mid-transfer.</div>
           </div>
         </div>
       </div>
@@ -563,13 +531,12 @@
         </div>
         <div class="step-card-body">
           <div class="callout callout-tip">
-            <div class="callout-icon">💡</div>
             <div>
               • Move closer to your microphone.<br>
               • Reduce background noise (TV, music, fans).<br>
-              • Speak at a steady moderate pace — not too fast, not exaggerated.<br>
+              • Speak at a steady moderate pace, not too fast, not exaggerated.<br>
               • Switch to a headset microphone if using a built-in laptop mic.<br>
-              • Confirm the correct input device is selected in Windows Sound settings.
+              • If a specific phrase keeps getting misheard, add your own wording for it in the Settings GUI instead of fighting the default one.
             </div>
           </div>
         </div>
@@ -578,23 +545,22 @@
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>No sound / Chronos speaks but I can't hear it</h3>
+          <h3>No sound / Friday speaks but I can't hear it</h3>
         </div>
         <div class="step-card-body">
-          <p>Check that speakers or headphones are connected and set as the default playback device in Windows Sound settings. Confirm system volume is not muted. Chronos plays audio through the Windows default output device — changing that in the Sound control panel is sufficient.</p>
+          <p>Check that speakers or headphones are connected and set as the default playback device in Windows Sound settings. Confirm system volume isn't muted. Friday plays audio through the Windows default output device.</p>
         </div>
       </div>
 
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>Antivirus or Windows Defender flagging Chronos</h3>
+          <h3>Antivirus or Windows Defender flagging Friday</h3>
         </div>
         <div class="step-card-body">
-          <p>Chronos is an unsigned executable — it has no commercial code-signing certificate. Some antivirus engines flag unsigned executables as potentially unwanted programs (PUPs). Chronos is not malware.</p>
+          <p>Friday's installer and its frozen executable are both unsigned, there's no commercial code-signing certificate. Some antivirus engines heuristically flag unsigned executables, especially ones built with PyInstaller or Nuitka, as potentially unwanted programs. Friday is not malware.</p>
           <div class="callout callout-info">
-            <div class="callout-icon">ℹ️</div>
-            <div>Add the Chronos install folder as an exclusion in your antivirus software to prevent interference. You can verify authenticity by comparing the SHA-256 hash of your downloaded file against the hash published on the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a>.</div>
+            <div>Add the Friday install folder as an exclusion in your antivirus software to prevent interference. You can verify authenticity by comparing the SHA-256 hash of your download against the hash published on the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a>.</div>
           </div>
         </div>
       </div>
@@ -602,10 +568,10 @@
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">!</div>
-          <h3>Chronos can't find a newly installed app</h3>
+          <h3>Friday can't find a newly installed app</h3>
         </div>
         <div class="step-card-body">
-          <p>The app catalogue is built when Chronos starts and doesn't automatically update while it's running. After installing a new application, say <strong>"rescan"</strong> or <strong>"rebuild"</strong> to trigger a fresh catalogue scan. Chronos will then be able to find and open the new app.</p>
+          <p>The app catalogue is built when Friday starts and doesn't automatically update while running. After installing a new application, say <strong>"rescan"</strong> or <strong>"rebuild"</strong> to trigger a fresh catalogue scan.</p>
         </div>
       </div>
     </div>
@@ -622,31 +588,51 @@
       <div class="faq-list reveal">
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            Does Chronos work without the internet?
+            Does Friday work without the internet?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes — completely. Chronos uses Vosk for offline speech recognition and edge-tts for text-to-speech, both running entirely on your device. After the initial download and install, you never need an internet connection to use Chronos.</p>
+            <p>The core loop does, Moonshine (speech recognition) and Piper (text-to-speech) both run entirely on your device. Optional features that reach out to a service, news, weather, email/Discord/Telegram checks, or AI chat via Duckduck Go/Groq, do need a connection, but nothing about hearing or responding to a command does.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            How large is Chronos after installation?
+            How do I add or change a voice command?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>The installer download is <strong>170 MB</strong>. After installation, the total footprint on disk is approximately <strong>400 MB</strong>. Most of that size is the Vosk speech recognition model, which is what enables fully offline voice recognition without any internet connection.</p>
+            <p>Say <strong>"configuration"</strong> or <strong>Click on the friday Icon in the tray</strong> to open the Settings GUI, find the tab that matches the command (see the Customising section above), and edit the phrase list directly. Friday checks every new phrase against every other command list first, so you can't accidentally create a conflict.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            Can I use Chronos on multiple PCs?
+            Can I change the wake word?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes. Just download and run the installer on each PC. There's no per-machine license, no activation, and no account needed. The TTS cache is stored locally per installation, so each PC will build up its own cache over time.</p>
+            <p>Yes, wake words are just another editable list, on the GENERAL tab of the Settings GUI. You can add as many as you like; Friday responds to any one of them.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            What's the difference between "rescan", "clear memory", and "reset to defaults"?
+            <div class="faq-arrow">▾</div>
+          </button>
+          <div class="faq-a">
+            <p><strong>"rescan"</strong> (or "rebuild") only rebuilds the installed-app catalogue, say it after installing something new. <strong>"clear memory"</strong> wipes the short-term rolling conversation buffer, not anything permanent. <strong>"reset to defaults"</strong> is the big one, a full factory reset that also wipes every command phrase you've customised in the Settings GUI, so use it deliberately.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Can I use Friday on multiple PCs?
+            <div class="faq-arrow">▾</div>
+          </button>
+          <div class="faq-a">
+            <p>Yes. Just download and run the installer on each PC. There's no per-machine license, no activation, and no account needed. Each install builds up its own local config and TTS cache over time.</p>
           </div>
         </div>
 
@@ -656,57 +642,47 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>The cache grows slowly because it only stores audio for unique phrases Chronos has actually spoken. In practice it stabilises quickly since daily usage involves many repeated phrases — greetings, acknowledgements, common responses. The cache is never cleared automatically, which is by design: it means Chronos only gets faster over time.</p>
+            <p>It grows slowly because it only stores audio for unique phrases Friday has actually spoken. In practice it stabilises quickly since daily usage repeats many phrases, greetings, acknowledgements, common responses. It's never cleared automatically, which is by design: Friday only gets faster over time.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            Does Chronos store or transmit my voice data?
+            Does Friday store or transmit my voice data?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>No. All audio is processed locally by Vosk on your CPU and immediately discarded after recognition. Chronos does not write your voice audio to disk and has no network component to transmit anything. See the <a href="privacy.html">Privacy page</a> for the full policy.</p>
+            <p>No. Audio is processed locally by Moonshine and discarded after recognition, it's written to disk and never sent anywhere. Any credentials you configure (email app passwords, API keys) are stored DPAPI-encrypted on your own machine, readable only under your own Windows login. See the <a href="privacy.html">Privacy page</a> for the full policy.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            How do I update Chronos to a newer version?
+            How do I update Friday to a newer version?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Download the new installer from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it. The installer will update the Chronos files in place. Your TTS cache is stored in a subfolder that won't be overwritten during an update, so all your cached audio is preserved.</p>
+            <p>Download the new <code>Friday-Setup.exe</code> from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it, it updates the files in place. Because Friday tracks what shipped last time separately from what you've changed, every command or setting you've customised survives the update automatically; only genuinely new defaults get added.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            Is Chronos free?
+            Is Friday free?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Yes, entirely free. No paid version, no premium tier, no subscription, no ads. Chronos is an independent personal project built and maintained by a solo developer, distributed freely via GitHub.</p>
+            <p>Yes, entirely free. No paid version, no premium tier, no subscription, no ads. Friday is an independent personal project, distributed freely via GitHub.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
-            What language does Chronos understand?
+            What language does Friday understand?
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>The current build ships with an English Vosk model. Other language models are available from the Vosk project, but swapping models requires manually replacing the model folder — this is not officially supported in the current release.</p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            What does the "reset" command actually do?
-            <div class="faq-arrow">▾</div>
-          </button>
-          <div class="faq-a">
-            <p>Saying "reset" or "clear" triggers a soft purge: it drains the current audio queue, resets the Vosk speech recogniser, rebuilds the application catalogue, and replays the startup greeting. It's a full internal refresh without closing or restarting Chronos — and importantly, it never touches the TTS cache.</p>
+            <p>The current build ships with an English Moonshine model. Other languages aren't officially supported in the current release.</p>
           </div>
         </div>
       </div>
@@ -718,18 +694,21 @@
     <div id="uninstall">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Uninstalling</div>
-        <h2>Removing Chronos</h2>
-        <p>Chronos leaves no footprint on your system outside its own folder.</p>
+        <h2>Removing Friday</h2>
+        <p>Because Friday is installed through Inno Setup, removing her the right way is a normal Windows uninstall, not a manual folder deletion.</p>
       </div>
 
       <div class="uninstall-box reveal">
-        <h4>⚠️ To completely remove Chronos</h4>
-        <p>Delete the Chronos install folder. Chronos does not write to the Windows registry, does not install services or drivers, and does not place files anywhere outside its own folder. There is no separate uninstaller because none is needed — deleting the folder is the complete and total removal. Also delete the desktop shortcut and remove the shortcut from <code>shell:startup</code> if you added one.</p>
+        <h4> To completely remove Friday</h4>
+        <p>Go to <strong>Settings → Apps → Installed apps</strong> (or <strong>Control Panel → Programs and Features</strong>) and uninstall <strong>Friday</strong>, or run <code>unins000.exe</code> from inside the install folder directly. This removes the application files and Start Menu shortcuts the installer created.</p>
+      </div>
+
+      <div class="callout callout-warn reveal" style="margin-top:1.25rem">
+        <div>The uninstaller only removes what it installed. It does <strong>not</strong> remove a shortcut you manually placed in <code>shell:startup</code>, or the <code>%APPDATA%\Friday</code> folder Friday creates at runtime for her config and TTS cache, delete both yourself if you want a completely clean removal.</div>
       </div>
 
       <div class="callout callout-info reveal" style="margin-top:1.25rem">
-        <div class="callout-icon">ℹ️</div>
-        <div>If you want to move Chronos rather than remove it, move the entire install folder to the new location and update your shortcut paths to point to the new <code>Chronos.exe</code> location. The TTS cache inside the folder moves with it automatically.</div>
+        <div>If you want to move Friday rather than remove her, move the entire install folder to the new location and update your shortcut paths (including the one in <code>shell:startup</code>) to point to the new <code>Friday.exe</code>. The TTS cache inside the folder moves with it automatically.</div>
       </div>
     </div>
 
@@ -738,9 +717,9 @@
     <!-- BOTTOM CTA -->
     <div class="bottom-cta reveal">
       <h3>Ready to get started?</h3>
-      <p>Download Chronos from GitHub — free, offline, and set up in under five minutes.</p>
+      <p>Download Friday from GitHub, free, offline at her core, and set up in under five minutes.</p>
       <div class="cta-btns">
-        <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener noreferrer" class="btn-primary">↓ Download on GitHub</a>
+        <a href="download.html" target="_blank" rel="noopener noreferrer" class="btn-primary">↓ Download on GitHub</a>
         <a href="privacy.html" class="btn-ghost">Read privacy policy →</a>
       </div>
     </div>
@@ -750,17 +729,281 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Chron<span>os</span></div>
+  <div class="footer-logo">Fri<span>day</span></div>
   <div class="foot-links">
     <a href="index.html">Home</a>
     <a href="about-me.html">About Me</a>
-    <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">Download</a>
+    <a href="download.html" target="_blank" rel="noopener">Download</a>
     <a href="privacy.html">Privacy</a>
   </div>
-  <small>Windows Voice Assistant · Free &amp; Offline · © 2026 Chronos</small>
+  <small>Windows Voice Assistant · Offline Speech &amp; Voice · © 2026 Friday</small>
 </footer>
 
 <script>
+// ============================================================
+//  VOICE COMMAND DATA  grouped exactly as the Settings GUI tabs
+// ============================================================
+const CMD_GROUPS = [
+  {
+    id: 'general', label: 'GENERAL', tabRef: 'GENERAL tab',
+    items: [
+      { say: ['friday', 'jarvis', 'edith'], wake: true, does: 'The <strong>wake word</strong>, say one before any command. Fully editable, and you can add your own.' },
+      { say: ['what can you do', 'commands'], does: 'Lists Friday\'s capabilities out loud.' },
+      { say: ['who are you', "what's your name"], does: 'Friday introduces herself.' },
+      { say: ['who made you', 'who created you'], does: 'Friday credits her creator.' },
+      { say: ['settings', 'configure'], does: 'Opens the on-screen <strong>Settings GUI</strong>.' },
+      { say: ['reset to defaults', 'factory reset'], does: 'Wipes every command and setting back to what shipped, including your customisations.' },
+      { say: ['sleep', 'run in background'], does: 'Stops actively listening but keeps Friday running quietly.' },
+      { say: ['memory status', 'what do you remember'], does: 'Reports how much of the current conversation Friday is holding onto.' },
+      { say: ['clear memory', 'forget everything'], does: 'Wipes the short-term rolling conversation memory only.' },
+      { say: ['remember that…', 'note that…'], does: 'Saves a fact permanently to Friday\'s knowledge base.' },
+      { say: ['what do you know about…', 'tell me about…'], does: 'Recalls a previously saved fact.' },
+      { say: ['tell me everything you know'], does: 'Lists every fact currently saved.' },
+      { say: ['calculate…', "what's…"], does: 'Quick maths, spoken back instantly.' },
+      { say: ['what time is it'], does: 'Speaks the current local time.' },
+      { say: ['what time is it in…'], does: 'Speaks the current time in a named city.' },
+      { say: ["what's on my clipboard"], does: 'Reads back whatever you last copied.' },
+      { say: ['paste that', 'paste it'], does: 'Types out the current clipboard contents.' },
+      { say: ['tell me a joke'], does: 'One dry, one-line joke.' },
+      { say: ['brief me', 'morning briefing'], does: 'Greeting, weather, news, system health, and a recap of yesterday, read in sequence.' },
+      { say: ['check my email'], does: 'Reads unread messages from your connected Gmail account(s).' },
+      { say: ['check notifications'], does: 'Reads current Windows Action Center notifications.' },
+      { say: ['check discord'], does: 'Reads recent messages from your watched Discord channels.' },
+      { say: ['check telegram'], does: 'Reads recent unread Telegram messages.' },
+    ]
+  },
+  {
+    id: 'voice', label: 'VOICE', tabRef: 'VOICE tab',
+    items: [
+      { say: ['open [app name]', 'launch [app name]'], does: 'Launches any installed application by name.' },
+      { say: ['rescan', 'rebuild'], does: 'Rebuilds the installed-app catalogue, run after installing something new.' },
+      { say: ['what is running'], does: 'Lists currently open applications.' },
+      { say: ['type', 'dictate'], does: 'Enters Moonshine dictation mode, typing exactly what you say into the focused field.' },
+      { say: ['stop typing', 'done typing'], does: 'Exits dictation mode.' },
+      { say: ['exit assistant mode', 'normal mode'], does: 'Leaves free-form AI conversation mode and returns to normal commands.' },
+      { say: ['delete', 'backspace'], does: 'Deletes the character before the cursor.' },
+      { say: ['delete word'], does: 'Deletes the whole word before the cursor.' },
+      { say: ['press enter'], does: 'Sends an Enter keystroke.' },
+      { say: ['screenshot', 'take a screenshot'], does: 'Captures the screen.' },
+      { say: ['generate a password'], does: 'Creates a strong random password.' },
+      { say: ['generate a qr code for…'], does: 'Creates a QR code for whatever follows.' },
+      { say: ['switch audio to…'], does: 'Moves playback to a named output device.' },
+    ]
+  },
+  {
+    id: 'media', label: 'MEDIA', tabRef: 'MEDIA tab',
+    items: [
+      { say: ['play', 'resume'], does: 'Resumes playback.' },
+      { say: ['pause', 'pause music'], does: 'Pauses playback.' },
+      { say: ['next', 'skip'], does: 'Skips to the next track.' },
+      { say: ['previous', 'go back'], does: 'Returns to the previous track.' },
+      { say: ['repeat', 'loop'], does: 'Toggles repeat, on Friday\'s own built-in player.' },
+      { say: ['stop the music'], does: 'Stops playback on Friday\'s own player.' },
+      { say: ["what's playing"], does: 'Names the current track.' },
+      { say: ['download that song'], does: 'Saves whatever Friday\'s own player currently has loaded.' },
+      { say: ['volume up', 'louder'], does: 'Raises system volume.' },
+      { say: ['volume down', 'quieter'], does: 'Lowers system volume.' },
+      { say: ['mute', 'unmute'], does: 'Toggles system mute.' },
+    ]
+  },
+  {
+    id: 'windows', label: 'WINDOWS', tabRef: 'WINDOWS tab',
+    items: [
+      { say: ['close window', 'close tab'], does: 'Closes the focused window.' },
+      { say: ['minimise window'], does: 'Minimises the focused window.' },
+      { say: ['maximise window', 'full screen'], does: 'Maximises the focused window.' },
+      { say: ['close [app name]', 'kill [app name]'], does: 'Force-closes a named application.' },
+      { say: ['restore', 'put it back'], does: 'Undoes the last close, minimise, or maximise.' },
+      { say: ['switch to [app name]'], does: 'Jumps straight to a named, already-open window.' },
+      { say: ['snap left', 'snap top right'], does: 'Snaps the focused window to a screen half or quadrant.' },
+      { say: ['tile [app] and [app]'], does: 'Snaps two named windows side-by-side.' },
+      { say: ['stack [app] and [app]'], does: 'Snaps two named windows top and bottom.' },
+      { say: ['show desktop'], does: 'Minimises everything to reveal the desktop.' },
+      { say: ['minimise all'], does: 'Minimises every open window at once.' },
+      { say: ['maximise all'], does: 'Restores or maximises every open window at once.' },
+      { say: ['switch app', 'alt tab'], does: 'Cycles to the next open window.' },
+    ]
+  },
+  {
+    id: 'mouse', label: 'MOUSE', tabRef: 'MOUSE tab',
+    items: [
+      { say: ['click', 'left click'], does: 'Performs a left mouse click.' },
+      { say: ['right click'], does: 'Performs a right mouse click.' },
+      { say: ['double click'], does: 'Performs a double click.' },
+      { say: ['mouse up / down / left / right'], does: 'Moves the cursor continuously in that direction until told to stop.' },
+      { say: ['stop', 'freeze'], does: 'Stops continuous cursor movement.' },
+      { say: ['nudge up / down / left / right'], does: 'Moves the cursor one small, single step.' },
+      { say: ['show numbers'], does: 'Overlays a clickable number on every actionable element on screen.' },
+      { say: ['hide numbers'], does: 'Hides the number overlay.' },
+      { say: ['scroll up', 'scroll down'], does: 'Scrolls the active window continuously until told to stop.' },
+      { say: ['stop scrolling'], does: 'Stops continuous scrolling.' },
+    ]
+  },
+  {
+    id: 'system', label: 'SYSTEM', tabRef: 'SYSTEM tab',
+    items: [
+      { say: ['lock screen'], does: 'Locks Windows.' },
+      { say: ['empty recycle bin'], does: 'Empties the Recycle Bin.' },
+      { say: ['shutdown', 'shut down'], does: 'Shuts down the PC.' },
+      { say: ['restart'], does: 'Restarts the PC.' },
+      { say: ['system status', 'how is my pc'], does: 'Reports CPU, RAM, disk, and battery health.' },
+      { say: ['clean up my pc'], does: 'Runs a Windows disk cleanup.' },
+      { say: ['find duplicate files'], does: 'Scans your drives for duplicate files.' },
+      { say: ['find large files'], does: "Finds what's taking up disk space." },
+      { say: ['start recording', 'record'], does: 'Starts a screen recording.' },
+      { say: ['stop recording'], does: 'Stops and saves the current recording.' },
+      { say: ['daily report', 'weekly report', 'monthly report'], does: 'Reads back your activity analytics for that period.' },
+      { say: ['random wallpaper'], does: 'Sets a new random desktop wallpaper.' },
+      { say: ['dark mode', 'light mode'], does: 'Switches the Windows theme.' },
+      { say: ['turn on do not disturb', 'turn off do not disturb'], does: 'Toggles Focus Assist.' },
+    ]
+  },
+  {
+    id: 'apps-web', label: 'APPS & WEB', tabRef: 'APPS & WEB tab',
+    items: [
+      { say: ['install [app name]'], does: 'Installs an app via winget, asks you to confirm first.' },
+      { say: ['uninstall [app name]'], does: 'Uninstalls an app via winget, asks you to confirm first.' },
+      { say: ['check for updates'], does: 'Checks for upgradable apps via winget.' },
+      { say: ['go to…', 'search for…'], does: 'Opens a known website or runs a web search.' },
+      { say: ['read this page'], does: 'Reads the open webpage aloud.' },
+      { say: ['nearest [place]', '[place] near me'], does: 'Finds the closest match and speaks its name, distance, and ETA.' },
+      { say: ['around here'], does: 'Opens Google Maps directly, skipping the spoken result.' },
+      { say: ['show map for…'], does: 'Opens OpenStreetMap centred on a named place.' },
+      { say: ['open downloads', 'open documents'], does: 'Opens a named system folder.' },
+      { say: ['find file…'], does: 'Searches your drives for a file by name.' },
+      { say: ['new folder named…'], does: 'Creates a folder in the current location.' },
+      { say: ['organise this'], does: 'Tidies the current folder into subfolders by file type.' },
+      { say: ["what's in this folder"], does: 'Previews the organise plan before it runs.' },
+    ]
+  },
+  {
+    id: 'timers', label: 'TIMERS', tabRef: 'TIMERS tab',
+    items: [
+      { say: ['set a timer for…'], does: 'Starts a countdown timer.' },
+      { say: ['cancel timer'], does: 'Cancels the running timer.' },
+      { say: ['list timers'], does: 'Lists every active timer.' },
+      { say: ['remind me to…'], does: 'Sets a one-off spoken reminder.' },
+      { say: ['start a focus session', 'start a pomodoro'], does: 'Begins a work/break focus timer cycle.' },
+      { say: ['cancel focus session'], does: 'Ends the current focus session.' },
+    ]
+  },
+  {
+    id: 'news-weather', label: 'NEWS & WEATHER', tabRef: 'NEWS & WEATHER tab',
+    items: [
+      { say: ["what's the weather"], does: 'Speaks the current forecast for your location.' },
+      { say: ['news', "what's happening"], does: 'A narrated local news summary.' },
+      { say: ['headlines', 'top stories'], does: 'A quick list of headline titles only, no narration.' },
+      { say: ['international news', 'world news'], does: 'A narrated world news summary.' },
+      { say: ['international headlines'], does: 'World headline titles only.' },
+    ]
+  },
+];
+
+// ============================================================
+//  COMMAND EXPLORER  horizontally-scrolling, auto-advancing
+// ============================================================
+(function initCommandExplorer() {
+  const tabstrip   = document.getElementById('cmdTabstrip');
+  const list       = document.getElementById('cmdList');
+  const title      = document.getElementById('cmdPanelTitle');
+  const sub        = document.getElementById('cmdPanelSub');
+  const progressBar = document.getElementById('cmdProgressBar');
+  if (!tabstrip) return;
+
+  let active = 0;
+  let timer = null;
+  const ADVANCE_MS = 60000;
+
+  CMD_GROUPS.forEach((group, i) => {
+    const tab = document.createElement('button');
+    tab.className = 'cmd-tab' + (i === 0 ? ' active' : '');
+    tab.innerHTML = group.label + ' <span class="cmd-tab-count">' + group.items.length + '</span>';
+    tab.addEventListener('click', () => selectGroup(i, true));
+    tab.dataset.idx = i;
+    tabstrip.appendChild(tab);
+  });
+
+  function buildRowsHTML(group) {
+    return group.items.map(item => {
+      const chips = item.say.map(p => '<span class="cmd-phrase' + (item.wake ? ' wake' : '') + '">' + p + '</span>').join('');
+      return '<div class="cmd-row"><div class="cmd-say">' + chips + '</div><div class="cmd-does">' + item.does + '</div></div>';
+    }).join('');
+  }
+
+  // Groups have different numbers of rows, so their panels render at
+  // different heights. Measure the tallest one and pin cmd-list to that
+  // height so switching tabs never shifts the rest of the page.
+  function lockPanelHeight() {
+    list.style.minHeight = '0px';
+    let max = 0;
+    CMD_GROUPS.forEach(group => {
+      list.innerHTML = buildRowsHTML(group);
+      max = Math.max(max, list.getBoundingClientRect().height);
+    });
+    list.style.minHeight = max + 'px';
+    list.innerHTML = buildRowsHTML(CMD_GROUPS[active]);
+  }
+
+  let resizeTimer = null;
+  window.addEventListener('resize', () => {
+    // Row height is responsive (wrapping chips, single-column layout under
+    // 640px), so the tallest group can change on resize too.
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(lockPanelHeight, 200);
+  }, { passive: true });
+
+  function renderPanel(i) {
+    const group = CMD_GROUPS[i];
+    title.textContent = group.label + ' COMMANDS';
+    sub.innerHTML = group.items.length + ' commands · edit these in the Settings GUI\u2019s <strong>' + group.tabRef + '</strong>';
+    list.style.animation = 'none';
+    list.offsetHeight; // reflow to restart animation
+    list.style.animation = '';
+    list.innerHTML = buildRowsHTML(group);
+  }
+
+  function setActiveTab(i) {
+    [...tabstrip.children].forEach((el, idx) => el.classList.toggle('active', idx === i));
+    const el = tabstrip.children[i];
+    if (!el) return;
+    // Scroll only the tabstrip itself horizontally  never el.scrollIntoView(),
+    // which walks up to the window and can also trigger a vertical page scroll.
+    const target = el.offsetLeft + el.offsetWidth / 2 - tabstrip.clientWidth / 2;
+    const max = tabstrip.scrollWidth - tabstrip.clientWidth;
+    tabstrip.scrollTo({ left: Math.max(0, Math.min(target, max)), behavior: 'smooth' });
+  }
+
+  function startProgress() {
+    progressBar.classList.remove('animating');
+    progressBar.style.width = '0%';
+    // force reflow so the next class add reliably restarts the transition
+    void progressBar.offsetWidth;
+    progressBar.classList.add('animating');
+    progressBar.style.width = '100%';
+  }
+
+  function selectGroup(i, manual) {
+    active = i;
+    setActiveTab(i);
+    renderPanel(i);
+    startProgress();
+    if (manual) resetTimer();
+  }
+
+  function advance() {
+    selectGroup((active + 1) % CMD_GROUPS.length, false);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(advance, ADVANCE_MS);
+  }
+
+  lockPanelHeight();
+  selectGroup(0, false);
+  resetTimer();
+})();
+
 // hamburger
 const burger = document.getElementById('burger');
 const mobNav = document.getElementById('mobNav');

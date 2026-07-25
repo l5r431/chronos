@@ -10,10 +10,12 @@
     --surface: rgba(255,255,255,0.03);
     --border: rgba(255,255,255,0.07);
     --white: #ffffff;
+    --whit:  #fb5d5d;
+    --whi:  #f4e13a;
     --muted: rgba(255,255,255,0.4);
     --accent: #4f46e5;
     --accent-glow: rgba(79,70,229,0.35);
-    --accent2: #06b6d4;
+    --accent2: #5648d0;
     --tag-bg: rgba(79,70,229,0.12);
     --tag-border: rgba(79,70,229,0.3);
     --ff-display: 'Syne', sans-serif;
@@ -343,10 +345,6 @@ main {
     width: min(500px, 80vw);
     height: min(500px, 80vw);
     border-radius: 50%;
-    background:
-        radial-gradient(circle,
-        var(--glow) 50%,
-        transparent 50%);
     z-index: 0;
     pointer-events: none;
     animation: pulse 2s ease-in-out infinite;
@@ -373,18 +371,21 @@ main {
 .glow-orb__ring--outer {
     stroke-width: 1;
     stroke-dasharray: 140 60 40 60;
+    stroke: var(--white);
     animation: spin-cw 18s linear infinite;
 }
 
 .glow-orb__ring--ticks {
     stroke-width: 2;
     stroke-dasharray: 2 9;
+    stroke: var(--white);
     opacity: 0.5;
     animation: spin-ccw 40s linear infinite;
 }
 
 .glow-orb__ring--mid {
     stroke-width: 1.5;
+    stroke: var(--whit);
     stroke-dasharray: 90 40 20 40 60 30;
     animation: spin-ccw 12s linear infinite;
 }
@@ -392,11 +393,13 @@ main {
 .glow-orb__ring--inner {
     stroke-width: 1;
     stroke-dasharray: 60 20;
+    stroke: var(--whi);
     animation: spin-cw 7s linear infinite;
 }
 
 .glow-orb__core {
-    fill: var(--white);
+    fill: var(--whit);
+    stroke: var(--whit);
     animation: pulse 2s ease-in-out infinite;
     transform-origin: 100px 100px;
 }
