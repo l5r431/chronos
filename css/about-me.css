@@ -13,7 +13,7 @@
                 box-shadow 0.3s ease;
 }
 
-/* ─── LIGHT MODE (day 19 palette) ─── */
+/* ─── LIGHT MODE (day 19 palette, i numbered all days i changed palletes) ─── */
 :root {
     --bg-main:       #f5f2eb;
     --bg-primary:    #f5f2eb;
@@ -29,8 +29,7 @@
     --card-lg:       linear-gradient(145deg, #f0ece2, #e8e3d8);
 
     --hover-bg:      rgba(26, 24, 20, 0.04);
-    --shadow:        0 2px 12px rgba(26, 24, 20, 0.08),
-                     0 1px 3px rgba(26, 24, 20, 0.06);
+    --shadow:        0px 0px 15px #00000098;
 
     --accent:        #d4521a;
     --accent-soft:   rgba(212, 82, 26, 0.10);
@@ -372,11 +371,11 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 0.4rem 0;
+    box-shadow: var(--shadow);
 }
 
 .stack-card:hover {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: var(--shadow);
 }
 
 .stack-img { width: 44px; height: 44px; object-fit: cover; }
@@ -548,12 +547,7 @@ main {
     animation: fadeUp 0.5s ease forwards;
     animation-delay: 0.3s;
     box-shadow: var(--shadow);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feeds:hover {
-    border-color: var(--accent);
-    box-shadow: 0 4px 20px rgba(212, 82, 26, 0.12);
+    transition: transform .4s;
 }
 
 @keyframes fadeUp {
