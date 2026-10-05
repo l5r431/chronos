@@ -395,7 +395,7 @@
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Voice commands</div>
         <h2>What you can say</h2>
-        <p>Every command Friday ships with, grouped exactly the way they're grouped in the Settings GUI. Browse the strip below, or let it play through each group on its own.</p>
+        <p>Every command Friday ships with, arranged into balanced sections of 10 commands each for easier browsing. Browse the strip below, or let it play through each section on its own.</p>
       </div>
 
       <div class="cmd-explorer reveal" id="cmdExplorer">
@@ -745,7 +745,7 @@
 // ============================================================
 const CMD_GROUPS = [
   {
-    id: 'general', label: 'GENERAL', tabRef: 'GENERAL tab',
+    id: 'general', label: 'GENERAL', tabRef: 'GENERAL section',
     items: [
       { say: ['friday', 'jarvis', 'edith'], wake: true, does: 'The <strong>wake word</strong>, say one before any command. Fully editable, and you can add your own.' },
       { say: ['what can you do', 'commands'], does: 'Lists Friday\'s capabilities out loud.' },
@@ -757,21 +757,27 @@ const CMD_GROUPS = [
       { say: ['remember that…', 'note that…'], does: 'Saves a fact permanently to Friday\'s knowledge base.' },
       { say: ['what do you know about…', 'tell me about…'], does: 'Recalls a previously saved fact.' },
       { say: ['tell me everything you know'], does: 'Lists every fact currently saved.' },
+    ]
+  },
+  {
+    id: 'conversation', label: 'CONVERSATION', tabRef: 'CONVERSATION section',
+    items: [
       { say: ['calculate…', "what's…"], does: 'Quick maths, spoken back instantly.' },
       { say: ['what time is it'], does: 'Speaks the current local time.' },
       { say: ['what time is it in…'], does: 'Speaks the current time in a named city.' },
       { say: ["what's on my clipboard"], does: 'Reads back whatever you last copied.' },
       { say: ['paste that', 'paste it'], does: 'Types out the current clipboard contents.' },
       { say: ['tell me a joke'], does: 'One dry, one-line joke.' },
-      { say: ['brief me', 'morning briefing'], does: 'Greeting, weather, news, system health, and a recap of yesterday, read in sequence.' },
       { say: ['check my email'], does: 'Reads unread messages from your connected Gmail account(s).' },
       { say: ['check notifications'], does: 'Reads current Windows Action Center notifications.' },
       { say: ['check discord'], does: 'Reads recent messages from your watched Discord channels.' },
       { say: ['check telegram'], does: 'Reads recent unread Telegram messages.' },
+      { say: ['who are you'], does: 'Tells you Friday’s identity and what kind of assistant it is.' },
+      { say: ['who made you'], does: 'Tells you who created Friday.' },
     ]
   },
   {
-    id: 'voice', label: 'VOICE', tabRef: 'VOICE tab',
+    id: 'voice', label: 'VOICE', tabRef: 'VOICE section',
     items: [
       { say: ['open [app name]', 'launch [app name]'], does: 'Launches any installed application by name.' },
       { say: ['rescan', 'rebuild'], does: 'Rebuilds the installed-app catalogue, run after installing something new.' },
@@ -783,13 +789,12 @@ const CMD_GROUPS = [
       { say: ['delete word'], does: 'Deletes the whole word before the cursor.' },
       { say: ['press enter'], does: 'Sends an Enter keystroke.' },
       { say: ['screenshot', 'take a screenshot'], does: 'Captures the screen.' },
-      { say: ['generate a password'], does: 'Creates a strong random password.' },
-      { say: ['generate a qr code for…'], does: 'Creates a QR code for whatever follows.' },
-      { say: ['switch audio to…'], does: 'Moves playback to a named output device.' },
+      { say: ['copy that', 'copy this'], does: 'Copies the selected text or item to the clipboard.' },
+      { say: ['select all'], does: 'Selects all available text or items in the focused application.' },
     ]
   },
   {
-    id: 'media', label: 'MEDIA', tabRef: 'MEDIA tab',
+    id: 'media', label: 'MEDIA', tabRef: 'MEDIA section',
     items: [
       { say: ['play', 'resume'], does: 'Resumes playback.' },
       { say: ['pause', 'pause music'], does: 'Pauses playback.' },
@@ -801,11 +806,12 @@ const CMD_GROUPS = [
       { say: ['download that song'], does: 'Saves whatever Friday\'s own player currently has loaded.' },
       { say: ['volume up', 'louder'], does: 'Raises system volume.' },
       { say: ['volume down', 'quieter'], does: 'Lowers system volume.' },
-      { say: ['mute', 'unmute'], does: 'Toggles system mute.' },
+      { say: ['switch audio to…'], does: 'Moves playback to a named audio output device.' },
+      { say: ['cycle audio device'], does: 'Cycles through available audio output devices.' },
     ]
   },
   {
-    id: 'windows', label: 'WINDOWS', tabRef: 'WINDOWS tab',
+    id: 'windows', label: 'WINDOWS', tabRef: 'WINDOWS section',
     items: [
       { say: ['close window', 'close tab'], does: 'Closes the focused window.' },
       { say: ['minimise window'], does: 'Minimises the focused window.' },
@@ -819,11 +825,10 @@ const CMD_GROUPS = [
       { say: ['show desktop'], does: 'Minimises everything to reveal the desktop.' },
       { say: ['minimise all'], does: 'Minimises every open window at once.' },
       { say: ['maximise all'], does: 'Restores or maximises every open window at once.' },
-      { say: ['switch app', 'alt tab'], does: 'Cycles to the next open window.' },
     ]
   },
   {
-    id: 'mouse', label: 'MOUSE', tabRef: 'MOUSE tab',
+    id: 'mouse', label: 'MOUSE', tabRef: 'MOUSE section',
     items: [
       { say: ['click', 'left click'], does: 'Performs a left mouse click.' },
       { say: ['right click'], does: 'Performs a right mouse click.' },
@@ -835,29 +840,29 @@ const CMD_GROUPS = [
       { say: ['hide numbers'], does: 'Hides the number overlay.' },
       { say: ['scroll up', 'scroll down'], does: 'Scrolls the active window continuously until told to stop.' },
       { say: ['stop scrolling'], does: 'Stops continuous scrolling.' },
+      { say: ['show grid'], does: 'Shows Friday’s grid overlay for navigating sparse or custom interfaces.' },
+      { say: ['click that', 'select that'], does: 'Activates the currently targeted item in the grid interface.' },
     ]
   },
   {
-    id: 'system', label: 'SYSTEM', tabRef: 'SYSTEM tab',
+    id: 'system', label: 'SYSTEM', tabRef: 'SYSTEM section',
     items: [
       { say: ['lock screen'], does: 'Locks Windows.' },
-      { say: ['empty recycle bin'], does: 'Empties the Recycle Bin.' },
       { say: ['shutdown', 'shut down'], does: 'Shuts down the PC.' },
       { say: ['restart'], does: 'Restarts the PC.' },
-      { say: ['system status', 'how is my pc'], does: 'Reports CPU, RAM, disk, and battery health.' },
-      { say: ['clean up my pc'], does: 'Runs a Windows disk cleanup.' },
-      { say: ['find duplicate files'], does: 'Scans your drives for duplicate files.' },
-      { say: ['find large files'], does: "Finds what's taking up disk space." },
       { say: ['start recording', 'record'], does: 'Starts a screen recording.' },
       { say: ['stop recording'], does: 'Stops and saves the current recording.' },
       { say: ['daily report', 'weekly report', 'monthly report'], does: 'Reads back your activity analytics for that period.' },
       { say: ['random wallpaper'], does: 'Sets a new random desktop wallpaper.' },
       { say: ['dark mode', 'light mode'], does: 'Switches the Windows theme.' },
       { say: ['turn on do not disturb', 'turn off do not disturb'], does: 'Toggles Focus Assist.' },
+      { say: ['minimise all'], does: 'Minimises every open window at once.' },
+      { say: ['switch theme'], does: 'Toggles between Friday’s available Windows theme modes.' },
+      { say: ['toggle focus assist'], does: 'Toggles Windows Focus Assist / Do Not Disturb.' },
     ]
   },
   {
-    id: 'apps-web', label: 'APPS & WEB', tabRef: 'APPS & WEB tab',
+    id: 'apps-web', label: 'APPS & WEB', tabRef: 'APPS & WEB section',
     items: [
       { say: ['install [app name]'], does: 'Installs an app via winget, asks you to confirm first.' },
       { say: ['uninstall [app name]'], does: 'Uninstalls an app via winget, asks you to confirm first.' },
@@ -869,32 +874,44 @@ const CMD_GROUPS = [
       { say: ['show map for…'], does: 'Opens OpenStreetMap centred on a named place.' },
       { say: ['open downloads', 'open documents'], does: 'Opens a named system folder.' },
       { say: ['find file…'], does: 'Searches your drives for a file by name.' },
+      { say: ['open folder…'], does: 'Opens a named Windows folder directly.' },
+      { say: ['read page'], does: 'Reads the currently open webpage aloud.' },
+    ]
+  },
+  {
+    id: 'tools-files', label: 'TOOLS & FILES', tabRef: 'TOOLS & FILES section',
+    items: [
+      { say: ['generate a password'], does: 'Creates a strong random password.' },
+      { say: ['generate a qr code for…'], does: 'Creates a QR code for whatever follows.' },
+      { say: ['switch audio to…'], does: 'Moves playback to a named output device.' },
+      { say: ['mute', 'unmute'], does: 'Toggles system mute.' },
       { say: ['new folder named…'], does: 'Creates a folder in the current location.' },
       { say: ['organise this'], does: 'Tidies the current folder into subfolders by file type.' },
       { say: ["what's in this folder"], does: 'Previews the organise plan before it runs.' },
+      { say: ['empty recycle bin'], does: 'Empties the Recycle Bin.' },
+      { say: ['clean up my pc'], does: 'Runs a Windows disk cleanup.' },
+      { say: ['switch app', 'alt tab'], does: 'Cycles to the next open window.' },
+      { say: ['clipboard history'], does: 'Opens the Windows clipboard history.' },
+      { say: ['delete file…'], does: 'Deletes a selected or named file using Friday’s file-operation handler.' },
     ]
   },
   {
-    id: 'timers', label: 'TIMERS', tabRef: 'TIMERS tab',
+    id: 'news-info', label: 'NEWS & INFO', tabRef: 'NEWS & INFO section',
     items: [
-      { say: ['set a timer for…'], does: 'Starts a countdown timer.' },
-      { say: ['cancel timer'], does: 'Cancels the running timer.' },
-      { say: ['list timers'], does: 'Lists every active timer.' },
-      { say: ['remind me to…'], does: 'Sets a one-off spoken reminder.' },
-      { say: ['start a focus session', 'start a pomodoro'], does: 'Begins a work/break focus timer cycle.' },
-      { say: ['cancel focus session'], does: 'Ends the current focus session.' },
-    ]
-  },
-  {
-    id: 'news-weather', label: 'NEWS & WEATHER', tabRef: 'NEWS & WEATHER tab',
-    items: [
+      { say: ['brief me', 'morning briefing'], does: 'Greeting, weather, news, system health, and a recap of yesterday, read in sequence.' },
       { say: ["what's the weather"], does: 'Speaks the current forecast for your location.' },
       { say: ['news', "what's happening"], does: 'A narrated local news summary.' },
       { say: ['headlines', 'top stories'], does: 'A quick list of headline titles only, no narration.' },
       { say: ['international news', 'world news'], does: 'A narrated world news summary.' },
       { say: ['international headlines'], does: 'World headline titles only.' },
+      { say: ['maximise all'], does: 'Restores or maximises every open window at once.' },
+      { say: ['system status', 'how is my pc'], does: 'Reports CPU, RAM, disk, and battery health.' },
+      { say: ['find duplicate files'], does: 'Scans your drives for duplicate files.' },
+      { say: ['find large files'], does: "Finds what's taking up disk space." },
+      { say: ['latest news'], does: 'Fetches the latest available local news update.' },
+      { say: ['weather forecast'], does: 'Speaks the current weather forecast for your configured location.' },
     ]
-  },
+  }
 ];
 
 // ============================================================
@@ -928,9 +945,8 @@ const CMD_GROUPS = [
     }).join('');
   }
 
-  // Groups have different numbers of rows, so their panels render at
-  // different heights. Measure the tallest one and pin cmd-list to that
-  // height so switching tabs never shifts the rest of the page.
+  // Keep the explorer stable even if responsive wrapping makes one section
+  // slightly taller than another at a particular viewport width.
   function lockPanelHeight() {
     list.style.minHeight = '0px';
     let max = 0;
@@ -953,7 +969,7 @@ const CMD_GROUPS = [
   function renderPanel(i) {
     const group = CMD_GROUPS[i];
     title.textContent = group.label + ' COMMANDS';
-    sub.innerHTML = group.items.length + ' commands · edit these in the Settings GUI\u2019s <strong>' + group.tabRef + '</strong>';
+    sub.innerHTML = group.items.length + ' commands · balanced browsing section';
     list.style.animation = 'none';
     list.offsetHeight; // reflow to restart animation
     list.style.animation = '';
