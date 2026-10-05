@@ -5,7 +5,7 @@
   --line:      rgba(255,255,255,0.12);
   --line-soft: rgba(255,255,255,0.07);
   --line-strong: rgba(255,255,255,0.32);
-  --whit:     #ffffff;
+  --whit:     #ffffff7a;
   --white:    #ccb899ae;
   --text:      #e4e4e4;
   --muted:     #7a7a7a;
@@ -230,8 +230,8 @@ nav{
   font-family:var(--mono);font-size:.72rem;font-weight:700;color:var(--white)}
 .startup-step-text{font-size:.88rem;color:var(--muted2);line-height:1.65;padding-top:3px}
 .startup-step-text strong{color:var(--text)}
-code{font-family:var(--mono);font-size:.82rem;color:var(--white);
-  background:rgba(255,255,255,.07);padding:.15rem .4rem;border-radius:4px}
+code{font-family:var(--mono);font-size:.82rem;color:var(--bg);
+  background: var(--whit);padding:.15rem .4rem;border-radius:4px}
 
 /* PATHS */
 .paths{display:flex;flex-direction:column;gap:.5rem}
@@ -408,11 +408,6 @@ footer .foot-links a{font-family:var(--disp);font-size:.75rem;font-weight:600;
   text-decoration:none;transition:color .2s}
 footer .foot-links a:hover{color:var(--white)}
 footer small{display:block;font-size:.77rem;color:var(--muted);margin-top:.5rem}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
-.reveal.visible{opacity:1;transform:translateY(0)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 /* SCROLLBAR */
 ::-webkit-scrollbar{width:5px}

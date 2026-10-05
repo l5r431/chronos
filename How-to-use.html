@@ -97,7 +97,7 @@
           <p>Speakers or headphones required to hear Friday's voice responses.</p>
         </div>
       </div>
-      <div class="status-row reveal">
+      <div class="status-row">
         <div class="status-badge"><div class="status-dot on"></div> Speech &amp; voice run offline</div>
         <div class="status-badge"><div class="status-dot ring"></div> Internet only for optional features</div>
         <div class="status-badge"><div class="status-dot ring"></div> Microphone permission required</div>
@@ -749,9 +749,7 @@ const CMD_GROUPS = [
     items: [
       { say: ['friday', 'jarvis', 'edith'], wake: true, does: 'The <strong>wake word</strong>, say one before any command. Fully editable, and you can add your own.' },
       { say: ['what can you do', 'commands'], does: 'Lists Friday\'s capabilities out loud.' },
-      { say: ['who are you', "what's your name"], does: 'Friday introduces herself.' },
-      { say: ['who made you', 'who created you'], does: 'Friday credits her creator.' },
-      { say: ['settings', 'configure'], does: 'Opens the on-screen <strong>Settings GUI</strong>.' },
+      { say: ['settings', 'configuration'], does: 'Opens the on-screen <strong>Settings GUI</strong>.' },
       { say: ['reset to defaults', 'factory reset'], does: 'Wipes every command and setting back to what shipped, including your customisations.' },
       { say: ['sleep', 'run in background'], does: 'Stops actively listening but keeps Friday running quietly.' },
       { say: ['memory status', 'what do you remember'], does: 'Reports how much of the current conversation Friday is holding onto.' },
@@ -1012,15 +1010,6 @@ document.addEventListener('click', e => {
   if (!burger.contains(e.target) && !mobNav.contains(e.target))
     mobNav.classList.remove('open');
 });
-
-// scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const revObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
-  });
-}, { threshold: 0.07 });
-reveals.forEach(el => revObs.observe(el));
 
 // TOC highlight
 const sections = document.querySelectorAll('[id]');
