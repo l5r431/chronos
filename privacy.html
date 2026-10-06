@@ -37,13 +37,7 @@
 <!-- HERO -->
 <div class="hero-band">
   <h1>Your Data <em>Stays With You</em></h1>
-  <p>Friday is a voice-powered AI assistant for Windows that controls your computer via Voice commands. Everything runs locally by default, no data is sent off your device, with one exception: the specific features that require the internet to function at all, like search, chat, news, weather, checking your messages, streaming music, and downloading files. This document defines exactly what those exceptions are, and how your privacy is protected everywhere else, including when you use Friday to download something via torrent.</p>
-  <div class="hero-stats">
-    <span class="hero-stat"><span class="dot"></span>Windows 10 / 11</span>
-    <span class="hero-stat"><span class="dot"></span>Offline-First Processing</span>
-    <span class="hero-stat"><span class="dot"></span>No Background Data Collection</span>
-    <span class="hero-stat"><span class="dot"></span>Internet Only Where a Feature Needs It</span>
-  </div>
+  <p>Friday is a voice-powered AI assistant for Windows that controls your computer via Voice commands. Everything runs locally by default, no data is sent off your device, with one exception: the specific features that require the internet to function at all, like search, chat, news, weather, checking your messages, streaming music, and downloading files. This document defines exactly what those exceptions are, and how your privacy is protected everywhere else, including when you use Friday to download something via the URL downloader.</p>
 </div>
 
 <div class="page-body">
@@ -53,7 +47,7 @@
       <li class="active-toc"><a href="#overview">Overview</a></li>
       <li><a href="#how">How privacy works</a></li>
       <li><a href="#data">Data we handle</a></li>
-      <li><a href="#torrent">Torrent downloads</a></li>
+      <li><a href="#torrent">URL downloads</a></li>
       <li><a href="#security">Security guarantees</a></li>
       <li><a href="#components">Components &amp; services</a></li>
       <li><a href="#rights">Your rights</a></li>
@@ -119,8 +113,8 @@
           <div class="startup-step-num">01</div>
           <div class="startup-step-text">
             <h4>Microphone capture</h4>
-            <p>Your system microphone captures audio, piped directly into Friday's local processing pipeline in memory. Raw audio is never written to disk, uploaded anywhere, or retained after recognition completes.</p>
-            <span class="startup-step-tag">RAM only · never persisted</span>
+            <p>Your system microphone captures audio, piped directly into Friday's local processing pipeline in memory. Some Raw audio is written to disk, retained after the synthesis completes to make friday faster, but not uploaded anywhere.</p>
+            <span class="startup-step-tag">RAM only · Faster everytime its used</span>
           </div>
         </div>
         <div class="startup-step">
@@ -128,7 +122,7 @@
           <div class="startup-step-text">
             <h4>Moonshine speech recognition</h4>
             <p>Audio is transcribed using Moonshine, running entirely on your CPU. The language model lives in your Friday Installation folder and performs inference with no internet access.</p>
-            <span class="startup-step-tag">Offline · open source · CPU-bound</span>
+            <span class="startup-step-tag">Offline · CPU-bound</span>
           </div>
         </div>
         <div class="startup-step">
@@ -184,7 +178,7 @@
     <div id="data">
       <div class="sec-header">
         <h2>What Data We Handle</h2>
-        <p>A complete, transparent breakdown of every category of information Friday interacts with and where it goes, including the handful of items that leave your device when you use an online feature. See <a href="#torrent" style="color:var(--white)">Torrent Downloads</a> below for the torrent-specific disclosure.</p>
+        <p>A complete, transparent breakdown of every category of information Friday interacts with and where it goes, including the handful of items that leave your device when you use an online feature. See <a href="#torrent" style="color:var(--white)">URL Downloads</a> below for the URL-specific disclosure.</p>
       </div>
 
       <div class="table-wrap">
@@ -243,9 +237,9 @@
             </tr>
             <tr>
               <td>Crash reports</td>
-              <td>Not collected</td>
-              <td>N/A</td>
-              <td>N/A</td>
+              <td>Collected locally</td>
+              <td>Crash Reports folder in Appdata</td>
+              <td>Retained for the user to send it to the developer</td>
               <td><span class="badge badge-never">NEVER</span></td>
             </tr>
             <tr>
@@ -264,15 +258,15 @@
             </tr>
             <tr>
               <td>Search queries</td>
-              <td>Web search, via DuckDuckGo</td>
-              <td>Sent to DuckDuckGo at query time</td>
+              <td>Web search, via External AI API's</td>
+              <td>Sent to AI at query time</td>
               <td>Not retained by Friday</td>
               <td><span class="badge badge-net">SENT PER SEARCH</span></td>
             </tr>
             <tr>
               <td>Chat messages</td>
-              <td>AI chat, via Groq and Ollama</td>
-              <td>Sent to Groq and Ollama at chat time</td>
+              <td>AI chat, via Groq, Gemini, OpenRouter and Ollama</td>
+              <td>Sent  at chat time</td>
               <td>Not retained by Friday beyond the reply</td>
               <td><span class="badge badge-net">SENT PER MESSAGE</span></td>
             </tr>
@@ -298,18 +292,11 @@
               <td><span class="badge badge-net">SENT PER REQUEST</span></td>
             </tr>
             <tr>
-              <td>Downloaded files (video, music, torrent files, other)</td>
+              <td>Downloaded files (video, music, URL files, other)</td>
               <td>Saving a file you asked Friday to download</td>
               <td>Your chosen downloads folder on your machine</td>
               <td>Until you delete it</td>
               <td><span class="badge badge-local">LOCAL, USER-INITIATED</span></td>
-            </tr>
-            <tr class="torrent-row">
-              <td>IP address during a torrent transfer</td>
-              <td>Peer-to-peer file transfer <em>(only when Friday downloads a file for you via torrent)</em></td>
-              <td>Not stored by Friday, visible only to the swarm/tracker, protocol-level</td>
-              <td>Governed by the tracker/swarm, not Friday</td>
-              <td><span class="badge badge-p2p">SWARM VISIBLE</span></td>
             </tr>
           </tbody>
         </table>
@@ -317,7 +304,7 @@
 
       <div class="callout callout-tip">
         <span class="callout-icon">◆</span>
-        <span><strong>Network activity is feature-triggered, not constant.</strong> No data is sent off your device except when you use one of these specific features: fetching news or weather, searching with DuckDuckGo, chatting via Groq, checking your email, Discord, or Telegram messages, streaming music, and downloading files (including videos, music, and torrent files). Every other part of Friday, voice recognition, command parsing, and app launching, is fully offline. You can verify this at any time with Windows Firewall, Wireshark, or GlassWire: you'll only see a connection when one of these features is actively in use.</span>
+        <span><strong>Network activity is feature-triggered, not constant.</strong> No data is sent off your device except when you use one of these specific features: fetching news or weather, searching with External AI, chatting via Groq, checking your email, Discord, or Telegram messages, streaming music, and downloading files (including videos, music, and other Url files). Every other part of Friday, voice recognition, command parsing, and app launching, is fully offline. You can verify this at any time with Windows Firewall, Wireshark, or GlassWire: you'll only see a connection when one of these features is actively in use.</span>
       </div>
     </div>
 
@@ -326,20 +313,19 @@
     <!-- TORRENT -->
     <div id="torrent">
       <div class="sec-header">
-        <h2>Torrent Downloads &amp; Your Privacy</h2>
-        <p>Friday can download files for you on request, including over the BitTorrent protocol. This section explains exactly what that means for your privacy, and for your responsibility as a user.</p>
+        <h2>URL Downloads &amp; Your Privacy</h2>
+        <p>Friday can download files for you on request, including over youtube, instagram, etc. This section explains exactly what that means for your privacy, and for your responsibility as a user.</p>
       </div>
 
       <div class="torrent-panel">
-        <h4>◆ Using Friday to download torrent files</h4>
-        <p>Friday can download files for you on request, videos, music, torrent files, and other user files, including over the BitTorrent protocol. This is a tool you direct: Friday downloads what you ask it to, when you ask it to, and nothing runs in the background without a request from you.</p>
-        <p>BitTorrent is a peer-to-peer protocol: when Friday downloads something via torrent on your behalf, your IP address is visible to the tracker coordinating the swarm and to the other peers you exchange data with, for as long as the download is running, exactly as it would be with any other torrent client. <strong>This is a property of the BitTorrent protocol itself</strong>, not something Friday adds, controls, or can suppress. Some trackers or peers may log IP addresses for longer than the transfer itself, that logging is entirely outside Friday's control and outside this policy's scope, since it belongs to the third-party tracker infrastructure, not to us.</p>
+        <h4>◆ Using Friday to download files</h4>
+        <p>Friday can download files for you on request, videos, music, and other user files, including over the internet URL downloader. This is a tool you direct: Friday downloads what you ask it to, when you ask it to, and nothing runs in the background without a request from you.</p>
         <p>Downloaded files are saved locally to your chosen folder, Friday does not upload, relay, or report what you've downloaded to us or to anyone else.</p>
       </div>
 
       <div class="callout callout-warn">
         <span class="callout-icon">◆</span>
-        <span><strong>You're responsible for what you download.</strong> Friday does not vet, filter, curate, or recommend what you choose to download, torrent or otherwise. Friday is provided as-is, and neither Friday nor its developer is liable for the legality, safety, or content of anything you download using it. Make sure you have the right to download what you're downloading, and that doing so complies with the laws that apply to you.</span>
+        <span><strong>You're responsible for what you download.</strong> Friday does not vet, filter, curate, or recommend what you choose to download, videos or otherwise. Friday is provided as-is, and neither Friday nor its developer is liable for the legality, safety, or content of anything you download using it. Make sure you have the right to download what you're downloading, and that doing so complies with the laws that apply to you.</span>
       </div>
     </div>
 
@@ -380,8 +366,8 @@
             <div><span class="k">process_injection</span>: <span class="v">false</span></div>
             <div><span class="k">telemetry</span>: <span class="v">none</span></div>
             <div><span class="k">crash_reporting</span>: <span class="v">none</span></div>
-            <div><span class="k">audio_written_to_disk</span>: <span class="v">false</span></div>
-            <div><span class="k">data_encryption</span>: <span class="v">N/A (no stored secrets)</span></div>
+            <div><span class="k">audio_written_to_disk</span>: <span class="v">True</span></div>
+            <div><span class="k">data_encryption</span>: <span class="v">N/A (encrypted for your privacy)</span></div>
             <div><span class="k">auto_update</span>: <span class="v">manual only</span></div>
             <div>&nbsp;</div>
             <div class="c"># Verified by: local file audit</div>
@@ -397,7 +383,7 @@
     <!-- OPEN SOURCE COMPONENTS -->
     <div id="components">
       <div class="sec-header">
-        <h2>Open Source Components</h2>
+        <h2>Source Code Components</h2>
         <p>Friday is built on trusted, auditable open-source technology. No black-box SDKs. No proprietary analytics libraries.</p>
       </div>
 
@@ -405,12 +391,10 @@
         <div class="req-card">
           <h4>Moonshine Speech Recognition</h4>
           <p>Moonshine is open-source (Apache 2.0) and runs 100% on-device. The model is downloaded once from the official Moonshine model repository and stored locally. No Moonshine servers are contacted during recognition.</p>
-          <span class="req-tag solid">Apache 2.0 license</span>
         </div>
         <div class="req-card">
           <h4>Voice TTS</h4>
-          <p>Friday uses the voice-TTS Python library, which interfaces with Microsoft Edge's Read Aloud feature. This library sends the response text to the programmed voice engine during synthesis. For fully offline operation, I am still working for friday to fallback to to Windows SAPI voices installed on your system only when the programmed voice engine gets a problem.</p>
-          <span class="req-tag outline">Network during synthesis</span>
+          <p>Friday uses the voice-TTS Python library, which interfaces with Microsoft Edge's Read Aloud feature. This library sends the response text to the programmed voice engine during synthesis. For fully offline operation, I am still working on friday to fallback to Windows SAPI voices installed on your system only when the programmed voice engine gets a problem.</p>
         </div>
       </div>
 
@@ -421,34 +405,28 @@
 
       <div class="req-grid">
         <div class="req-card">
-          <h4>DuckDuckGo</h4>
-          <p>Powers Friday's web search feature. Your query is sent to DuckDuckGo at search time and nowhere else.</p>
-          <span class="req-tag outline">Search only</span>
+          <h4>External AI's</h4>
+          <p>Powers Friday's web search feature. Your query is sent to AI at search time and nowhere else.</p>
         </div>
         <div class="req-card">
-          <h4>Groq</h4>
-          <p>Powers Friday's AI chat feature. Your message is sent to Groq to generate a reply, only while you're chatting.</p>
-          <span class="req-tag outline">Chat only</span>
+          <h4>Groq and other models</h4>
+          <p>Powers Friday's AI chat feature. Your message is sent to the AI to generate a reply, only while you're chatting.</p>
         </div>
         <div class="req-card">
           <h4>News &amp; weather provider</h4>
           <p>Supplies current news and weather when you ask for it. Contacted only for that request.</p>
-          <span class="req-tag outline">Request only</span>
         </div>
         <div class="req-card">
           <h4>Email, Discord &amp; Telegram</h4>
           <p>Friday checks these on your behalf using your own account credentials, only when you ask it to check your messages.</p>
-          <span class="req-tag outline">Check only</span>
         </div>
         <div class="req-card">
           <h4>Music streaming provider</h4>
           <p>Streams music you ask Friday to play. Contacted only while a track is playing.</p>
-          <span class="req-tag outline">Playback only</span>
         </div>
         <div class="req-card">
-          <h4>Download &amp; torrent client</h4>
-          <p>Fetches videos, music, torrent files, and other files you ask Friday to download, straight to your local downloads folder.</p>
-          <span class="req-tag outline">Download only</span>
+          <h4>Download &amp; URL client</h4>
+          <p>Fetches videos, music, and other files you ask Friday to download, straight to your local downloads folder.</p>
         </div>
       </div>
     </div>
@@ -477,11 +455,11 @@
         </div>
         <div class="right-card">
           <h3><svg viewBox="0 0 16 16" fill="none"><path d="M8 1l2 5h5l-4 3 2 5-5-3-5 3 2-5L1 6h5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Disable logging</h3>
-          <p>Command logging is disabled by default. If you enabled it for debugging, set <code>"logging": false</code> in settings.json or toggle it from Friday's system tray menu. Existing logs can be deleted from the logs subfolder.</p>
+          <p>Command logging is enabled by default. its enabled for debugging, so its <code>"logging": True</code> in the source code. Existing logs can be deleted from the logs subfolder.</p>
         </div>
         <div class="right-card">
           <h3><svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M6 8h4M8 6v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Offline voice mode</h3>
-          <p>After the initial Moonshine model download, enable full offline mode in settings. Friday uses Windows SAPI for voice output instead of Edge TTS. This removes the one network call tied to voice synthesis, it doesn't affect the online features (search, chat, news, weather, messaging, streaming, downloads), which simply go unused if you don't invoke them.</p>
+          <p>After the initial Moonshine model download, enable full offline mode in settings. This removes the one network call tied to voice synthesis, it doesn't affect the online features (search, chat, news, weather, messaging, streaming, downloads), which simply go unused if you don't invoke them.</p>
         </div>
         <div class="right-card">
           <h3><svg viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="currentColor" stroke-width="1.2"/><path d="M8 7v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="11" r="0.8" fill="currentColor"/></svg>Audit network activity</h3>
@@ -509,15 +487,15 @@
         </div>
         <div class="provision-item">
           <h4>Jurisdiction</h4>
-          <p>Friday itself does not transmit or store your data on any server it operates. When you use an online feature, your request is sent directly to that feature's own provider (e.g. Groq, DuckDuckGo, your email/Discord/Telegram service), which may involve a cross-border transfer governed by that provider's own policy, not Friday's. This policy is published in English and is intended to meet the spirit of major privacy frameworks including GDPR.</p>
+          <p>Friday itself does not transmit or store your data on any server it operates. When you use an online feature, your request is sent directly to that feature's own provider (e.g. Groq, Gemini, etc, your email/Discord/Telegram service), which may involve a cross-border transfer governed by that provider's own policy, not Friday's. This policy is published in English and is intended to meet the spirit of major privacy frameworks including GDPR.</p>
         </div>
         <div class="provision-item">
           <h4>Open source verification</h4>
-          <p>We believe trust must be earned through transparency. Friday's source code is available for review on <a href="https://github.com/l5r431" target="_blank" rel="noopener">GitHub</a>. You're encouraged to audit the codebase, inspect network calls, or run it through any static analysis tool.</p>
+          <p>We believe trust must be earned through transparency. Friday's source code is not available for review because of sorce code duplication by others and i have built it from the ground up and i have to take the credibility for that.</p>
         </div>
         <div class="provision-item">
-          <h4>Torrent consent</h4>
-          <p>Asking Friday to download a file via torrent means your IP address is visible to that swarm and tracker for the duration of the transfer, a property of the BitTorrent protocol, not of Friday. See <a href="#torrent">Torrent Downloads &amp; Your Privacy</a> above for the full disclosure.</p>
+          <h4>Downloads consent</h4>
+          <p>Asking Friday to download a file via internet means you know the sorce of that file and friday or the developer will not know what you have downloaded.</p>
         </div>
         <div class="provision-item">
           <h4>Disclaimer &amp; liability</h4>
@@ -537,8 +515,8 @@
       <div class="dl-hero">
         <div class="dl-hero-text">
           <h3>Questions about this policy?</h3>
-          <p>If you have any questions about how Friday handles your data, want to report a privacy concern, or would like clarification on any point in this document, reach out directly. We respond to all privacy-related queries within 72 hours.</p>
-          <p class="tg-link"><a href="https://t.me/l5r431" target="_blank" rel="noopener">Telegram</a></p>
+          <p>If you have any questions about how Friday handles your data, want to report a privacy concern, send a crash report or would like clarification on any point in this document, reach out directly. We respond to all privacy-related queries within 72 hours.</p>
+          <p class="tg-link">See the <a href="about-me.html" target="_blank" rel="noopener">About Me</a> page for more ways to talk to me</p>
         </div>
         <a href="mailto:contact@fridaycore.win" class="dl-btn">Contact Us</a>
       </div>
