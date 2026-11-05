@@ -86,7 +86,7 @@
         </div>
         <div class="req-card">
           <h4>Free disk space</h4>
-          <p>The Installation of Friday needs atleast 1.5GB of free space (Friday files + Ollama).</p>
+          <p>Friday needs at least 1.5 GB of free space, plus about 1 GB more if you tick the optional Ollama AI.</p>
         </div>
         <div class="req-card">
           <h4>Microphone</h4>
@@ -99,7 +99,7 @@
       </div>
       <div class="status-row">
         <div class="status-badge"><div class="status-dot on"></div> Speech &amp; voice run offline</div>
-        <div class="status-badge"><div class="status-dot ring"></div> Internet only for optional features</div>
+        <div class="status-badge"><div class="status-dot ring"></div> Internet only for online install, updates and optional features</div>
         <div class="status-badge"><div class="status-dot ring"></div> Microphone permission required</div>
       </div>
     </div>
@@ -110,14 +110,14 @@
     <div id="step1">
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 01</div>
-        <h2>Download the installer</h2>
-        <p>Grab the latest official Friday release directly from GitHub Releases and the Download Page.</p>
+        <h2>Download Friday</h2>
+        <p>Pick <strong>Online</strong> (1 file) or <strong>Offline</strong> (3 files). Both give you the same Friday.</p>
       </div>
 
       <div class="dl-hero reveal">
         <div class="dl-hero-text">
-          <h3>Friday-Setup.exe</h3>
-          <p>Download the Friday Installer by using the button below or visiting the download page.</p>
+          <h3>Friday Downloads</h3>
+          <p>Open the download page for the installer, the Voice Pack and the Models Pack.</p>
         </div>
         <a href="download.html" target="_blank" rel="noopener noreferrer" class="dl-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -128,16 +128,40 @@
       <div class="step-card reveal">
         <div class="step-card-header">
           <div class="step-num-badge">01</div>
-          <h3>Finding the right file on GitHub</h3>
+          <h3>Which download do I need?</h3>
           <div class="step-tag">Download</div>
         </div>
         <div class="step-card-body">
-          <p>Click the button above or go to the <strong>GitHub Releases page or the Download Page</strong>. Under the latest release, look for the <strong>Assets</strong> section and click <code>Friday-Setup.exe</code> to download it.</p>
+          <p>Friday is split in <strong>3 files</strong> so the download is easier on your internet:</p>
+          <div class="startup-steps">
+            <div class="startup-step">
+              <div class="startup-step-num">1</div>
+              <div class="startup-step-text"><strong>Installer</strong> <code>Friday-Setup-1.0.0.exe</code>, the Friday app and the setup wizard. Always needed.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">2</div>
+              <div class="startup-step-text"><strong>Voice Pack</strong> <code>Friday-Voice-1.zip</code>, Friday's speaking voice and the sounds and images it uses.</div>
+            </div>
+            <div class="startup-step">
+              <div class="startup-step-num">3</div>
+              <div class="startup-step-text"><strong>Models Pack</strong> <code>Friday-Models-1.zip</code>, the models that let Friday hear you and understand what you mean.</div>
+            </div>
+          </div>
+          <p>Now choose how to install:</p>
+          <div class="callout callout-tip">
+            <div><strong>Online install (easiest):</strong> download <strong>only the Installer</strong> and run it. During setup it downloads the Voice Pack and Models Pack for you. Needs internet while installing.</div>
+          </div>
           <div class="callout callout-info">
-            <div>Always download Friday from the official GitHub Releases page and My Website. Third-party mirrors or file-sharing sites may serve outdated or tampered builds.</div>
+            <div><strong>Offline install:</strong> download <strong>all 3 files</strong> and put them <strong>in the same folder</strong>. Run the Installer. It finds the two zip files beside it and installs from them, with no downloading. Best for slow or unstable internet, many PCs, or a PC with no internet (download on another PC and carry the files on a USB stick).</div>
           </div>
           <div class="callout callout-warn">
-            <div><strong>Browser warning:</strong> Your browser may show <em>"This file type may be harmful."</em> This is standard for any unsigned installer. Click <strong>Keep</strong> or <strong>Download anyway</strong>, Friday contains no malware. See Troubleshooting if Windows Defender or antivirus flags it.</div>
+            <div><strong>Do not unzip</strong> the two <code>.zip</code> files and <strong>do not move them</strong> to a different folder than the Installer. Keep the original names. A browser adding "(1)" to a name is fine.</div>
+          </div>
+          <div class="callout callout-info">
+            <div>Always download Friday from the official <a href="download.html">Download page</a> or the GitHub Releases page. Third-party mirrors or file-sharing sites may serve outdated or tampered builds.</div>
+          </div>
+          <div class="callout callout-warn">
+            <div><strong>Browser warning:</strong> Your browser may show <em>"This file type may be harmful."</em> This is standard for any unsigned installer. Click <strong>Keep</strong> or <strong>Download anyway</strong>. See Troubleshooting if Windows Defender or antivirus flags it.</div>
           </div>
         </div>
       </div>
@@ -150,7 +174,7 @@
       <div class="sec-header reveal">
         <div class="sec-eyebrow">Step 02</div>
         <h2>Run the installer</h2>
-        <p>Double-click the downloaded .exe and follow the short Setup wizard.</p>
+        <p>Double-click the Installer and follow the short Setup wizard. The steps are the same for online and offline.</p>
       </div>
 
       <div class="step-card reveal">
@@ -160,12 +184,18 @@
           <div class="step-tag">Install</div>
         </div>
         <div class="step-card-body">
-          <p>Double-click <code>Friday-Setup.exe</code>. The Setup wizard unpacks the frozen application  files and Ollama Offline model into a folder of your choosing, and creates Start Menu shortcuts.</p>
+          <p>Double-click <code>Friday-Setup-1.0.0.exe</code>. The wizard installs Friday into a folder of your choosing, installs the Voice Pack and Models Pack (from the files beside it if you chose offline, or by downloading them if you chose online), and creates Start Menu shortcuts.</p>
+          <div class="callout callout-tip">
+            <div><strong>Optional offline AI:</strong> the wizard has a checkbox to install <strong>Ollama</strong> and a small AI model so Friday can chat with no internet. It is about a 1 GB download and needs internet, even in an offline install. Untick it to skip. If you already have it, it is skipped automatically.</div>
+          </div>
+          <div class="callout callout-info">
+            <div><strong>Online install interrupted?</strong> Run the Installer again. Finished downloads are kept and unfinished ones resume.</div>
+          </div>
           <div class="callout callout-warn">
             <div><strong>Windows SmartScreen:</strong> You may see a blue dialog, <em>"Windows protected your PC."</em> This appears because the installer  isn't signed with a commercial certificate. Click <strong>"More info"</strong> → <strong>"Run anyway"</strong>. You'll only see this once.</div>
           </div>
           <div class="callout callout-tip">
-            <div><strong>Recommended install path:</strong> Install to <code>C:\Users\YourName\AppData\Local\Friday</code> or <code>C:\Users\YourName\Documents\Friday</code>. Avoid <code>C:\Program Files</code> unless you run as admin, Friday's runtime files (config, TTS cache) live alongside the executable.</div>
+            <div><strong>Recommended install path:</strong> Install to <code>C:\Users\YourName\AppData\Local\Friday</code> or <code>C:\Users\YourName\Documents\Friday</code>. Avoid <code>C:\Program Files</code>, because Friday installs for your own user account and does not need admin rights.</div>
           </div>
           <p>Once the wizard finishes, Friday is ready, no additional setup, no dependencies to install, no configuration files to edit by hand.</p>
         </div>
@@ -181,9 +211,9 @@
           <p>The installer unpacks everything Friday needs to run:</p>
           <div class="callout callout-info">
             <div>
-              <strong>Friday.exe</strong>, the frozen application itself.<br><br>
-              <strong>Moonshine speech model</strong>, the offline recognition engine that hears your wake word, commands, and dictation entirely on-device.<br><br>
-              <strong>Piper voice model + TTS cache</strong>, the offline text-to-speech engine Friday speaks with, plus a cache folder that fills up over time for instant playback of repeated phrases.<br><br>
+              <strong>Friday.exe</strong>, the application itself, plus <strong>FridayUpdater.exe</strong> which checks for updates.<br><br>
+              <strong>Moonshine speech model</strong> (from the Models Pack), the offline recognition engine that hears your wake word, commands, and dictation entirely on-device.<br><br>
+              <strong>Piper voice model + TTS cache</strong> (voice from the Voice Pack), the offline text-to-speech engine Friday speaks with, plus a cache folder that fills up over time for instant playback of repeated phrases.<br><br>
               <strong>Config &amp; secrets files</strong>, written to <code>%APPDATA%\Friday</code> on first run, and DPAPI-encrypted so they're unreadable outside your own Windows login.
             </div>
           </div>
@@ -517,10 +547,39 @@
           <h3>Friday crashes on startup</h3>
         </div>
         <div class="step-card-body">
-          <p>A crash on launch usually means a missing or corrupted file inside the install folder, or the installer didn't complete successfully, occasionally the case when a PyInstaller one-file build's temp extraction gets interrupted by another process (antivirus included).</p>
+          <p>A crash on launch usually means a missing or corrupted file inside the install folder, or the installer didn't complete successfully, occasionally the case when antivirus interrupts the install or the data packs did not finish installing.</p>
           <div class="callout callout-warn">
-            <div>Re-download <code>Friday-Setup.exe</code> from the <a href="download.html" target="_blank" rel="noopener">GitHub Releases page</a>and the <a href="download.html" target="_blank" rel="noopener">Downloads page</a> and run it again. The original download may have been interrupted or corrupted mid-transfer.</div>
+            <div>Run <code>Friday-Setup-1.0.0.exe</code> again. If it still fails, re-download it from the <a href="download.html" target="_blank" rel="noopener">Download page</a>. The original download may have been interrupted or corrupted mid-transfer.</div>
           </div>
+        </div>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card-header">
+          <div class="step-num-badge">!</div>
+          <h3>Offline install says it is downloading the data, or fails</h3>
+        </div>
+        <div class="step-card-body">
+          <p>The Installer could not find the two zip files beside it, or they are incomplete.</p>
+          <div class="callout callout-tip">
+            <div>
+              1. Put <strong>Friday-Setup-1.0.0.exe</strong>, <strong>Friday-Voice-1.zip</strong> and <strong>Friday-Models-1.zip</strong> <strong>in the same folder</strong>.<br><br>
+              2. Do not unzip them or rename them. The file names must still contain <code>Voice</code> and <code>Models</code>.<br><br>
+              3. If a zip will not install, it was probably cut short. Delete it and download it again.<br><br>
+              4. Do not run the Installer from inside a zip or from a temporary folder. Copy everything to a normal folder first.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-card reveal">
+        <div class="step-card-header">
+          <div class="step-num-badge">!</div>
+          <h3>Online install stops or the data download fails</h3>
+        </div>
+        <div class="step-card-body">
+          <p>Run the Installer again. Finished parts are kept, and the unfinished part resumes. If your connection keeps dropping, switch to the offline install: download the Voice Pack and Models Pack on a better connection and put them beside the Installer.</p>
+          <p>Friday also repairs itself: if the data is missing when you start it, it offers to download what is missing.</p>
         </div>
       </div>
 
@@ -586,6 +645,16 @@
       </div>
 
       <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Online or offline install, which should I pick?
+            <div class="faq-arrow">▾</div>
+          </button>
+          <div class="faq-a">
+            <p><strong>Online</strong>: download only the Installer, it fetches the Voice and Models packs while installing. <strong>Offline</strong>: download all 3 files into one folder, then run the Installer, no internet needed for the install. The result is identical. Offline is best for slow or unstable internet, installing on several PCs, or a PC with no connection.</p>
+          </div>
+        </div>
+
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">
             Does Friday work without the internet?
@@ -662,7 +731,7 @@
             <div class="faq-arrow">▾</div>
           </button>
           <div class="faq-a">
-            <p>Download the new <code>Friday-Setup.exe</code> from the <a href="https://github.com/l5r431/Jarvis-Voice-Assistant/releases" target="_blank" rel="noopener">GitHub Releases page</a> and run it, it updates the files in place. Because Friday tracks what shipped last time separately from what you've changed, every command or setting you've customised survives the update automatically; only genuinely new defaults get added.</p>
+            <p>Friday checks for updates once a day through its small updater and asks <strong>Yes or No</strong> before changing anything. If you say Yes, it downloads and installs the update for you. If a new version only changes the app, the large Voice and Models packs are not downloaded again. You can also download the new Installer from the <a href="download.html">Download page</a> and run it, it updates the files in place. Because Friday tracks what shipped last time separately from what you've changed, every command or setting you've customised survives the update automatically; only genuinely new defaults get added.</p>
           </div>
         </div>
 
@@ -717,9 +786,9 @@
     <!-- BOTTOM CTA -->
     <div class="bottom-cta reveal">
       <h3>Ready to get started?</h3>
-      <p>Download Friday from GitHub, free, offline at her core, and set up in under five minutes.</p>
+      <p>Download Friday, free and offline at her core. Online install needs one file, offline install needs three.</p>
       <div class="cta-btns">
-        <a href="download.html" target="_blank" rel="noopener noreferrer" class="btn-primary">↓ Download on GitHub</a>
+        <a href="download.html" target="_blank" rel="noopener noreferrer" class="btn-primary">↓ Go to Downloads</a>
         <a href="privacy.html" class="btn-ghost">Read privacy policy →</a>
       </div>
     </div>

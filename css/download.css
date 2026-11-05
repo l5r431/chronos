@@ -762,7 +762,7 @@
     padding-left: 20px;
   }
 
-  .cmd-ai::before { content: 'CHRONOS → '; color: rgba(79,195,247,0.5); }
+  .cmd-ai::before { content: 'FRIDAY → '; color: rgba(79,195,247,0.5); }
 
   .cmd-line:nth-child(1) { animation-delay: 0.3s; }
   .cmd-line:nth-child(2) { animation-delay: 0.7s; }
@@ -1094,4 +1094,121 @@
     border-radius: 50%;
     border: 1px solid #4caf50;
     animation: pulse-ring 1.5s ease-out infinite;
+  }
+
+  /* ─── INSTALL OPTIONS ─── */
+  .mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .mode-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+  }
+
+  .mode-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-dim));
+  }
+
+  .mode-card-alt::before { background: linear-gradient(90deg, var(--cyan), var(--gold-dim)); }
+
+  .mode-tag {
+    align-self: flex-start;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    background: var(--gold);
+    padding: 3px 10px;
+  }
+
+  .mode-tag-alt { background: var(--cyan); }
+
+  .mode-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .mode-sub { color: var(--text); font-size: 1rem; line-height: 1.5; }
+  .mode-sub strong { color: var(--gold); }
+
+  .mode-steps {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .mode-steps strong { color: var(--text); font-weight: 600; }
+
+  .mode-best {
+    border-left: 3px solid var(--gold-dim);
+    padding: 8px 12px;
+    background: rgba(201,168,76,0.05);
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .mode-best strong { color: var(--gold); }
+
+  .mode-btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+  .mode-card > .mode-btn { margin-top: auto; align-self: flex-start; }
+  .mode-btn { padding: 12px 22px; font-size: 0.72rem; letter-spacing: 2px; }
+
+  .install-notes {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note-line {
+    border: 1px solid var(--border);
+    background: var(--bg2);
+    padding: 12px 16px;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
+  .note-line strong { color: var(--text); }
+
+  code {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.82em;
+    color: var(--gold);
+    background: rgba(201,168,76,0.08);
+    padding: 1px 6px;
+  }
+
+  @media (max-width: 860px) {
+    .mode-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    .mode-card { padding: 24px 18px; }
+    .mode-btns { flex-direction: column; }
+    .mode-btn { width: 100%; justify-content: center; }
   }

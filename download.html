@@ -76,12 +76,13 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Chron<span>o</span>s</div>
+  <div class="nav-logo">Fri<span>day</span></div>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">HOME</a></li>
+    <li><a href="#install">INSTALL</a></li>
     <li><a href="about-me.html">About me</a></li>
     <li><a href="How-to-use.html">User Guide</a></li>
     <li><a href="privacy.html">privacy</a></li>
@@ -98,10 +99,11 @@
     </h1>
     <p class="hero-sub">Control your PC with just your voice. No cloud, no surveillance, blazing-fast local AI that sounds exactly like Stark's right-hand system.</p>
     <div class="cta-row">
-      <a href="https://downloads.fridaycore.win/Friday-Setup-1.0.0.exe" class="btn-primary">⬇ Download EXE</a>
-      <a href="https://downloads.fridaycore.win/Friday-Voice-1.zip" class="btn-secondary">Download Voice Model</a>
-      <a href="https://downloads.fridaycore.win/Friday-Models-1.zip" class="btn-secondary">Download Data Pack</a>
+      <a href="https://downloads.fridaycore.win/Friday-Setup-1.0.0.exe" class="btn-primary">⬇ 1 · Installer</a>
+      <a href="https://downloads.fridaycore.win/Friday-Voice-1.zip" class="btn-secondary">⬇ 2 · Voice Pack</a>
+      <a href="https://downloads.fridaycore.win/Friday-Models-1.zip" class="btn-secondary">⬇ 3 · Models Pack</a>
     </div><br>
+    <p class="refer"><strong>Not sure what to download?</strong> Online install: just file 1. Offline install: all 3 files. <a href="#install" class="spanuser">See which one fits you</a>.</p><br>
     <p class="refer">Refer to the <a href="How-to-use.html" class="spanuser">User Guide</a> For Commands and How to Use</p>
   </div>
 
@@ -242,6 +244,95 @@
     <div class="stat-label">App Commands</div>
   </div>
 </div>
+
+<!-- INSTALL OPTIONS -->
+<section id="install" style="padding-top:60px;">
+  <div class="items">
+    <div class="section-label">Choose Your Install</div>
+    <h2 class="section-title">Online or <span class="g">Offline</span> Install</h2>
+    <p class="section-desc">Friday comes in 3 downloads: the installer, the Voice Pack and the Models Pack. Pick the way that suits your internet. Both give you the exact same Friday.</p>
+  </div>
+
+  <div class="mode-grid">
+    <div class="mode-card">
+      <div class="mode-tag">Easiest</div>
+      <h3 class="mode-title">Online Install</h3>
+      <p class="mode-sub">Download <strong>1 file</strong>. The installer fetches the rest for you.</p>
+      <ol class="mode-steps">
+        <li>Download <strong>1 · Installer</strong> (<code>Friday-Setup-1.0.0.exe</code>).</li>
+        <li>Double-click it and follow the wizard.</li>
+        <li>When the wizard reaches the data step, it downloads the Voice Pack and Models Pack by itself. A progress window shows you how far it is.</li>
+        <li>If your internet drops, run the installer again. Downloads resume where they stopped.</li>
+        <li>Open Friday from the Start Menu. Done.</li>
+      </ol>
+      <div class="mode-best"><strong>Choose this if:</strong> your internet is stable and you want the simplest path.</div>
+      <a href="https://downloads.fridaycore.win/Friday-Setup-1.0.0.exe" class="btn-primary mode-btn">⬇ Download Installer</a>
+    </div>
+
+    <div class="mode-card mode-card-alt">
+      <div class="mode-tag mode-tag-alt">No internet needed to install</div>
+      <h3 class="mode-title">Offline Install</h3>
+      <p class="mode-sub">Download <strong>all 3 files</strong>, put them together, run the installer.</p>
+      <ol class="mode-steps">
+        <li>Download all three: <strong>1 · Installer</strong>, <strong>2 · Voice Pack</strong> and <strong>3 · Models Pack</strong>.</li>
+        <li>Put them <strong>in the same folder</strong> (for example, your Downloads folder, or a USB stick).</li>
+        <li><strong>Do not unzip</strong> the two <code>.zip</code> files. Leave them as they are.</li>
+        <li>Double-click the installer. It spots the two zip files next to it and installs everything from them, with no downloading.</li>
+        <li>Open Friday from the Start Menu. Done.</li>
+      </ol>
+      <div class="mode-best"><strong>Choose this if:</strong> your connection is slow or keeps dropping, you want to install on several PCs, or the PC you are installing on has no internet. Download on another PC and carry the 3 files over.</div>
+      <div class="mode-btns">
+        <a href="https://downloads.fridaycore.win/Friday-Setup-1.0.0.exe" class="btn-primary mode-btn">⬇ 1 · Installer</a>
+        <a href="https://downloads.fridaycore.win/Friday-Voice-1.zip" class="btn-secondary mode-btn">⬇ 2 · Voice Pack</a>
+        <a href="https://downloads.fridaycore.win/Friday-Models-1.zip" class="btn-secondary mode-btn">⬇ 3 · Models Pack</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="items" style="margin-top:50px;">
+    <div class="section-label">What Is In Each File</div>
+    <h2 class="section-title">The <span class="g">3 Downloads</span></h2>
+  </div>
+  <div class="req-grid">
+    <div class="req-item">
+      <div class="req-icon">⚙️</div>
+      <div>
+        <div class="req-name">1 · Installer</div>
+        <div class="req-val"><code>Friday-Setup-1.0.0.exe</code><br>The Friday app itself, the updater and the setup wizard. Always needed.</div>
+      </div>
+    </div>
+    <div class="req-item">
+      <div class="req-icon">🔊</div>
+      <div>
+        <div class="req-name">2 · Voice Pack</div>
+        <div class="req-val"><code>Friday-Voice-1.zip</code><br>Friday's speaking voice and the sounds and images it uses.</div>
+      </div>
+    </div>
+    <div class="req-item">
+      <div class="req-icon">🧠</div>
+      <div>
+        <div class="req-name">3 · Models Pack</div>
+        <div class="req-val"><code>Friday-Models-1.zip</code><br>The models that let Friday hear you and understand what you mean.</div>
+      </div>
+    </div>
+    <div class="req-item">
+      <div class="req-icon">🔄</div>
+      <div>
+        <div class="req-name">Updates</div>
+        <div class="req-val">Friday checks for updates once a day and asks you <strong>Yes or No</strong> first. When only the app changes, you do not download the packs again.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="install-notes">
+    <div class="note-line"><strong>Windows warning?</strong> If Windows says <em>"Windows protected your PC"</em>, click <strong>More info</strong>, then <strong>Run anyway</strong>. This shows because the installer is not signed with a paid certificate.</div>
+    <div class="note-line"><strong>Optional Ollama AI:</strong> the wizard has a checkbox to install Ollama and a small offline AI model, so Friday can chat without internet. This part is a download of about 1 GB and <strong>needs internet</strong>, even in an offline install. Untick the box to skip it.</div>
+    <div class="note-line"><strong>Only some files in the folder?</strong> No problem. Whatever pack is missing is downloaded for you during the install.</div>
+    <div class="note-line"><strong>No admin needed.</strong> Friday installs for your user account only. Windows may ask for permission once if the Visual C++ runtime or the Everything search service must be installed.</div>
+  </div>
+</section>
+
+<div class="divider"></div>
 
 <!-- FEATURES -->
 <section id="features" style="padding-top:60px;">
@@ -534,7 +625,7 @@
       <div class="req-icon">💾</div>
       <div>
         <div class="req-name">Storage</div>
-        <div class="req-val">~400MB for app + voice model (downloaded on first run)</div>
+        <div class="req-val">About 1.5 GB free for the app and its voice and models packs (more if you tick the optional Ollama AI)</div>
       </div>
     </div>
     <div class="req-item">
@@ -548,14 +639,14 @@
       <div class="req-icon">🌐</div>
       <div>
         <div class="req-name">Internet</div>
-        <div class="req-val">Required once on first launch to download models. Fully offline after.</div>
+        <div class="req-val">Only needed for the online install, updates and online features. Offline install needs none.</div>
       </div>
     </div>
     <div class="req-item">
       <div class="req-icon">⚙️</div>
       <div>
         <div class="req-name">Dependencies</div>
-        <div class="req-val">Python 3.x included in installer. No manual setup required.</div>
+        <div class="req-val">Everything is included. No Python, no manual setup.</div>
       </div>
     </div>
   </div>
@@ -566,19 +657,19 @@
 <!-- DOWNLOAD -->
 <section id="download">
   <div class="download-box">
-    <div class="download-version">VERSION 2.0.0 · STABLE RELEASE</div>
+    <div class="download-version">VERSION 1.0.0 · STABLE RELEASE</div>
     <div class="download-title">GET FRIDAY</div>
-    <p class="download-sub">Download the installer for Windows 10 & 11 and the Data Packs. One click setup, no technical knowledge required. Your Jarvis awaits.</p>
+    <p class="download-sub">Online install: download the installer only. Offline install: download all 3 files and keep them in one folder. <a href="#install" style="color:var(--gold)">Help me choose</a>.</p>
     <a href="https://downloads.fridaycore.win/Friday-Setup-1.0.0.exe" class="download-btn">
-      ⬇ &nbsp;DOWNLOAD FRIDAY EXE
+      ⬇ &nbsp;1 · INSTALLER
     </a>
-    <a href="https://downloads.fridaycore.win/Friday-Voice-1.zip" class="btn-secondary">Download Voice Model</a>
-      <a href="https://downloads.fridaycore.win/Friday-Models-1.zip" class="btn-secondary">Download Data Pack</a>
+    <a href="https://downloads.fridaycore.win/Friday-Voice-1.zip" class="btn-secondary">⬇ 2 · Voice Pack</a>
+    <a href="https://downloads.fridaycore.win/Friday-Models-1.zip" class="btn-secondary">⬇ 3 · Models Pack</a>
     <div class="download-meta">
       <div class="dmeta">Free · No Subscription</div>
       <div class="dmeta">Windows 10 / 11 Only</div>
-      <div class="dmeta">~200MB Executable</div>
-      <div class="dmeta">Voices auto-generated on first run</div>
+      <div class="dmeta">Online install: file 1 only</div>
+      <div class="dmeta">Offline install: all 3 files, same folder</div>
     </div>
   </div>
 </section>
@@ -589,7 +680,7 @@
   <div class="footer-copy">© 2026 Friday Voice AI · Built for Iron Men · By l5r431·</div>
   <ul class="footer-links">
     <li><a href="privacy.html">Docs</a></li>
-    <li><a href="support@fridaycore.win">Support</a></li>
+    <li><a href="mailto:support@fridaycore.win">Support</a></li>
     <li><a href="privacy.html">Privacy</a></li>
     <li><a href="https://github.com/l5r431">GitHub</a></li>
   </ul>
