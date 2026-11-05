@@ -63,6 +63,7 @@
       <li><a href="#step4">Step 4 : Auto-start</a></li>
       <li><a href="#step5">Step 5 : Start talking</a></li>
       <li><a href="#customise">Customising commands</a></li>
+      <li><a href="#accounts">Accounts &amp; API keys</a></li>
       <li><a href="#commands">Voice commands</a></li>
       <li><a href="#tips">Tips &amp; best practices</a></li>
       <li><a href="#troubleshoot">Troubleshooting</a></li>
@@ -417,6 +418,284 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ACCOUNTS & API KEYS -->
+    <div id="accounts">
+      <div class="sec-header reveal">
+        <div class="sec-eyebrow">Optional setup</div>
+        <h2>Accounts &amp; API keys</h2>
+        <p>Friday works out of the box for apps, windows, music, files and system control. Online features need a key or an account. Everything below has a free option, and you only set up what you want.</p>
+      </div>
+
+      <div class="acc-table-wrap"><table class="acc-table"><thead><tr><th>Feature</th><th>What you need</th><th>Cost</th></tr></thead><tbody><tr><td>AI chat and questions</td><td>At least <strong>one</strong> of Groq, Gemini, Cloudflare or OpenRouter, or Ollama offline</td><td>Free</td></tr><tr><td>Morning briefing and news</td><td>Nothing. Optional GNews and Currents keys add more sources</td><td>Free</td></tr><tr><td>Weather and maps</td><td>Nothing</td><td>Free</td></tr><tr><td>Check email</td><td>Gmail app password</td><td>Free</td></tr><tr><td>Read calendar</td><td>Secret calendar link</td><td>Free</td></tr><tr><td>Create calendar events</td><td>Google Cloud OAuth client</td><td>Free</td></tr><tr><td>Discord</td><td>Bot token and channel IDs</td><td>Free</td></tr><tr><td>Telegram</td><td>API ID, API hash and phone number</td><td>Free</td></tr><tr><td>WhatsApp</td><td>Scan a QR code with your phone</td><td>Free</td></tr></tbody></table></div>
+
+      <div class="callout callout-tip reveal" style="margin-top:1.5rem">
+        <div><strong>Where to type them:</strong> open Settings by saying <strong>settings</strong> or clicking the Friday tray icon. Each key has its own page: <strong>AI &amp; Memory</strong>, <strong>News &amp; Weather</strong> and <strong>Communications</strong>. Click <strong>SAVE &amp; APPLY</strong> after each change.</div>
+      </div>
+      <div class="callout callout-info reveal" style="margin-top:1rem">
+        <div><strong>Your keys stay on your PC.</strong> Friday encrypts them with your Windows login, so they cannot be read from another Windows account. Never share a key or post it online. If one leaks, delete it on the provider's site and make a new one. Free plan limits belong to each provider and can change.</div>
+      </div>
+
+      <h3 class="sub-h reveal">AI chat keys</h3>
+      <p class="sub-p reveal">Friday tries Groq first, then Gemini, Cloudflare, OpenRouter and finally Ollama. If one is out of free quota it moves to the next. Set up one, or all of them for the best backup.</p>
+      <div class="step-card reveal" id="k-groq">
+        <div class="step-card-header">
+          <div class="step-num-badge">G1</div>
+          <h3>Groq key (AI chat with live web search)</h3>
+          <div class="step-tag">AI · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Groq is first in Friday's AI chain and the only one that can search the live web. Free account, no credit card.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://console.groq.com" target="_blank" rel="noopener">https://console.groq.com</a> and sign up (Google, GitHub or email).</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open <a href="https://console.groq.com/keys" target="_blank" rel="noopener">API Keys</a>.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Click <strong>Create API Key</strong>, give it a name (for example <em>Friday</em>) and create it.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Copy the key now. It starts with <code>gsk_</code> and is shown only once.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">Open Friday's Settings (say <strong>settings</strong> or click the Friday tray icon), go to <strong>AI &amp; Memory</strong>, paste it in <strong>Groq API key</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-gemini">
+        <div class="step-card-header">
+          <div class="step-num-badge">G2</div>
+          <h3>Gemini key (Google AI)</h3>
+          <div class="step-tag">AI · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Second in the chain. Free key from Google AI Studio, no credit card.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">https://aistudio.google.com/apikey</a> and sign in with a Google account.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Click <strong>Create API key</strong>. Pick an existing Google Cloud project or let it create one.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Copy the key.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">In Friday: Settings, <strong>AI &amp; Memory</strong>, paste it in <strong>Gemini API key</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-cf">
+        <div class="step-card-header">
+          <div class="step-num-badge">G3</div>
+          <h3>Cloudflare Workers AI (token and Account ID)</h3>
+          <div class="step-tag">AI · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Third in the chain. This one needs <strong>two</strong> values: an API token and your Account ID.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Create a free account at <a href="https://dash.cloudflare.com/sign-up" target="_blank" rel="noopener">https://dash.cloudflare.com/sign-up</a> and log in.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open the <a href="https://dash.cloudflare.com/?to=/:account/ai/workers-ai" target="_blank" rel="noopener">Workers AI</a> page in the dashboard (left menu: <strong>AI</strong>, then <strong>Workers AI</strong>).</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Click <strong>Use REST API</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Click <strong>Create a Workers AI API Token</strong>, check the prefilled details, click <strong>Create API Token</strong>, then <strong>Copy API Token</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">On the same page, copy the <strong>Account ID</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">6</div><div class="startup-step-text">In Friday: Settings, <strong>AI &amp; Memory</strong>. Paste the token in <strong>Cloudflare API key</strong> and the ID in <strong>Cloudflare account ID</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          <div class="callout callout-warn"><div>Use an <strong>API token</strong>, not the old "Global API Key". If you make a custom token instead of using the template, give it both <strong>Workers AI - Read</strong> and <strong>Workers AI - Edit</strong> permissions. Docs: <a href="https://developers.cloudflare.com/workers-ai/get-started/rest-api/" target="_blank" rel="noopener">https://developers.cloudflare.com/workers-ai/get-started/rest-api/</a>.</div></div>
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-or">
+        <div class="step-card-header">
+          <div class="step-num-badge">G4</div>
+          <h3>OpenRouter key</h3>
+          <div class="step-tag">AI · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Fourth in the chain. It routes to whichever free models are live, so it keeps working when a single free model disappears.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://openrouter.ai" target="_blank" rel="noopener">https://openrouter.ai</a> and sign up.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open <a href="https://openrouter.ai/keys" target="_blank" rel="noopener">Keys</a>.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Click <strong>Create Key</strong>, name it, and copy it.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">In Friday: Settings, <strong>AI &amp; Memory</strong>, paste it in <strong>OpenRouter API key</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-ollama">
+        <div class="step-card-header">
+          <div class="step-num-badge">G5</div>
+          <h3>Ollama (offline AI, no key)</h3>
+          <div class="step-tag">AI · Offline</div>
+        </div>
+        <div class="step-card-body">
+          <p>The last fallback. It runs on your PC, so Friday can still chat with no internet. The Friday installer can do this for you if you tick the Ollama box.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Download Ollama from <a href="https://ollama.com/download" target="_blank" rel="noopener">https://ollama.com/download</a> and install it.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open <strong>Command Prompt</strong> and run: <code>ollama pull gemma3:1b</code> (about 1 GB).</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Make sure Ollama is running (its icon is in the system tray).</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Friday uses it automatically. The default address is <code>http://localhost:11434</code> and the default model is <code>gemma3:1b</code>. Both can be changed in Settings, <strong>AI &amp; Memory</strong>.</div></div>
+</div>
+          <div class="callout callout-tip"><div><strong>Check everything at once:</strong> open the <strong>Chat</strong> tab and click <strong>TEST PROVIDERS</strong>. It shows which AI services work and the exact error for any that do not. You only need <strong>one</strong> working service, but more means a backup when one hits its daily free limit.</div></div>
+        </div>
+      </div>
+
+
+      <h3 class="sub-h reveal">News</h3>
+      <div class="step-card reveal" id="k-news">
+        <div class="step-card-header">
+          <div class="step-num-badge">N1</div>
+          <h3>GNews and Currents keys (more news sources)</h3>
+          <div class="step-tag">News · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Optional. Friday already reads news from RSS feeds with no key. These two add more outlets to your briefing and news. Keep any one, or both.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text"><strong>GNews:</strong> sign up at <a href="https://gnews.io/register" target="_blank" rel="noopener">https://gnews.io/register</a>, verify your email, then copy the key from <a href="https://gnews.io/dashboard" target="_blank" rel="noopener">your dashboard</a>. Free plan: 100 requests a day, 10 articles a request.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text"><strong>Currents:</strong> sign up at <a href="https://currentsapi.services/en/register" target="_blank" rel="noopener">https://currentsapi.services/en/register</a>, log in, then copy the key from your <a href="https://currentsapi.services/en/profile" target="_blank" rel="noopener">profile page</a>. Free plan: 250 requests a day.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">In Friday: Settings, <strong>News &amp; Weather</strong>. Paste them in <strong>GNews API key</strong> and <strong>Currents API key</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Optional: if Friday picks the wrong country for your news, type your two-letter country code (for example <code>UG</code>, <code>US</code>, <code>GB</code>) in <strong>GNews country</strong>.</div></div>
+</div>
+          <div class="callout callout-info"><div>Free plan limits are set by the providers and can change. Weather needs <strong>no key</strong> at all.</div></div>
+        </div>
+      </div>
+
+
+      <h3 class="sub-h reveal">Email and calendar</h3>
+      <div class="step-card reveal" id="k-gmail">
+        <div class="step-card-header">
+          <div class="step-num-badge">E1</div>
+          <h3>Gmail (check my email)</h3>
+          <div class="step-tag">Email · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Friday reads unread mail with a Google <strong>app password</strong>, not your real password. You can add up to 3 Gmail accounts.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Turn on <strong>2-Step Verification</strong> for the account at <a href="https://myaccount.google.com/security" target="_blank" rel="noopener">myaccount.google.com/security</a>. App passwords do not exist without it.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open <a href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener">https://myaccount.google.com/apppasswords</a> and sign in.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Type a name (for example <em>Friday</em>) and click <strong>Create</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Copy the 16-character password Google shows. Spaces do not matter.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>, Gmail account 1. Fill in the <strong>email address</strong>, a <strong>label</strong> (for example <em>Personal</em>) and paste the <strong>app password</strong>. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">6</div><div class="startup-step-text">Repeat in slot 2 or 3 for more accounts.</div></div>
+</div>
+          <div class="callout callout-warn"><div>No app passwords option? Work or school accounts and accounts with Advanced Protection often have it disabled. A normal <code>@gmail.com</code> account works. Outlook email is not supported.</div></div>
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-cal">
+        <div class="step-card-header">
+          <div class="step-num-badge">C1</div>
+          <h3>Calendar, read only (secret link)</h3>
+          <div class="step-tag">Calendar · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>The simple way. Friday reads your events from a private calendar link. It cannot create events with this method. Works with Google, Outlook and iCloud, up to 3 calendars.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text"><strong>Google Calendar:</strong> open <a href="https://calendar.google.com" target="_blank" rel="noopener">calendar.google.com</a> on a computer. In the left list hover your calendar, click the three dots, <strong>Settings and sharing</strong>, then <strong>Integrate calendar</strong>, and copy <strong>Secret address in iCal format</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text"><strong>Outlook:</strong> Settings, Calendar, Shared calendars, <strong>Publish a calendar</strong>, choose the calendar and copy the <strong>ICS</strong> link (not the HTML link).</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text"><strong>iCloud:</strong> in Calendar, share the calendar as a <strong>Public Calendar</strong> and copy the link. A <code>webcal://</code> link is fine.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>, Calendar 1. Add a label and paste the link. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          <div class="callout callout-warn"><div>Treat the link like a password. Anyone who has it can see your calendar.</div></div>
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-calapi">
+        <div class="step-card-header">
+          <div class="step-num-badge">C2</div>
+          <h3>Calendar, read and create events (Google sign-in)</h3>
+          <div class="step-tag">Calendar · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Needed only if you want Friday to <strong>create</strong> events (<em>create a calendar event</em>). You make a free Google Cloud app once, then connect each account. It does not need billing.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://console.cloud.google.com/" target="_blank" rel="noopener">https://console.cloud.google.com/</a>, sign in and create a project (any name).</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Go to <strong>APIs &amp; Services</strong>, <strong>Library</strong>, search <strong>Google Calendar API</strong> and click <strong>Enable</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Open <strong>Google Auth platform</strong> (or <strong>OAuth consent screen</strong>). Choose <strong>External</strong>, add an app name and your email, and save. Leave it in <strong>Testing</strong>. Do not publish it.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Under <strong>Audience</strong> (or <strong>Test users</strong>), add the Gmail address of every account you will connect.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">Go to <strong>Google Auth platform</strong>, <strong>Clients</strong>, <strong>Create Client</strong>. Set <strong>Application type</strong> to <strong>Desktop app</strong> and click <strong>Create</strong>. Copy the <strong>Client ID</strong> and <strong>Client secret</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">6</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>. Paste them in the Google Calendar API fields and click <strong>SAVE &amp; APPLY</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">7</div><div class="startup-step-text">Add a label for account 1 and click <strong>CONNECT ACCOUNT 1</strong>. Your browser opens. Sign in and allow access. Friday keeps the token and renews it by itself.</div></div>
+</div>
+          <div class="callout callout-info"><div>Menu names in Google Cloud change from time to time. Google's guide: <a href="https://developers.google.com/workspace/guides/create-credentials" target="_blank" rel="noopener">https://developers.google.com/workspace/guides/create-credentials</a>. Friday asks only for permission to manage <strong>events</strong>, not to change your calendar settings.</div></div>
+        </div>
+      </div>
+
+
+      <h3 class="sub-h reveal">Messaging</h3>
+      <div class="step-card reveal" id="k-discord">
+        <div class="step-card-header">
+          <div class="step-num-badge">D1</div>
+          <h3>Discord (check discord)</h3>
+          <div class="step-tag">Messaging · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Friday reads new messages from channels you choose, using a <strong>bot</strong> you create. A bot only sees servers it has been invited to, and it cannot read your personal DMs.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://discord.com/developers/applications" target="_blank" rel="noopener">https://discord.com/developers/applications</a> and click <strong>New Application</strong>. Name it and create it.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Open the <strong>Bot</strong> tab. Click <strong>Reset Token</strong>, then <strong>Copy</strong>. Keep this token secret.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">On the same tab, under <strong>Privileged Gateway Intents</strong>, turn on <strong>Message Content Intent</strong> and save. Without it every message appears blank.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Open <strong>OAuth2</strong>, <strong>URL Generator</strong>. Tick the scope <strong>bot</strong>, then the permissions <strong>View Channels</strong> and <strong>Read Message History</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">Copy the generated URL, open it in your browser, pick your server (you need the Manage Server permission) and click <strong>Authorize</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">6</div><div class="startup-step-text">In Discord, open <strong>User Settings</strong>, <strong>Advanced</strong> and turn on <strong>Developer Mode</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">7</div><div class="startup-step-text">Right-click each channel you want watched and choose <strong>Copy Channel ID</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">8</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>, Discord. Paste the <strong>bot token</strong> and add each <strong>channel ID</strong> to the list. Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+</div>
+          
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-tg">
+        <div class="step-card-header">
+          <div class="step-num-badge">T1</div>
+          <h3>Telegram (read messages, send, and control Friday by chat)</h3>
+          <div class="step-tag">Messaging · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>Friday logs in as <strong>you</strong> (not a bot), so it can read your unread chats. For that you need a free Telegram API ID and hash.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">Go to <a href="https://my.telegram.org" target="_blank" rel="noopener">https://my.telegram.org</a> and log in with your phone number. Telegram sends a code to your Telegram app.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">Click <strong>API development tools</strong>. Fill in an <strong>App title</strong> and <strong>Short name</strong> (anything, for example <em>Friday</em>) and create the application.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Copy the <strong>api_id</strong> (a number) and the <strong>api_hash</strong> (long letters and numbers).</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>, Telegram. Enter the <strong>API ID</strong>, the <strong>API hash</strong> and your <strong>phone number with country code</strong> (for example <code>+256700000000</code>). Click <strong>SAVE &amp; APPLY</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">5</div><div class="startup-step-text">Click <strong>SEND LOGIN CODE</strong>. Telegram sends a code to your Telegram app. Type it in and click <strong>SUBMIT</strong>. If you use a two-step password, enter it when asked.</div></div>
+<div class="startup-step"><div class="startup-step-num">6</div><div class="startup-step-text">Done. You only log in once. Chat control and message reading share this one login.</div></div>
+</div>
+          <div class="callout callout-tip"><div><strong>Control Friday from your phone:</strong> with the Telegram bridge on, send a message to yourself in <strong>Saved Messages</strong> (for example <code>open chrome</code> or <code>what's the weather</code>). Friday does it and replies in the chat. Only change the bridge chat to someone else if you fully trust them, because they could then control your PC.</div></div>
+        </div>
+      </div>
+
+      <div class="step-card reveal" id="k-wa">
+        <div class="step-card-header">
+          <div class="step-num-badge">W1</div>
+          <h3>WhatsApp (read and send)</h3>
+          <div class="step-tag">Messaging · Free</div>
+        </div>
+        <div class="step-card-body">
+          <p>No key needed. You link Friday to your WhatsApp the same way you link WhatsApp Web, by scanning a QR code.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text">In Friday: Settings, <strong>Communications</strong>, <strong>WhatsApp Login</strong>. A QR code appears.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text">On your phone open WhatsApp. Android: tap the three dots, then <strong>Linked devices</strong>. iPhone: <strong>Settings</strong>, then <strong>Linked devices</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text">Tap <strong>Link a device</strong> and scan the QR code on your screen.</div></div>
+<div class="startup-step"><div class="startup-step-num">4</div><div class="startup-step-text">Friday shows as <strong>Friday</strong> in your linked devices. You can unlink it any time from the same panel or from your phone.</div></div>
+</div>
+          <div class="callout callout-info"><div>Reading a chat through Friday marks it as read, like opening it on your phone.</div></div>
+        </div>
+      </div>
+
+
+      <h3 class="sub-h reveal">Personal basics</h3>
+      <div class="step-card reveal" id="k-loc">
+        <div class="step-card-header">
+          <div class="step-num-badge">L1</div>
+          <h3>Your location, name and wake word (no account needed)</h3>
+          <div class="step-tag">Basics</div>
+        </div>
+        <div class="step-card-body">
+          <p>Quick settings that make weather, news, maps and greetings personal.</p>
+          <div class="startup-steps">
+<div class="startup-step"><div class="startup-step-num">1</div><div class="startup-step-text"><strong>Location:</strong> Friday finds you from your internet connection. If weather or maps pick the wrong place, open Settings, <strong>Overview</strong>, find the manual location box, type your city (or coordinates) and click <strong>SET</strong>.</div></div>
+<div class="startup-step"><div class="startup-step-num">2</div><div class="startup-step-text"><strong>How Friday addresses you:</strong> in Settings, <strong>General</strong>, use the <strong>How Friday addresses you</strong> box to set your name and choose <em>Sir</em> or <em>Madam</em>.</div></div>
+<div class="startup-step"><div class="startup-step-num">3</div><div class="startup-step-text"><strong>Wake words:</strong> Settings, <strong>Voice &amp; Wake</strong>, add the names you want Friday to answer to.</div></div>
+</div>
+          
+        </div>
+      </div>
+
     </div>
 
     <hr class="divider">

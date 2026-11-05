@@ -433,3 +433,22 @@ footer small{display:block;font-size:.77rem;color:var(--muted);margin-top:.5rem}
   .reveal{transition:none}
   .cmd-progress-bar.animating{transition:none}
 }
+
+
+/* ACCOUNTS & API KEYS */
+.startup-step-text a{color:var(--white);text-decoration:underline;word-break:break-word}
+.startup-step-text a:hover{opacity:.7}
+.startup-step-text strong{color:var(--text);font-weight:500}
+.sub-h{font-family:var(--disp);font-weight:800;font-size:1.25rem;color:var(--white);
+  letter-spacing:-.02em;margin:3rem 0 .6rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.sub-p{font-size:.93rem;color:var(--muted2);max-width:640px;margin-bottom:1.25rem;font-weight:300}
+.acc-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+.acc-table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:520px}
+.acc-table th{font-family:var(--disp);font-size:.64rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);text-align:left;padding:.75rem 1rem;
+  background:var(--bg2);border-bottom:1px solid var(--line-strong)}
+.acc-table td{padding:.8rem 1rem;border-bottom:1px solid var(--line-soft);color:var(--muted2);vertical-align:top}
+.acc-table tr:last-child td{border-bottom:none}
+.acc-table td:first-child{color:var(--text)}
+.acc-table td strong{color:var(--text);font-weight:500}
+.step-card-header h3{min-width:0}
