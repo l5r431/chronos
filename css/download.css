@@ -1212,3 +1212,102 @@
     .mode-btns { flex-direction: column; }
     .mode-btn { width: 100%; justify-content: center; }
   }
+
+
+  /* ─── CAPABILITIES ─── */
+  .cap-table-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+  }
+
+  .cap-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .cap-table thead th {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: left;
+    padding: 14px 22px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cap-table tbody tr { background: var(--bg2); transition: background 0.3s; }
+  .cap-table tbody tr:hover { background: var(--bg3); }
+  .cap-table tbody tr + tr { border-top: 1px solid var(--border); }
+
+  .cap-table tbody th {
+    width: 26%;
+    min-width: 170px;
+    padding: 22px;
+    text-align: left;
+    vertical-align: top;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border-right: 1px solid var(--border);
+  }
+
+  .cap-table tbody td { padding: 20px 22px; vertical-align: top; }
+
+  .cap-icon { font-size: 1.2rem; margin-right: 6px; }
+
+  .cap-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cap-list li {
+    position: relative;
+    padding-left: 16px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text-dim);
+  }
+
+  .cap-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--red-bright);
+  }
+
+  .cap-list strong { color: var(--text); font-weight: 600; }
+
+  .cap-foot {
+    max-width: 1200px;
+    margin: 18px auto 0;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.74rem;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 640px) {
+    .cap-table thead { display: none; }
+    .cap-table, .cap-table tbody, .cap-table tr, .cap-table th, .cap-table td { display: block; width: 100%; }
+    .cap-table tbody th { border-right: none; border-bottom: 1px solid var(--border); padding: 16px; min-width: 0; }
+    .cap-table tbody td { padding: 16px; }
+  }
+
+
+  /* ─── FONT AWESOME ICONS ─── */
+  .req-icon, .cap-icon { color: var(--gold); }
+  .req-icon { font-size: 1.5rem; }
+  .cap-icon { display: inline-block; width: 1.4em; text-align: center; margin-right: 6px; }
+  .btn-primary i, .btn-secondary i, .download-btn i { font-size: 0.95em; }
+  .check i, .cross i { margin-right: 4px; }
+  .privacy-title i { margin-right: 8px; }
