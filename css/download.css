@@ -1311,3 +1311,13 @@
   .btn-primary i, .btn-secondary i, .download-btn i { font-size: 0.95em; }
   .check i, .cross i { margin-right: 4px; }
   .privacy-title i { margin-right: 8px; }
+
+/* keyboard keys in the capabilities table */
+.cap-list kbd {
+  font-family: inherit;
+  font-size: 0.85em;
+  padding: 1px 6px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  opacity: 0.85;
+}
