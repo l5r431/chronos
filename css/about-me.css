@@ -125,6 +125,8 @@ main {
     padding: 6px 0;
 }
 
+.ico { margin-right: 0.35rem; color: var(--accent); }
+
 .m-link {
     display: flex;
     align-items: center;
